@@ -1,0 +1,66 @@
+- var dragable_ui           = true;
+- var theme_customizer      = true;
+- var calendar              = true;
+- var page_calendar         = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                    h3
+                                      | Calendar Basic
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                         | Home
+                                      li.breadcrumb-item Calendar
+                                      li.breadcrumb-item.active Calendar Basic
+                                .col-sm-6
+                                  include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid
+                      .calendar-wrap
+                        .row
+                          .col-sm-12
+                            .card
+                              .card-header.pb-0
+                                h5 Basic
+                                span
+                                  | This is the basic example having navigation button to navigate next and previous months and today button. This basic example lists all the events on the calendar.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #cal-basic
+                            .card
+                              .card-header
+                                h5 Basic Views
+                                span
+                                  | This is the basic example having navigation buttons as well as month, week and day views. In this example the option to change your view to a basicWeek or basicDay view. In the Basic Week or Basic Day View events are listed all together.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #cal-basic-view
+                            .card
+                              .card-header
+                                h5 Agenda Views
+                                span
+                                  | The following example demonstrates agenda views and the defaultView option is set to agendaWeek.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #cal-agenda-view
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

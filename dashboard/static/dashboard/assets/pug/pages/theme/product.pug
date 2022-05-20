@@ -1,0 +1,1164 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var range_slider          = true;
+- var page_range_slider     = true;
+- var touchspin             = true;
+- var select2               = true;
+- var page_select2          = true;
+- var product_tab           = true;
+- var owlcarousel           = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                          .row
+                            .col-sm-6
+                              h3
+                                | Product
+                              ol.breadcrumb
+                                li.breadcrumb-item
+                                  a(href='index.html')
+                                   | Home
+                                li.breadcrumb-item ECommerce
+                                li.breadcrumb-item.active Product
+                            .col-sm-6
+                              include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid.product-wrapper
+                        .product-grid
+                          .feature-products
+                            .row.m-b-10
+                              .col-md-3.col-sm-2.products-total
+                                .square-product-setting.d-inline-block
+                                  a.icon-grid.grid-layout-view(href='javascript:void(0)', data-original-title='', title='')
+                                    i(data-feather='grid')
+                                .square-product-setting.d-inline-block
+                                  a.icon-grid.m-0.list-layout-view(href='javascript:void(0)', data-original-title='', title='')
+                                    i(data-feather='list')
+                                .d-none-productlist.filter-toggle
+                                  h6.mb-0
+                                    | Filters
+                                    span.ms-2
+                                      i(data-feather='chevron-down').toggle-data
+                                .grid-options.d-inline-block
+                                  ul
+                                    li
+                                      a.product-2-layout-view(href='javascript:void(0)', data-original-title='', title='')
+                                        span.line-grid.line-grid-1.bg-primary
+                                        span.line-grid.line-grid-2.bg-primary
+                                    li
+                                      a.product-3-layout-view(href='javascript:void(0)', data-original-title='', title='')
+                                        span.line-grid.line-grid-3.bg-primary
+                                        span.line-grid.line-grid-4.bg-primary
+                                        span.line-grid.line-grid-5.bg-primary
+                                    li
+                                      a.product-4-layout-view(href='javascript:void(0)', data-original-title='', title='')
+                                        span.line-grid.line-grid-6.bg-primary
+                                        span.line-grid.line-grid-7.bg-primary
+                                        span.line-grid.line-grid-8.bg-primary
+                                        span.line-grid.line-grid-9.bg-primary
+                                    li
+                                      a.product-6-layout-view(href='javascript:void(0)', data-original-title='', title='')
+                                        span.line-grid.line-grid-10.bg-primary
+                                        span.line-grid.line-grid-11.bg-primary
+                                        span.line-grid.line-grid-12.bg-primary
+                                        span.line-grid.line-grid-13.bg-primary
+                                        span.line-grid.line-grid-14.bg-primary
+                                        span.line-grid.line-grid-15.bg-primary
+                              .col-md-9.col-sm-10.text-end
+                                span.f-w-600.m-r-5 Showing Products 1 - 24 Of 200 Results
+                                .select2-drpdwn-product.select-options.d-inline-block
+                                  select.form-control.btn-square(name='select')
+                                    option(value='opt1') Featured
+                                    option(value='opt2') Lowest Prices
+                                    option(value='opt3') Highest Prices
+                            .row                             
+                              .col-md-12
+                                .pro-filter-sec
+                                  .product-sidebar
+                                    .filter-section
+                                      .card
+                                        .card-header
+                                          h6.mb-0.f-w-600
+                                            | Filters
+                                            span.pull-right
+                                              i.fa.fa-chevron-down.toggle-data
+                                        .left-filter
+                                          .card-body.filter-cards-view.animate-chk
+                                            .product-filter
+                                              h6.f-w-600 Category
+                                              .checkbox-animated.mt-0
+                                                label.d-block(for='edo-ani5')
+                                                  input#edo-ani5.radio_animated(type='radio', data-original-title='', title='')
+                                                  | Man Shirt
+                                                label.d-block(for='edo-ani6')
+                                                  input#edo-ani6.radio_animated(type='radio', data-original-title='', title='')
+                                                  | Man Jeans
+                                                label.d-block(for='edo-ani7')
+                                                  input#edo-ani7.radio_animated(type='radio', data-original-title='', title='')
+                                                  | Woman Top
+                                                label.d-block(for='edo-ani8')
+                                                  input#edo-ani8.radio_animated(type='radio', data-original-title='', title='')
+                                                  | Woman Jeans
+                                                label.d-block(for='edo-ani9')
+                                                  input#edo-ani9.radio_animated(type='radio', data-original-title='', title='')
+                                                  | Man T-shirt
+                                            .product-filter
+                                              h6.f-w-600 Brand
+                                              .checkbox-animated.mt-0
+                                                label.d-block(for='chk-ani')
+                                                  input#chk-ani.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                  |  Levi's
+                                                label.d-block(for='chk-ani1')
+                                                  input#chk-ani1.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                  | Diesel
+                                                label.d-block(for='chk-ani2')
+                                                  input#chk-ani2.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                  | Lee
+                                                label.d-block(for='chk-ani3')
+                                                  input#chk-ani3.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                  | Hudson
+                                                label.d-block(for='chk-ani4')
+                                                  input#chk-ani4.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                  | Denizen
+                                                label.d-block(for='chk-ani5')
+                                                  input#chk-ani5.checkbox_animated(type='checkbox', data-original-title='', title='')
+                                                  | Spykar
+                                            .product-filter.slider-product
+                                              h6.f-w-600 Colors
+                                              .color-selector
+                                                ul
+                                                  li.white
+                                                  li.gray
+                                                  li.black
+                                                  li.orange
+                                                  li.green
+                                                  li.pink
+                                                  li.yellow
+                                                  li.blue
+                                                  li.red
+                                            .product-filter.pb-0
+                                              h6.f-w-600 Price
+                                              input#u-range-03(type='text')
+                                              h6.f-w-600 New Products
+                                            .product-filter.pb-0.new-products
+                                              #testimonial.owl-carousel.owl-theme
+                                                .item
+                                                  .product-box
+                                                    .media
+                                                      .product-img.me-3
+                                                        img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='', data-original-title='', title='')
+                                                      .media-body
+                                                        .product-details
+                                                          div                                                   
+                                                            ul
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                            p.mb-0.f-w-700 Fancy Shirt
+                                                            .f-w-500 $100.00
+                                                  .product-box
+                                                    .media
+                                                      .product-img.me-3
+                                                        img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='', data-original-title='', title='')
+                                                      .media-body
+                                                        .product-details
+                                                          div                                                   
+                                                            ul
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                            p.mb-0.f-w-700 Fancy Shirt
+                                                            .f-w-500 $100.00
+                                                  .product-box
+                                                    .media
+                                                      .product-img.me-3
+                                                        img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='', data-original-title='', title='')
+                                                      .media-body
+                                                        .product-details
+                                                          div                                                   
+                                                            ul
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                            p.mb-0.f-w-700 Fancy Shirt
+                                                            .f-w-500 $100.00
+                                                .item
+                                                  .product-box
+                                                    .media
+                                                      .product-img.me-3
+                                                        img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='', data-original-title='', title='')
+                                                      .media-body
+                                                        .product-details
+                                                          div                                                   
+                                                            ul
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                            p.mb-0.f-w-700 Fancy Shirt
+                                                            .f-w-500 $100.00
+                                                  .product-box
+                                                    .media
+                                                      .product-img.me-3
+                                                        img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='', data-original-title='', title='')
+                                                      .media-body
+                                                        .product-details
+                                                          div                                                   
+                                                            ul
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                            p.mb-0.f-w-700 Fancy Shirt
+                                                            .f-w-500 $100.00
+                                                  .product-box
+                                                    .media
+                                                      .product-img.me-3
+                                                        img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='', data-original-title='', title='')
+                                                      .media-body
+                                                        .product-details
+                                                          div                                                   
+                                                            ul
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                              li
+                                                                i.fa.fa-star.font-warning
+                                                            p.mb-0.f-w-700 Fancy Shirt
+                                                            .f-w-500 $100.00
+                                            .product-filter.text-center
+                                              img.img-fluid.banner-product(src='../assets/images/ecommerce/banner.jpg', alt='', data-original-title='', title='')
+                                  .product-search
+                                    form
+                                      .form-group.m-0
+                                        input.form-control(type='search', placeholder='Search..', data-original-title='', title='')
+                                        i.fa.fa-search
+                          .product-wrapper-grid
+                            .row
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter16')
+                                              i.icon-eye
+                                    #exampleModalCenter16.modal.fade
+                                      .modal-dialog.modal-lg.modal-dialog-centered
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Man's Jacket                                       
+                                                .product-price
+                                                  | $26.00
+                                                  del $35.00
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart                                                     
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Man's Jacket                                       
+                                      p Solid Denim Jacket
+                                      .product-price
+                                        | $26.00
+                                        del $35.00
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-danger Sale
+                                      img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter1')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter1.modal.fade
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 fido dido
+                                                .product-price
+                                                  | $55.00
+                                                  del $62.00 
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 fido dido
+                                      p Solid Polo Collar T-shirt
+                                      .product-price
+                                        | $55.00
+                                        del $62.00
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter2')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter2.modal.fade
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Wonder Woman
+                                                .product-price
+                                                  | $45.00
+                                                  del $52.00
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Wonder Woman
+                                      p Woman Gray Round T-shirt
+                                      .product-price
+                                        | $45.00
+                                        del $52.00
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-success.ribbon-right 50%
+                                      img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter3')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter3.modal.fade
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Roadster
+                                                .product-price
+                                                  | $38.00
+                                                  del $45.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')  
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Roadster
+                                      p Women Solid Denim Jacket
+                                      .product-price
+                                        | $38.00
+                                        del $45.00 
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-success.ribbon-right 50%
+                                      img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter4')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter4.modal.fade
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Roadster
+                                                .product-price
+                                                  | $38.00
+                                                  del $45.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')  
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Roadster
+                                      p Women Solid Denim Jacket
+                                      .product-price
+                                        | $38.00
+                                        del $45.00 
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter5')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter5.modal.fade
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Man's Jacket                                       
+                                                .product-price
+                                                  | $26.00
+                                                  del $35.00
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Man's Jacket                                       
+                                      p Solid Denim Jacket
+                                      .product-price
+                                        | $26.00
+                                        del $35.00
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-danger Sale
+                                      img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter6')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter6.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter1', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 fido dido
+                                                .product-price
+                                                  | $55.00
+                                                  del $62.00 
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 fido dido
+                                      p Solid Polo Collar T-shirt
+                                      .product-price
+                                        | $55.00
+                                        del $62.00
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter7')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter7.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter2', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Wonder Woman
+                                                .product-price
+                                                  | $45.00
+                                                  del $52.00
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Wonder Woman
+                                      p Woman Gray Round T-shirt
+                                      .product-price
+                                        | $45.00
+                                        del $52.00
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter8')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter8.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter2', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Wonder Woman
+                                                .product-price
+                                                  | $45.00
+                                                  del $52.00
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Wonder Woman
+                                      p Woman Gray Round T-shirt
+                                      .product-price
+                                        | $45.00
+                                        del $52.00
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-success.ribbon-right 50%
+                                      img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter9')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter9.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter3', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Roadster
+                                                .product-price
+                                                  | $38.00
+                                                  del $45.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')  
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Roadster
+                                      p Women Solid Denim Jacket
+                                      .product-price
+                                        | $38.00
+                                        del $45.00 
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter10')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter10.modal.fade
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Man's Jacket                                       
+                                                .product-price
+                                                  | $26.00
+                                                  del $35.00
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Man's Jacket                                       
+                                      p Solid Denim Jacket
+                                      .product-price
+                                        | $26.00
+                                        del $35.00
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-danger Sale
+                                      img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter11')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter11.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter1', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 fido dido
+                                                .product-price
+                                                  | $55.00
+                                                  del $62.00 
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 fido dido
+                                      p Solid Polo Collar T-shirt
+                                      .product-price
+                                        | $55.00
+                                        del $62.00
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-danger Sale
+                                      img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter12')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter12.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter1', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/02.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 fido dido
+                                                .product-price
+                                                  | $55.00
+                                                  del $62.00 
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 fido dido
+                                      p Solid Polo Collar T-shirt
+                                      .product-price
+                                        | $55.00
+                                        del $62.00
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter13')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter13.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter2', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/03.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Wonder Woman
+                                                .product-price
+                                                  | $45.00
+                                                  del $52.00
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Wonder Woman
+                                      p Woman Gray Round T-shirt
+                                      .product-price
+                                        | $45.00
+                                        del $52.00
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      .ribbon.ribbon-success.ribbon-right 50%
+                                      img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter14')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter14.modal.fade(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenter3', aria-hidden='true')
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/04.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Roadster
+                                                .product-price
+                                                  | $38.00
+                                                  del $45.00    
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')  
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Roadster
+                                      p Women Solid Denim Jacket
+                                      .product-price
+                                        | $38.00
+                                        del $45.00 
+                              .col-xl-3.col-sm-6.xl-4
+                                .card
+                                  .product-box
+                                    .product-img
+                                      img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                      .product-hover
+                                        ul
+                                          li
+                                            a(href="cart.html")
+                                              i.icon-shopping-cart
+                                          li
+                                            a(data-bs-toggle='modal', data-bs-target='#exampleModalCenter15')
+                                              i.icon-eye
+                                          
+                                    #exampleModalCenter15.modal.fade
+                                      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+                                        .modal-content
+                                          .modal-header
+                                            .product-box.row
+                                              .product-img.col-lg-6
+                                                img.img-fluid(src='../assets/images/ecommerce/01.jpg', alt='')
+                                              .product-details.col-lg-6.text-start
+                                                a(href="product-page.html")
+                                                  h4 Man's Jacket                                       
+                                                .product-price
+                                                  | $26.00
+                                                  del $35.00
+                                                .product-view
+                                                  h6.f-w-600 Product Details
+                                                  p.mb-0 Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo.
+                                                .product-size
+                                                  ul
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') M
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') L
+                                                    li 
+                                                      button.btn.btn-outline-light(type='button') Xl
+                                                .product-qnty
+                                                  h6.f-w-600 Quantity
+                                                  fieldset
+                                                    .input-group
+                                                      input.touchspin.text-center(type='text', value='5')
+                                                  .addcart-btn
+                                                    a.btn.btn-primary.me-3(href="cart.html") Add to Cart
+                                                    a.btn.btn-primary(href="product-page.html") View Details
+                                            button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+                                    .product-details
+                                      a(href="product-page.html")
+                                        h4 Man's Jacket                                       
+                                      p Solid Denim Jacket
+                                      .product-price
+                                        | $26.00
+                                        del $35.00
+                              
+
+
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

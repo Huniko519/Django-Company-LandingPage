@@ -1,0 +1,99 @@
+
+$primary: #7ED321;
+
+
+body{
+	background: #fff;
+}
+
+
+
+
+
+.hero{
+	background: $primary;
+	color: #fff;
+	padding: 100px 0;
+	margin-bottom: 140px;
+
+	.logo{
+		background: url('images/brand-white.png') no-repeat center / cover;
+		font-size: 0;
+		width: 160px;
+		height: 40px;
+		margin: 0 auto 30px;
+		display: block;
+	}//logo
+
+	.lead{
+		margin-bottom: 40px;
+	}
+
+
+	.btn.btn-light:hover,
+	.btn.btn-light:active,
+	.btn.btn-light:focus,
+	.btn.btn-light:active:focus{
+		background: #fff;
+		color: $primary;
+		box-shadow: none;
+	}
+
+}//hero
+
+
+
+
+.tmb{
+	background: #fff;
+	color: #777;
+	font-size: 0.9rem;
+	font-weight: 600;
+	text-align: center;
+	padding: 30px 20px;
+	display: block;
+	border-radius: 8px;
+	transition: .6s;
+
+	img{
+		max-width: 100%;
+		opacity: 0.8;
+		transition: .5s;
+	}//img
+
+
+	img + span{
+		padding-top: 20px;
+		display: block;
+	}// img + span
+
+
+	&:hover, &:active, &:focus, &:active:focus{
+		color: #333;
+		text-decoration: none;
+		box-shadow: 0 0 40px rgba(#000, .1);
+
+		img{ opacity: 1; }
+
+	}// :hover
+
+}//tmb
+
+
+
+
+.main-footer{
+	font-size: 0.9rem;
+	line-height: 1.2;
+	text-align: center;
+	padding-bottom: 200px;
+
+
+	a,
+	a:hover,
+	a:active,
+	a:focus,
+	a:active:focus{
+		color: $primary;
+	}
+}//main-footer

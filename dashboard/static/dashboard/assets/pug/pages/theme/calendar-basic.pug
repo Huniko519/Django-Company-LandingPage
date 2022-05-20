@@ -1,0 +1,107 @@
+- var theme_customizer      = true;
+- var calendar              = true;
+- var calendar_basic        = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                    h3
+                                      | Calender Basic
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                          | Home
+                                      li.breadcrumb-item Apps
+                                      li.breadcrumb-item.active Calender Basic
+                                .col-sm-6
+                                  include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid.calendar-basic
+                        .row
+                          .col-12
+                            .card
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #menu
+                                      #menu-navi
+                                        .menu-navi-left
+                                          button.btn.btn-primary.move-today(type='button' data-action='move-today') Today
+                                        #renderRange.render-range.menu-navi-center
+                                        .menu-navi-right
+                                          button#dropdownMenu-calendarType.btn.btn-primary(type='button' data-bs-toggle='dropdown')
+                                            i#calendarTypeIcon
+                                            span#calendarTypeName Dropdown
+                                            i.fa.fa-angle-down
+                                          ul.dropdown-menu(role='menu')
+                                            li(role='presentation')
+                                              a.dropdown-menu-title(role='menuitem' data-action='toggle-daily')
+                                                i.fa.fa-bars
+                                                | Daily
+                                            li(role='presentation')
+                                              a.dropdown-menu-title(role='menuitem' data-action='toggle-weekly')
+                                                i.fa.fa-th-large
+                                                | Weekly
+                                            li(role='presentation')
+                                              a.dropdown-menu-title(role='menuitem' data-action='toggle-monthly')
+                                                i.fa.fa-th
+                                                | Month
+                                            li(role='presentation')
+                                              a.dropdown-menu-title(role='menuitem' data-action='toggle-weeks2')
+                                                i.fa.fa-th-large
+                                                | 2 weeks
+                                            li(role='presentation')
+                                              a.dropdown-menu-title(role='menuitem' data-action='toggle-weeks3')
+                                                i.fa.fa-th-large
+                                                | 3 weeks
+                                            li.dropdown-divider(role='presentation')
+                                            li(role='presentation')
+                                              a(role='menuitem' data-action='toggle-workweek')
+                                                input.tui-full-calendar-checkbox-square(type='checkbox' value='toggle-workweek' checked='')
+                                                span.checkbox-title
+                                                | Show weekends
+                                            li(role='presentation')
+                                              a(role='menuitem' data-action='toggle-start-day-1')
+                                                input.tui-full-calendar-checkbox-square(type='checkbox' value='toggle-start-day-1')
+                                                span.checkbox-title
+                                                | Start Week on Monday
+                                            li(role='presentation')
+                                              a(role='menuitem' data-action='toggle-narrow-weekend')
+                                                input.tui-full-calendar-checkbox-square(type='checkbox' value='toggle-narrow-weekend')
+                                                span.checkbox-title
+                                                | Narrower than weekdays
+                                          .move-btn
+                                            button.btn.btn-primary.move-day(type='button' data-action='move-prev')
+                                              i.fa.fa-angle-left(data-action='move-prev')
+                                            button.btn.btn-primary.move-day(type='button' data-action='move-next')
+                                              i.fa.fa-angle-right(data-action='move-next')
+                                    #lnb
+                                      .lnb-new-schedule
+                                        button#btn-new-schedule.btn.lnb-new-schedule-btn.btn-primary(type='button' data-bs-toggle='modal')
+                                          | New schedule
+                                      #lnb-calendars.lnb-calendars
+                                        #calendarList.lnb-calendars-d1
+                                        .lnb-calendars-item.m-0.p-0
+                                          label
+                                            input.tui-full-calendar-checkbox-square(type='checkbox' value='all' checked='')
+                                            span
+                                            strong View all
+                                  .col-md-12
+                                    #right
+                                      #calendar
+                    // Container-fluid Ends
+
+                include ../../components/footer
+        include ../../components/footer-files 

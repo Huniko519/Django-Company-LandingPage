@@ -1,0 +1,51 @@
+/**=====================
+      08. GRID CSS Start
+==========================**/
+.grid-showcase {
+  margin-bottom: -10px;
+  span {
+    display: block;
+    border: 1px solid $light-gray;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background-color: rgba($primary-color,0.1);
+    color: $primary-color;
+    font-weight:600;
+  }
+}
+.grid-align{
+  margin-bottom: -30px;
+  .row{
+    padding: 15px 0;
+    min-height: 10rem;
+    border: 1px solid  rgba($primary-color, 0.03);
+    margin-bottom: 30px;
+    background-color: rgba($primary-color, 0.03);
+  }
+}
+
+
+.grid-wrrapper{ 
+  .table-striped {
+    tbody {
+      tr{
+        &:nth-of-type(odd){
+          --bs-table-accent-bg:unset;
+          background-color: rgba($primary-color, 0.1);
+          color: $primary-color;
+          th,td{
+            color: $primary-color;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/**=====================
+      08. GRID CSS Ends
+==========================**/
+

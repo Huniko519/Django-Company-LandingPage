@@ -1,0 +1,313 @@
+- var theme_customizer = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                    h3
+                                      | Knowledgebase
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                         | Home
+                                      li.breadcrumb-item.active Knowledgebase
+                                .col-sm-6
+                                  include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid.faq-section
+                        .row
+                          .col-12
+                            .knowledgebase-bg
+                              img.bg-img-cover.bg-center(src="../assets/images/knowledgebase/bg_1.jpg" alt="looginpage" )
+                            .knowledgebase-search
+                              div
+                                h3 How Can I help you?
+                                form.form-inline(action="#" method="get")
+                                  .form-group.w-100.mb-0
+                                    i(data-feather='search')
+                                    input.form-control-plaintext.w-100(type="text" placeholder="Type question here" title="")                                     
+                          .col-xl-4.xl-50.col-lg-6.box-col-6
+                            .card.bg-primary
+                              .card-body
+                                .media.faq-widgets
+                                  .media-body
+                                    h5 Articles
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                  i(data-feather='book-open')
+                          .col-xl-4.xl-50.col-lg-6.box-col-6
+                            .card.bg-primary
+                              .card-body
+                                .media.faq-widgets
+                                  .media-body
+                                    h5 Knowledgebase
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                  i(data-feather='aperture')
+                          .col-xl-4.col-lg-12.xl-100.box-col-12
+                            .card.bg-primary
+                              .card-body
+                                .media.faq-widgets
+                                  .media-body
+                                    h5 Support
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                  i(data-feather='file-text')
+                          .col-lg-12.featured-tutorial
+                            .header-faq
+                              h5.mb-0 Featured Tutorials
+                            .row
+                              .col-xl-3.xl-50.col-sm-6.box-col-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/1.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-link
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-import
+                                  .card-body
+                                    a(href="knowledge-detail.html")
+                                      h6  Web Design
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    ul.pull-right
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                              .col-xl-3.xl-50.col-sm-6.box-col-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/2.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-link
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-import
+                                  .card-body
+                                    a(href="knowledge-detail.html")
+                                      h6 Web Development
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    ul.pull-right
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star-o.font-primary
+                              .col-xl-3.xl-50.col-sm-6.box-col-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/3.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-link
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-import
+                                  .card-body
+                                    a(href="knowledge-detail.html")
+                                      h6 UI Design
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    ul.pull-right
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                              .col-xl-3.xl-50.col-sm-6.box-col-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/4.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-link
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-import
+                                  .card-body
+                                    a(href="knowledge-detail.html")
+                                      h6 UX Design
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    ul.pull-right
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star-half-o.font-primary
+                              .col-xl-3.xl-50.col-sm-6.box-col-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/3.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-link
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-import
+                                  .card-body
+                                    a(href="knowledge-detail.html")
+                                      h6 UI Design
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    ul.pull-right
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                              .col-xl-3.xl-50.col-sm-6.box-col-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/4.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-link
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-import
+                                  .card-body
+                                    a(href="knowledge-detail.html")
+                                      h6 UX Design
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    ul.pull-right
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star-half-o.font-primary
+                              .col-xl-3.xl-50.col-sm-6.box-col-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/1.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-link
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-import
+                                  .card-body
+                                    a(href="knowledge-detail.html")
+                                      h6  Web Design
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    ul.pull-right
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                              .col-xl-3.xl-50.col-sm-6.box-col-6
+                                .card.features-faq.product-box
+                                  .faq-image.product-img
+                                    img.img-fluid(src='../assets/images/faq/2.jpg', alt='')
+                                    .product-hover
+                                      ul
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-link
+                                        li
+                                          a(href="knowledge-detail.html")
+                                            i.icon-import
+                                  .card-body
+                                    a(href="knowledge-detail.html")
+                                      h6 Web Development
+                                    p
+                                      | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
+                                  .card-footer
+                                    span Dec 15, 2019
+                                    ul.pull-right
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star.font-primary
+                                      li
+                                        i.fa.fa-star-o.font-primary
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

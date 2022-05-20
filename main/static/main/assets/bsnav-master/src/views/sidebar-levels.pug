@@ -1,0 +1,127 @@
+extends templates/_template.pug
+
+block content
+	.navbar.navbar-expand-sm.bsnav.bsnav-sidebar.bsnav-sidebar-left
+
+		a.navbar-brand.align-self-end(href="#") bsnav
+
+		button.navbar-toggler.toggler-spring
+			span.navbar-toggler-icon
+
+
+		.collapse.navbar-collapse.justify-content-sm-end.align-items-start
+			ul.navbar-nav.navbar-mobile.mr-0
+				li.nav-item.active
+					a.nav-link(href="#") Home
+
+
+
+				li.nav-item
+					a.nav-link(href="#") #[i.caret] #[span.title Has children!]
+
+					ul.navbar-nav
+						li.nav-item
+							a.nav-link(href="#") Level 1
+						li.nav-item
+							a.nav-link(href="#") #[i.caret] #[span.title Levels]
+
+							ul.navbar-nav
+								li.nav-item
+									a.nav-link(href="#") Level 2
+								li.nav-item
+									a.nav-link(href="#") #[i.caret] #[span.title Levels]
+
+									ul.navbar-nav
+										li.nav-item
+											a.nav-link(href="#") Level 3
+										li.nav-item
+											a.nav-link(href="#") Action
+										li.nav-item
+											a.nav-link(href="#") Other Action
+
+
+								li.nav-item
+									a.nav-link(href="#") Action
+
+
+								li.nav-item
+									a.nav-link(href="#") #[i.caret] #[span.title Levels]
+
+									ul.navbar-nav
+										li.nav-item
+											a.nav-link(href="#") Level 3
+										li.nav-item
+											a.nav-link(href="#") Action
+										li.nav-item
+											a.nav-link(href="#") Other Action
+
+
+								li.nav-item
+									a.nav-link(href="#") Other Action
+
+						li.nav-item
+							a.nav-link(href="#") Action
+
+
+						li.nav-item
+							a.nav-link(href="#") #[i.caret] #[span.title Levels]
+
+							ul.navbar-nav
+								li.nav-item
+									a.nav-link(href="#") Level 3
+								li.nav-item
+									a.nav-link(href="#") Action
+								li.nav-item
+									a.nav-link(href="#") Other Action
+
+
+						li.nav-item
+							a.nav-link(href="#") Other Action
+
+
+
+				li.nav-item
+					a.nav-link(href="#") #[i.caret] #[span.title Has children too]
+
+					ul.navbar-nav
+						li.nav-item
+							a.nav-link(href="#") Level 1
+						li.nav-item
+							a.nav-link(href="#") Level 1
+						li.nav-item
+							a.nav-link(href="#") Level 1
+
+
+				li.nav-item
+					a.nav-link(href="#") News
+				li.nav-item
+					a.nav-link(href="#") Gallery
+				li.nav-item
+					a.nav-link(href="#") Contact
+
+
+
+	.bsnav-body-wrapper
+		.jumbotron.jumbotron-fluid
+			.container
+				h1 Sidebar levels
+		
+
+		.container
+			script(src="https://gitlab.com/snippets/1829403.js")
+	
+
+
+	.bsnav-mobile
+		.bsnav-mobile-overlay
+		.navbar
+
+
+	style.
+		.jumbotron{
+			background: url('https://picsum.photos/1400/700?random') no-repeat center top / cover;
+			color: #fff;
+			height: 600px;
+			display: flex;
+			align-items: center;
+		}

@@ -1,0 +1,75 @@
+{% extends "main/base.html" %}
+{% block content %}
+{% load static %}
+<!-- Inner Banner -->
+<section class="bg-dark bg-img position-relative inner-banner py-5"
+  style="background-image: url('{% static 'main/images/services-bg-01.jpg' %}');">
+  <div class="bg_overlay bg-dark"></div>
+  <div class="container">
+    <div class="inner-banner-wrap d-table w-100">
+      <div class="inner-banner-content d-table-cell align-middle w-100 text-center text-white">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-2">Services</h2>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+              <ol class="breadcrumb bg-transparent m-0 p-0">
+                <li class="breadcrumb-item">
+                  <a href="/">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">Services</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Inner Banner / END -->
+
+<!-- hiro_benner_Service -->
+<div class="our_services py-100-70">
+  <div class="container">
+    <div class="section-title text-center mb-50">
+      <h6 class="h5 font-weight-lighter">Our Services</h6>
+      <h2 class="h1 mb-3">What We Do</h2>
+      <div class="border-title"></div>
+    </div>
+    <div class="row">
+      <!-- services_box -->
+      <div class="col-md-6 col-sm-6 col-lg-4 col-xl-4 mb-30">
+        <div class="services_box position-relative">
+          <img src="{% static 'main/images/service/01.jpg' %}" alt="" class="mb-4 img-fluid">
+          <h5 class="font-weight-bold h4">Business Analysis</h5>
+          <p>Provide Business Finacial Support</p>
+          <a href="" class="stretched-link text-primary font-weight-bold">Read More <i
+              class="mdi mdi-arrow-right ml-2"></i></a>
+        </div>
+      </div>
+      <!--End oF services_box -->
+      <!-- services_box -->
+      <div class="col-md-6 col-sm-6 col-lg-4 col-xl-4 mb-30">
+        <div class="services_box position-relative">
+          <img src="{% static 'main/images/service/02.jpg' %}" alt="" class="mb-4 img-fluid">
+          <h5 class="font-weight-bold h4">Reports Analysis</h5>
+          <p>Provide Business reports analytics support</p>
+          <a href="" class="stretched-link text-primary font-weight-bold">Read More <i
+              class="mdi mdi-arrow-right ml-2"></i></a>
+        </div>
+      </div>
+      <!--End oF services_box -->
+      <!-- services_box -->
+      <div class="col-md-6 col-sm-6 col-lg-4 col-xl-4 mb-30">
+        <div class="services_box position-relative">
+          <img src="{% static 'main/images/service/03.jpg' %}" alt="" class="mb-4 img-fluid">
+          <h5 class="font-weight-bold h4">Business Credit Subscription Plan</h5>
+          <p>We also Provide Subscription plans</p>
+          <a href="" class="stretched-link text-primary font-weight-bold">Read More <i
+              class="mdi mdi-arrow-right ml-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End of hiro_benner_Service -->
+{% endblock content %}

@@ -1,0 +1,58 @@
+- var dragable_ui           = true;
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var calendar              = true;
+- var page_calendar         = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                    h3
+                                      | Calendar Events
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                         | Home
+                                      li.breadcrumb-item Calendar
+                                      li.breadcrumb-item.active Calendar Events
+                                .col-sm-6
+                                  include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid
+                      .calendar-wrap
+                        .row
+                          .col-sm-12
+                            .card
+                              .card-header
+                                h5 Background Event
+                                span
+                                  | Events that appear as background highlights can be achieved by an Event Object's property to "background".
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #cal-bg-events
+                            .card
+                              .card-header
+                                h5 Event Colors
+                                span
+                                  | You can change the color of all events on the calendar using the eventColor option.
+                              .card-body
+                                .row
+                                  .col-md-12
+                                    #cal-event-colors
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

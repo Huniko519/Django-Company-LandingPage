@@ -1,0 +1,201 @@
+- var theme_customizer      = true;
+- var counter               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                              .col-sm-6
+                                  h3
+                                    | Pricing
+                                  ol.breadcrumb
+                                    li.breadcrumb-item
+                                      a(href='index.html')
+                                       | Home
+                                    li.breadcrumb-item Pages
+                                    li.breadcrumb-item Ecommerce   
+                                    li.breadcrumb-item.active Pricing
+                              .col-sm-6
+                                include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header.pb-0 
+                                h5 Simple Pricing Card
+                            .card-body.row.pricing-content
+                              .col-xl-3.col-sm-6.xl-50.box-col-6
+                                .card.text-center.pricing-simple
+                                  .card-body
+                                    h3 Standard
+                                    h1 $15
+                                    h6.mb-0 Lorum Ipsum
+                                  a.btn.btn-lg.btn-primary.btn-block(href='javascript:void(0)')
+                                    h5.mb-0 Purchase
+                              .col-xl-3.col-sm-6.xl-50.box-col-6
+                                .card.text-center.pricing-simple
+                                  .card-body
+                                    h3 Business
+                                    h1 $25
+                                    h6.mb-0 Lorum Ipsum
+                                  a.btn.btn-lg.btn-primary.btn-block(href='javascript:void(0)')
+                                    h5.mb-0 Purchase
+                              .col-xl-3.col-sm-6.xl-50.box-col-6
+                                .card.text-center.pricing-simple
+                                  .card-body
+                                    h3 Premium
+                                    h1 $35
+                                    h6.mb-0 Lorum Ipsum
+                                  a.btn.btn-lg.btn-primary.btn-block(href='javascript:void(0)')
+                                    h5.mb-0 Purchase
+                              .col-xl-3.col-sm-6.xl-50.box-col-6
+                                .card.text-center.pricing-simple
+                                  .card-body
+                                    h3 Extra
+                                    h1 $45
+                                    h6.mb-0 Lorum Ipsum
+                                  a.btn.btn-lg.btn-primary.btn-block(href='javascript:void(0)')
+                                    h5.mb-0 Purchase
+                        .col-sm-12
+                          .card
+                            .card-header.pb-0 
+                                h5 Pricing
+                            .card-body.row.pricing-content.pricing-col
+                              .col-md-3
+                                .pricing-block.card.text-center
+                                  .pricing-header
+                                      h2 standard
+                                      .price-box
+                                        div
+                                          h3 $10
+                                          p / month
+                                  .pricing-list                                      
+                                    ul.pricing-inner
+                                      li
+                                        h6
+                                          | 50GB
+                                          span  Disk Space
+                                      li
+                                        h6
+                                          | 50
+                                          span  Email Accounts
+                                      li
+                                        h6
+                                          | 50GB
+                                          span  Bandwidth
+                                      li
+                                        h6
+                                          | 10
+                                          span  Subdomains
+                                      li
+                                        h6
+                                          | 15
+                                          span  Domains
+                                    button.btn.btn-primary.btn-lg(type='button', data-original-title='btn btn-primary btn-lg', title='') Subscribe
+                              .col-md-3
+                                .pricing-block.card.text-center
+                                  .pricing-header
+                                      h2 business
+                                      .price-box
+                                        div
+                                          h3 $20
+                                          p / month
+                                  .pricing-list                                      
+                                    ul.pricing-inner
+                                      li
+                                        h6
+                                          | 60GB
+                                          span  Disk Space
+                                      li
+                                        h6
+                                          | 60
+                                          span  Email Accounts
+                                      li
+                                        h6
+                                          | 60GB
+                                          span  Bandwidth
+                                      li
+                                        h6
+                                          | 15
+                                          span  Subdomains
+                                      li
+                                        h6
+                                          | 20
+                                          span  Domains
+                                    button.btn.btn-primary.btn-lg(type='button', data-original-title='btn btn-primary btn-lg', title='') Subscribe
+                              .col-md-3
+                                .pricing-block.card.text-center
+                                  .pricing-header
+                                      h2 PREMIUM 
+                                      .price-box
+                                        div
+                                          h3 $30
+                                          p / month
+                                  .pricing-list
+                                    ul.pricing-inner
+                                      li
+                                        h6
+                                          | 70GB
+                                          span  Disk Space
+                                      li
+                                        h6
+                                          | 70
+                                          span  Email Accounts
+                                      li
+                                        h6
+                                          | 70GB
+                                          span  Bandwidth
+                                      li
+                                        h6
+                                          | 25
+                                          span  Subdomains
+                                      li
+                                        h6
+                                          | 30
+                                          span  Domains
+                                    button.btn.btn-primary.btn-lg(type='button', data-original-title='btn btn-primary btn-lg', title='') Subscribe
+                              .col-md-3
+                                .pricing-block.card.text-center
+                                  .pricing-header
+                                      h2 auther pack
+                                      .price-box
+                                        div
+                                          h3 $40
+                                          p / month
+                                  .pricing-list                                      
+                                    ul.pricing-inner
+                                      li
+                                        h6
+                                          | 80GB
+                                          span  Disk Space
+                                      li
+                                        h6
+                                          | 80
+                                          span  Email Accounts
+                                      li
+                                        h6
+                                          | 80GB
+                                          span  Bandwidth
+                                      li
+                                        h6
+                                          | 25
+                                          span  Subdomains
+                                      li
+                                        h6
+                                          | 30
+                                          span  Domains
+                                    button.btn.btn-primary.btn-lg(type='button', data-original-title='btn btn-primary btn-lg', title='') Subscribe
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

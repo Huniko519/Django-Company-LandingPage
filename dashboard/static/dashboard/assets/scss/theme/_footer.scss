@@ -1,0 +1,71 @@
+/**=====================
+     47. Footer CSS Start
+==========================**/
+.footer-links{
+  text-align: $footer_link_align;
+  li{
+    display: inline-block;
+    padding-right: 15px;
+    a{
+      font-size: 12px;
+    }
+  }
+}
+footer{
+  background-color: $footer_bg_color;
+  box-shadow: $footer_box_shadow;
+  padding: 15px;
+  bottom: 0;
+  left: 0;  
+  margin-left: 275px;
+  a{
+    font-weight: 600;
+  }
+  &.footer-starter-kit{
+    bottom: -52px;
+  }
+  p{
+    font-size:14px;       
+    font-weight:500;     
+    color:$light-text;
+  } 
+}
+.page-wrapper{
+    .page-body-wrapper{
+      .footer-dark{
+        background-color: $footer_dark_color;
+        p{
+          color: $white !important;
+        }
+        li{
+          a{
+            color: $footer_dark__txt_color;
+          }
+        }
+    }
+  }
+}
+.footer-fix{
+  width: calc(100% - 255px);
+  position: fixed;
+}
+.page-wrapper.horizontal-wrapper{
+  .page-body-wrapper{
+    footer{
+      transition: all 0.3s ease;
+      bottom: 0;
+      z-index: 8;
+      margin-left: 0;
+      p{
+        color: $theme-body-font-color;
+        i{
+          color: $secondary-color;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}
+/**=====================
+     47. Footer CSS Ends
+==========================**/

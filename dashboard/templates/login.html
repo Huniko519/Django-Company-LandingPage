@@ -1,0 +1,100 @@
+{% extends "main/base.html" %}
+{% block content %} {% load static %}
+<!-- page-wrapper Start-->
+<div class="our_services py-100-70">
+  <div class="container">
+    <div class="section-title text-center mb-50">
+      <h6 class="h5 font-weight-lighter">Login / Sign up</h6>
+      <h2 class="h1 mb-3">Login into Your Account</h2>
+      <div class="border-title"></div>
+    </div>
+    <div class="row">
+      <section class="page-wrapper">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="login-card">
+                <form class="theme-form login-form" action="{% url 'login' %}" method="post"> {% csrf_token %}
+                  <h4>Login</h4>
+                  <h6>Welcome back! Log in to your account.</h6>
+                  <div class="form-group">
+                    <label>Email Address</label>
+                    <div class="input-group">
+                      <input class="form-control" type="text" required="" name="username" placeholder="Test@gmail.com">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <div class="input-group">
+                      <input class="form-control" type="password" name="password" required="" placeholder="*********">
+                      <div class="show-hide"><span class="show"> </span></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Sign in</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="col-4"></div>
+      <section>
+        <div class="container-fluid p-0">
+          <div class="row m-0">
+            <div class="col-12 p-0">
+              <div class="login-card">
+                <form class="theme-form login-form" method="post" action="{% url 'signup' %}"> {% csrf_token %}
+                  <h4>Create your account</h4>
+                  <h6>Enter your personal details to create account</h6>
+                  <div class="form-group">
+                    <label>Your Name</label>
+                    <div class="small-group">
+                      <div class="input-group">
+                        <input class="form-control" name="first_name" type="text" required="" placeholder="Fist Name">
+                      </div>
+                      <div class="input-group">
+                        <input class="form-control" name="last_name" type="text" required="" placeholder="Last Name">
+                      </div>
+                      <div class="input-group">
+                        <input class="form-control" name="username" type="text" required="" placeholder="Userame">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Email Address</label>
+                    <div class="input-group">
+                      <input class="form-control" name="email" type="email" required="" placeholder="Test@gmail.com">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Password</label>
+                    <div class="input-group">
+                      <input class="form-control" type="password" name="password1" required="" placeholder="Password">
+                      <div class="show-hide"><span class="show"> </span></div>
+                    </div>
+                    <div class="input-group">
+                      <input class="form-control" type="password" name="password2" required="" placeholder="Confirm Password">
+                      <div class="show-hide"><span class="show"> </span></div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <div class="checkbox">
+                      <input id="checkbox1" type="checkbox">
+                      <label class="text-muted" for="checkbox1">Agree with <span>Privacy Policy </span></label>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <button class="btn btn-primary btn-block" type="submit">Create Account</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  {% endblock content %}

@@ -1,0 +1,451 @@
+- var theme_customizer      = true;
+- var photo_swipe           = true;
+- var counter               = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                      .page-header
+                        .row
+                          .col-sm-6
+                              h3
+                                | User Profile
+                              ol.breadcrumb
+                                li.breadcrumb-item
+                                  a(href='index.html')
+                                   | Home
+                                li.breadcrumb-item Users
+                                li.breadcrumb-item.active User Profile
+                          .col-sm-6
+                            include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid
+                      .user-profile
+                        .row
+                          // user profile header start
+                          .col-sm-12
+                            .card.profile-header
+                              img.img-fluid.bg-img-cover(src="../assets/images/user-profile/bg-profile.jpg" , alt="")
+                              .profile-img-wrrap
+                                img.img-fluid.bg-img-cover(src="../assets/images/user-profile/bg-profile.jpg" , alt="")
+                              .userpro-box
+                                .img-wrraper                               
+                                  .avatar
+                                    img.img-fluid(alt='' , src='../assets/images/user/7.jpg')
+                                  a(href="edit-profile.html").icon-wrapper
+                                    i.icofont.icofont-pencil-alt-5
+                                .user-designation
+                                  .title
+                                    a(target='_blank' href='') 
+                                     h4 Emay Walter
+                                     h6 designer
+                                  .social-media
+                                    ul.user-list-social
+                                      li
+                                        a(href='#')
+                                          i.fa.fa-facebook
+                                      li
+                                        a(href='#')
+                                          i.fa.fa-google-plus
+                                      li
+                                        a(href='#')
+                                          i.fa.fa-twitter
+                                      li
+                                        a(href='#')
+                                          i.fa.fa-instagram
+                                      li
+                                        a(href='#')
+                                          i.fa.fa-rss
+                                  .follow
+                                    ul.follow-list
+                                      li
+                                        .follow-num.counter 325
+                                        span Follower
+                                      li
+                                        .follow-num.counter 450
+                                        span Following
+                                      li
+                                        .follow-num.counter 500
+                                        span Likes
+                          // user profile header end
+                          .col-xl-3.col-lg-12.col-md-5.xl-35
+                            .default-according.style-1.faq-accordion.job-accordion
+                              .row
+                                .col-xl-12
+                                  .card
+                                    .card-header
+                                      h5.p-0
+                                        button.btn.btn-link.ps-0(data-bs-toggle='collapse', data-bs-target='#collapseicon2', aria-expanded='true', aria-controls='collapseicon2')
+                                          | About Me
+                                    #collapseicon2.collapse.show(aria-labelledby='collapseicon2', data-parent='#accordion')
+                                      .card-body.post-about
+                                        ul
+                                          li
+                                            .icon
+                                              i(data-feather="briefcase")
+                                            div
+                                              h5 UX desginer at Pixelstrap
+                                              p banglore - 2021
+                                          li
+                                            .icon
+                                              i(data-feather="book")
+                                            div
+                                              h5 studied computer science
+                                              p at london univercity - 2015
+                                          li
+                                            .icon
+                                              i(data-feather="heart")
+                                            div
+                                              h5 relationship status
+                                              p single
+                                          li
+                                            .icon
+                                              i(data-feather="map-pin")
+                                            div
+                                              h5 lived in london
+                                              p last 5 year
+                                          li
+                                            .icon
+                                              i(data-feather="droplet")
+                                            div
+                                              h5 blood group
+                                              p O+ positive
+                                        div.social-network.theme-form
+                                          span.f-w-600 Social Networks
+                                          button.btn.social-btn.btn-fb.mb-2.text-center
+                                            i.fa.fa-facebook.m-r-5
+                                            | Facebook
+                                          button.btn.social-btn.btn-twitter.mb-2.text-center
+                                            i.fa.fa-twitter.m-r-5
+                                            | Twitter
+                                          button.btn.social-btn.btn-google.text-center
+                                            i.fa.fa-dribbble.m-r-5
+                                            | Dribbble
+                                .col-xl-12.col-lg-6.col-md-12.col-sm-6
+                                  .card
+                                    .card-header
+                                      h5.p-0
+                                        button.btn.btn-link.ps-0(data-bs-toggle='collapse', data-bs-target='#collapseicon8', aria-expanded='true', aria-controls='collapseicon8')
+                                          | Followers
+                                    #collapseicon8.collapse.show(aria-labelledby='collapseicon8', data-parent='#accordion')
+                                      .card-body.social-list.filter-cards-view
+                                        .media
+                                          img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/2.png')
+                                          .media-body
+                                            span.d-block Bucky Barnes
+                                            a(href='javascript:void(0)') Add Friend
+                                        .media
+                                          img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.png')
+                                          .media-body
+                                            span.d-block Sarah Loren
+                                            a(href='javascript:void(0)') Add Friend
+                                        .media
+                                          img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.jpg')
+                                          .media-body
+                                            span.d-block Jason Borne
+                                            a(href='javascript:void(0)') Add Friend
+                                        .media
+                                          img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/10.jpg')
+                                          .media-body
+                                            span.d-block Comeren Diaz
+                                            a(href='javascript:void(0)') Add Friend
+                                        .media
+                                          img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/11.png')
+                                          .media-body
+                                            span.d-block Andew Jon
+                                            a(href='javascript:void(0)') Add Friend
+                                .col-xl-12.col-lg-6.col-md-12.col-sm-6
+                                  .card
+                                    .card-header
+                                      h5.p-0
+                                        button.btn.btn-link.ps-0(data-bs-toggle='collapse', data-bs-target='#collapseicon11', aria-expanded='true', aria-controls='collapseicon11')
+                                          | Followings
+                                    #collapseicon11.collapse.show(aria-labelledby='collapseicon11', data-parent='#accordion')
+                                      .card-body.social-list.filter-cards-view
+                                        .media
+                                          img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.png')
+                                          .media-body
+                                            span.d-block Sarah Loren
+                                            a(href='javascript:void(0)') Add Friend
+                                        .media
+                                          img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/2.png')
+                                          .media-body
+                                            span.d-block Bucky Barnes
+                                            a(href='javascript:void(0)') Add Friend
+                                        .media
+                                          img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/10.jpg')
+                                          .media-body
+                                            span.d-block Comeren Diaz
+                                            a(href='javascript:void(0)') Add Friend
+                                        .media
+                                          img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/3.jpg')
+                                          .media-body
+                                            span.d-block Jason Borne
+                                            a(href='javascript:void(0)') Add Friend
+                                        .media
+                                          img.img-50.img-fluid.m-r-20.rounded-circle(alt='', src='../assets/images/user/11.png')
+                                          .media-body
+                                            span.d-block Andew Jon
+                                            a(href='javascript:void(0)') Add Friend
+                                .col-xl-12.col-lg-6.col-md-12.col-sm-6
+                                  .card
+                                    .card-header
+                                      h5.p-0
+                                        button.btn.btn-link.ps-0(data-bs-toggle='collapse', data-bs-target='#collapseicon4', aria-expanded='true', aria-controls='collapseicon4')
+                                          | Latest Photos
+                                    #collapseicon4.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon4')
+                                      .card-body.photos.filter-cards-view
+                                        ul
+                                          li
+                                            .latest-post
+                                              img.img-fluid(alt='', src='../assets/images/social-app/post-1.png')
+                                          li
+                                            .latest-post
+                                              img.img-fluid(alt='', src='../assets/images/social-app/post-2.png')
+                                          li
+                                            .latest-post
+                                              img.img-fluid(alt='', src='../assets/images/social-app/post-3.png')
+                                          li
+                                            .latest-post
+                                              img.img-fluid(alt='', src='../assets/images/social-app/post-4.png')
+                                          li
+                                            .latest-post
+                                              img.img-fluid(alt='', src='../assets/images/social-app/post-5.png')
+                                          li
+                                            .latest-post
+                                              img.img-fluid(alt='', src='../assets/images/social-app/post-6.png')
+                                          li
+                                            .latest-post
+                                              img.img-fluid(alt='', src='../assets/images/social-app/post-7.png')
+                                          li
+                                            .latest-post
+                                              img.img-fluid(alt='', src='../assets/images/social-app/post-8.png')                                             
+                                .col-xl-12.col-lg-6.col-md-12.col-sm-6
+                                  .card
+                                    .card-header
+                                      h5.p-0
+                                        button.btn.btn-link.ps-0(data-bs-toggle='collapse', data-bs-target='#collapseicon13', aria-expanded='true', aria-controls='collapseicon13')
+                                          | Friends
+                                    #collapseicon13.collapse.show(data-parent='#accordion', aria-labelledby='collapseicon13')
+                                      .card-body.avatar-showcase.filter-cards-view
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/3.jpg', alt='#')
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/5.jpg', alt='#')
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/1.jpg', alt='#')
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/2.png', alt='#')
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/3.png', alt='#')
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/6.jpg', alt='#')
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/10.jpg', alt='#')
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/14.png', alt='#')
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/1.jpg', alt='#')
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/4.jpg', alt='#')
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/11.png', alt='#')
+                                        .d-inline-block.friend-pic
+                                          img.img-50.rounded-circle(src='../assets/images/user/8.jpg', alt='#')
+                          .col-xl-9.col-lg-12.col-md-7.xl-65
+                            .row
+                              // profile post start
+                              .col-sm-12
+                                .card
+                                  .profile-post
+                                    .post-header
+                                      .media
+                                        img.img-thumbnail.rounded-circle.me-3(src='../assets/images/user/7.jpg', alt='Generic placeholder image')
+                                        .media-body.align-self-center
+                                          a(href="social-app.html")
+                                            h5.user-name Emay Walter
+                                          h6 22 Hours ago
+                                      .post-setting
+                                        i.fa.fa-ellipsis-h
+                                    .post-body
+                                      .img-container
+                                        #aniimated-thumbnials.my-gallery(itemscope='')
+                                          figure(itemprop='associatedMedia', itemscope='')
+                                            a(href='../assets/images/user-profile/post1.jpg', itemprop='contentUrl', data-size='1600x950')
+                                              img.img-fluid.rounded(src='../assets/images/user-profile/post1.jpg', itemprop='thumbnail', alt='gallery')
+                                            figcaption(itemprop='caption description') Image caption  1
+                                      .post-react
+                                        ul
+                                          li
+                                            img.rounded-circle(src='../assets/images/user/3.jpg' alt='')
+                                          li
+                                            img.rounded-circle(src='../assets/images/user/5.jpg' alt='')
+                                          li
+                                            img.rounded-circle(src='../assets/images/user/1.jpg' alt='')
+                                        h6 +5 people react this post
+                                      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                                     
+                                      ul.post-comment
+                                        li
+                                          label
+                                            a(href='#')
+                                              i(data-feather="heart")
+                                              | &nbsp;&nbsp;Like
+                                              span.counter 50
+                                        li
+                                          label
+                                            a(href='#')
+                                              i(data-feather="message-square")
+                                              | &nbsp;&nbsp;Comment
+                                              span.counter 70
+                                        li
+                                          label
+                                            a(href='#')
+                                              i(data-feather="share")
+                                              | &nbsp;&nbsp;share
+                                              span.counter 20
+                              // profile post end
+
+                              // profile post start
+                              .col-sm-12
+                                .card
+                                  .profile-post
+                                    .post-header
+                                      .media
+                                        img.img-thumbnail.rounded-circle.me-3(src='../assets/images/user/7.jpg', alt='Generic placeholder image')
+                                        .media-body.align-self-center
+                                          a(href="social-app.html")
+                                            h5.user-name Emay Walter
+                                          h6 5 Hours ago
+                                      .post-setting
+                                        i.fa.fa-ellipsis-h
+                                    .post-body
+                                      .img-container
+                                        #aniimated-thumbnials-2.row.mt-4.pictures.my-gallery(itemscope='')
+                                          figure.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                            a(href='../assets/images/user-profile/post2.jpg', itemprop='contentUrl', data-size='1600x950')
+                                              img.img-fluid.rounded(src='../assets/images/user-profile/post2.jpg', itemprop='thumbnail', alt='gallery')
+                                            figcaption(itemprop='caption description') Image caption  1
+                                          figure.col-sm-6(itemprop='associatedMedia', itemscope='')
+                                            a(href='../assets/images/user-profile/post3.jpg', itemprop='contentUrl', data-size='1600x950')
+                                              img.img-fluid.rounded(src='../assets/images/user-profile/post3.jpg', itemprop='thumbnail', alt='gallery')
+                                            figcaption(itemprop='caption description') Image caption  2
+                                      .post-react
+                                        ul
+                                          li
+                                            img.rounded-circle(src='../assets/images/user/3.jpg' alt='')
+                                          li
+                                            img.rounded-circle(src='../assets/images/user/5.jpg' alt='')
+                                          li
+                                            img.rounded-circle(src='../assets/images/user/1.jpg' alt='')
+                                        h6 +25 people react this post
+                                      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                                     
+                                      ul.post-comment
+                                        li
+                                          label
+                                            a(href='#')
+                                              i(data-feather="heart")
+                                              | &nbsp;&nbsp;Like
+                                              span.counter 520
+                                        li
+                                          label
+                                            a(href='#')
+                                              i(data-feather="message-square")
+                                              | &nbsp;&nbsp;Comment
+                                              span.counter 85
+                                        li
+                                          label
+                                            a(href='#')
+                                              i(data-feather="share")
+                                              | &nbsp;&nbsp;share
+                                              span.counter 30
+                              // profile post end   
+
+
+                              // profile post start
+                              .col-sm-12
+                                .card
+                                  .profile-post
+                                    .post-header
+                                      .media
+                                        img.img-thumbnail.rounded-circle.me-3(src='../assets/images/user/7.jpg', alt='Generic placeholder image')
+                                        .media-body.align-self-center
+                                          a(href="social-app.html")
+                                            h5.user-name Emay Walter
+                                          h6 2 Hours ago
+                                      .post-setting
+                                        i.fa.fa-ellipsis-h
+                                    .post-body
+                                      .img-container
+                                        #aniimated-thumbnials.my-gallery(itemscope='')
+                                          figure(itemprop='associatedMedia', itemscope='')
+                                            a(href='../assets/images/user-profile/post4.jpg', itemprop='contentUrl', data-size='1600x950')
+                                              img.img-fluid.rounded(src='../assets/images/user-profile/post4.jpg', itemprop='thumbnail', alt='gallery')
+                                            figcaption(itemprop='caption description') Image caption  1
+                                      .post-react
+                                        ul
+                                          li
+                                            img.rounded-circle(src='../assets/images/user/3.jpg' alt='')
+                                          li
+                                            img.rounded-circle(src='../assets/images/user/5.jpg' alt='')
+                                          li
+                                            img.rounded-circle(src='../assets/images/user/1.jpg' alt='')
+                                        h6 +20 people react this post
+                                      p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.                                     
+                                      ul.post-comment
+                                        li
+                                          label
+                                            a(href='#')
+                                              i(data-feather="heart")
+                                              | &nbsp;&nbsp;Like
+                                              span.counter 407
+                                        li
+                                          label
+                                            a(href='#')
+                                              i(data-feather="message-square")
+                                              | &nbsp;&nbsp;Comment
+                                              span.counter 302
+                                        li
+                                          label
+                                            a(href='#')
+                                              i(data-feather="share")
+                                              | &nbsp;&nbsp;share
+                                              span.counter 180
+                              // profile post end                           
+                          // user profile fifth-style end
+                          .pswp(tabindex='-1', role='dialog', aria-hidden='true')
+                            .pswp__bg
+                            .pswp__scroll-wrap
+                              .pswp__container
+                                .pswp__item
+                                .pswp__item
+                                .pswp__item
+                              .pswp__ui.pswp__ui--hidden
+                                .pswp__top-bar
+                                  .pswp__counter
+                                  button.pswp__button.pswp__button--close(title='Close (Esc)')
+                                  button.pswp__button.pswp__button--share(title='Share')
+                                  button.pswp__button.pswp__button--fs(title='Toggle fullscreen')
+                                  button.pswp__button.pswp__button--zoom(title='Zoom in/out')
+                                  .pswp__preloader
+                                    .pswp__preloader__icn
+                                      .pswp__preloader__cut
+                                        .pswp__preloader__donut
+                                .pswp__share-modal.pswp__share-modal--hidden.pswp__single-tap
+                                  .pswp__share-tooltip
+                                button.pswp__button.pswp__button--arrow--left(title='Previous (arrow left)')
+                                button.pswp__button.pswp__button--arrow--right(title='Next (arrow right)')
+                                .pswp__caption
+                                  .pswp__caption__center
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

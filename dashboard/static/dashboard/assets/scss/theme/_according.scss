@@ -1,0 +1,110 @@
+/**=====================
+    24. According CSS start
+==========================**/
+.default-according{
+    .card{
+        margin-bottom: 0;
+        box-shadow: none !important;
+        &+.card{
+            margin-top: $according-card-top-margin;
+        }
+        .btn-link{
+            font-weight: $according-btn-weight;
+            color: $theme-body-font-color;
+            font-size: 16px;
+        }
+        .btn-link{
+            &:focus,&:hover{
+                text-decoration: none;
+            }
+        }
+        .card-header{
+            padding: $according-card-header-padding;
+            // border: 1px solid $light-gray;
+            border-bottom: 1px solid $light-gray;
+            i{
+                position: initial;
+                font-size: 20px;
+                display: inline-block;
+                vertical-align: text-bottom;
+                margin-right: 5px;
+            }
+            h5{
+                margin-top: 2px;
+            }
+        }
+        .card-body {           
+            border-top:none !important;
+            padding: 20px;
+            h5{
+                font-size: 14px;
+                margin-bottom: 5px;
+            }
+            h6{
+               color: $light-text ;
+               font-size: 12px ;
+               margin-bottom: 5px ;
+            }
+            ul{
+                &.rating{
+                    li{
+                        display: inline-block;
+                    }
+                }
+            }
+        }
+    }
+}
+.default-according.style-1{
+    button{
+        width: 100%;
+        text-align: left;
+        &:before{
+            right: 20px;
+            position: absolute;
+            transition: 0.4s;
+        }
+        &[aria-expanded="true"]{
+            &:before{
+                content: $according-open-icon;
+                font-family: $according-card-header-icon;
+            }
+        }
+        &[aria-expanded="false"]{
+            &:before{
+                content: $according-close-icon;
+                font-family: $according-card-header-icon;
+            }
+        }
+    }
+}
+
+
+@media (max-width:480px){
+    .default-according {
+        .card {
+            .card-header{
+                padding-right:32px;
+                h5{
+                    font-size:16px;
+                }
+            }
+        }
+        &.style-1 {
+            button{
+                &:before{
+                    right:10px;
+                }
+            }
+        }
+    }
+
+
+    
+}
+
+
+
+/**=====================
+     24. According CSS Ends
+==========================**/

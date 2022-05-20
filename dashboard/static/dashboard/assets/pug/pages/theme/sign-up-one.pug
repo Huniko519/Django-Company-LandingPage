@@ -1,0 +1,69 @@
+-var sweetalert2 = true ;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+      include ../../components/loader      
+      // page-wrapper Start
+      section          
+        .container-fluid.p-0 
+          .row.m-0
+            .col-xl-5
+              img.bg-img-cover.bg-center(src="../assets/images/login/3.jpg" alt="looginpage" )
+            .col-xl-7.p-0 
+              .login-card
+                form.theme-form.login-form
+                  h4 Create your account
+                  h6 Enter your personal details to create account
+                  .form-group
+                    label Your Name
+                    .small-group
+                      .input-group
+                        span(class="input-group-text")
+                          i.icon-user
+                        input.form-control(type='email', required='' placeholder='First Name')
+                      .input-group
+                        span(class="input-group-text")
+                          i.icon-user
+                        input.form-control(type='email', required='' placeholder='Last Name')
+                  .form-group
+                    label Email Address
+                    .input-group
+                      span(class="input-group-text")
+                        i.icon-email
+                      input.form-control(type='email', required='' placeholder='Test@gmail.com')
+                  .form-group
+                    label Password
+                    .input-group
+                      span(class="input-group-text")
+                        i.icon-lock
+                      input.form-control(type='password', name='login[password]', required='' placeholder="*********")
+                      .show-hide
+                        span.show                          
+                  .form-group
+                    .checkbox
+                      input#checkbox1(type='checkbox')
+                      label.text-muted(for='checkbox1') Agree with 
+                        span Privacy Policy                   
+                  .form-group
+                    button.btn.btn-primary.btn-block(type='submit') Create Account
+                  .login-social-title                 
+                    h5 Sign in with
+                  .form-group
+                    ul.login-social
+                      li
+                        a(href='https://www.linkedin.com/login' target='_blank')
+                          i(data-feather="linkedin")
+                      li
+                        a(href='https://www.linkedin.com/login' target='_blank')
+                          i(data-feather="twitter")
+                      li
+                        a(href='https://www.linkedin.com/login' target='_blank')
+                          i(data-feather="facebook")
+                      li
+                        a(href='https://www.instagram.com/login' target='_blank')
+                          i(data-feather="instagram")                   
+                  p Already have an account?
+                    a.ms-2(href="sign-in.html") Sign in
+      // page-wrapper end
+      include ../../components/footer-files

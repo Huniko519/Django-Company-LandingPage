@@ -1,0 +1,61 @@
+/* ==============================================================
+
+Template name : BSNAV - advanced Bootstrap 4 menu
+Categorie : Bootstrap Menu in CSS
+Author : @fitodac
+Version : v.0.1
+Created : May 2018
+Last update : May 2018
+
+============================================================== */
+
+// LINKHOVER
+@mixin linkHover($params...){
+
+  &:hover, &:hover:active, &:active, &:focus{
+
+		@each $style in $params{
+			$rule: nth($style,1);
+			$val: nth($style,2);
+			#{$rule}: $val;
+		}
+
+	}//:hover, :active, :focus
+
+}
+
+
+
+
+@import 'navbar-brand';
+@import 'navbar-toggler';
+
+.bsnav{
+	background: #fff;
+	padding-top: 0;
+	padding-bottom: 0;
+	z-index: 50;
+}//bsnav
+
+@import 'bg-dark';
+@import 'bg-transparent';
+@import 'bg-light';
+@import 'bg-overlay';
+
+@import 'nav-item';
+@import 'nav-link';
+@import 'caret';
+@import 'submenu';
+@import 'submenu-horizontal';
+@import 'submenu-animations';
+@import 'megamenu';
+
+@import 'brand-center';
+@import 'brand-top';
+@import 'sidebar';
+
+@import 'sticky';
+
+
+@import 'mobile';
+@import 'responsive';

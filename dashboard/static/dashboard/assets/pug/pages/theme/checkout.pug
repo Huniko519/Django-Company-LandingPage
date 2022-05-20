@@ -1,0 +1,121 @@
+- var theme_customizer      = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body.checkout
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                  .page-header-left
+                                    h3 Checkout
+                                    ol.breadcrumb
+                                        li.breadcrumb-item
+                                          a(href='index.html')
+                                            | Home                                       
+                                        li.breadcrumb-item Ecommerce
+                                        li.breadcrumb-item.active Checkout
+                                .col-sm-6
+                                  include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid
+                      .card
+                        .card-header.pb-0
+                          h5 Billing Details
+                        .card-body
+                          .row
+                            .col-xl-6.col-sm-12
+                              form
+                                .row
+                                  .mb-3.col-sm-6
+                                    label(for='inputEmail4') First Name
+                                    input#inputEmail4.form-control(type='email')
+                                  .mb-3.col-sm-6
+                                    label(for='inputPassword4') Last Name
+                                    input#inputPassword4.form-control(type='password')
+                                .row
+                                  .mb-3.col-sm-6
+                                    label(for='inputEmail5') Phone
+                                    input#inputEmail5.form-control(type='email')
+                                  .mb-3.col-sm-6
+                                    label(for='inputPassword7') Email Address
+                                    input#inputPassword7.form-control(type='password')
+                                .mb-3
+                                  label(for='inputState') Country
+                                  select#inputState.form-control
+                                    option(selected='') Choose...
+                                    option ...
+                                .mb-3
+                                  label(for='inputAddress5') Address
+                                  input#inputAddress5.form-control(type='text')
+                                .mb-3
+                                  label(for='inputCity') Town/City
+                                  input#inputCity.form-control(type='text')
+                                .mb-3
+                                  label(for='inputAddress2') State/Country
+                                  input#inputAddress2.form-control(type='text')
+                                .mb-3
+                                  label(for='inputAddress6') Postal Code
+                                  input#inputAddress6.form-control(type='text')
+                                .mb-3
+                                  .form-check
+                                    input#gridCheck.form-check-input(type='checkbox')
+                                    label.form-check-label(for='gridCheck')
+                                      | Check me out
+                            .col-xl-6.col-sm-12
+                              .checkout-details
+                                .order-box
+                                  .title-box
+                                    div.checkbox-title
+                                      h4.mb-0 Product 
+                                      span Total
+                                  ul.qty
+                                    li
+                                      | Pink Slim Shirt × 1 
+                                      span $25.10
+                                    li
+                                      | SLim Fit Jeans × 1 
+                                      span $555.00
+                                  ul.sub-total
+                                    li
+                                      | Subtotal 
+                                      span.count $380.10
+                                    li.shipping-class
+                                      | Shipping
+                                      .shopping-checkout-option
+                                        label.d-block(for='chk-ani')
+                                          input#chk-ani.checkbox_animated(type='checkbox', checked='')
+                                          | Option 1
+                                        label.d-block(for='chk-ani1')
+                                          input#chk-ani1.checkbox_animated(type='checkbox')
+                                          | Option 2
+                                  ul.sub-total.total
+                                    li
+                                      | Total 
+                                      span.count $620.00
+                                  .animate-chk
+                                    .row
+                                      .col
+                                        label.d-block(for='edo-ani')
+                                          input#edo-ani.radio_animated(type='radio', name='rdo-ani', checked='', data-original-title='', title='')
+                                          | Check Payments
+                                        label.d-block(for='edo-ani1')
+                                          input#edo-ani1.radio_animated(type='radio', name='rdo-ani', data-original-title='', title='')
+                                          | Cash On Delivery
+                                        label.d-block(for='edo-ani2')
+                                          input#edo-ani2.radio_animated(type='radio', name='rdo-ani', checked='', data-original-title='', title='')
+                                          | PayPal
+                                          img(src='../assets/images/checkout/paypal.png', alt='' class='img-paypal')
+                                  .order-place
+                                    a.btn.btn-primary(href='javascript:void(0)') Place Order  
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

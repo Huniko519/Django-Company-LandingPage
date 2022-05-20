@@ -1,0 +1,153 @@
+- var theme_customizer = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                    h3
+                                      | Knowledgebase
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                         | Home
+                                      li.breadcrumb-item.active Knowledgebase
+                                .col-sm-6
+                                  include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-xl-3.xl-40
+                            .job-sidebar
+                              a.btn.btn-primary.job-toggle(href="javascript:void(0)")
+                                | Knowledge filter
+                              .job-left-aside.custom-scrollbar.custom-scrollbar
+                                #accordionoc.default-according.style-1.faq-accordion.job-accordion
+                                  .row
+                                    .col-xl-12
+                                      .card
+                                        .card-header
+                                          h5.mb-0.p-0
+                                            button.btn.btn-link(data-bs-toggle='collapse', data-bs-target='#collapseicon1') Knowledge Categories
+                                        #collapseicon1.collapse.show(aria-labelledby='collapseicon1', data-bs-parent='#accordion')
+                                          .categories
+                                            .learning-header
+                                              span.f-w-600 Design
+                                            ul
+                                              li
+                                                a(href='#') UI Design 
+                                                span.badge.badge-primary.pull-right 28
+                                              li
+                                                a(href='#') UX Design 
+                                                span.badge.badge-primary.pull-right 35
+                                              li
+                                                a(href='#') Interface Design 
+                                                span.badge.badge-primary.pull-right 17
+                                              li
+                                                a(href='#') User Experience 
+                                                span.badge.badge-primary.pull-right 26
+                                          .categories.pt-0
+                                            .learning-header
+                                              span.f-w-600 Development
+                                            ul
+                                              li
+                                                a(href='#') Frontend Development
+                                                span.badge.badge-primary.pull-right 48
+                                              li
+                                                a(href='#') Backend Development
+                                                span.badge.badge-primary.pull-right 19
+                                    .col-xl-12
+                                      .card
+                                        .card-header
+                                          h5.mb-0.p-0
+                                            button.btn.btn-link(data-bs-toggle='collapse', data-bs-target='#collapseicon2', aria-expanded='true', aria-controls='collapseicon2') Upcoming Courses
+                                        #collapseicon2.collapse.show(aria-labelledby='collapseicon2', data-bs-parent='#accordion')
+                                          .upcoming-course.card-body
+                                            .media
+                                              .media-body
+                                                span.f-w-600 UX Development
+                                                h6
+                                                  | Course By 
+                                                  a(href='#')  Lorem ipsum
+                                                ul.rating
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star-half-o.font-warning
+                                              div
+                                                h5.mb-0.p-0.font-primary 18
+                                                span.d-block Dec
+                                            .media
+                                              .media-body
+                                                span.f-w-600 Business Analyst
+                                                h6
+                                                  | Course By 
+                                                  a(href='#') Lorem ipsum 
+                                                ul.rating
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star-half-o.font-warning
+                                              div
+                                                h5.mb-0.p-0.font-primary 28
+                                                span.d-block Dec
+                                            .media
+                                              .media-body
+                                                span.f-w-600 Web Development
+                                                h6
+                                                  | Course By 
+                                                  a(href='#') Lorem ipsum 
+                                                ul.rating
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star.font-warning
+                                                  li
+                                                    i.fa.fa-star-half-o.font-warning
+                                              div
+                                                h5.mb-0.p-0.font-primary 5
+                                                span.d-block Jan                         
+                        .col-xl-9.xl-60.box-col-8                         
+                          .blog-single
+                            .blog-box
+                              .card
+                                img.img-fluid.w-100(src='../assets/images/knowledgebase/1.jpg' , alt='blog-main')
+                              .card
+                                .card-body
+                                  .blog-details                                   
+                                    h4.mt-0
+                                      | Why Choose Knowledge Course ?
+                                    .single-blog-content-top
+                                      p
+                                        | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                      p
+                                        | It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

@@ -1,0 +1,135 @@
+// Page Header Start
+.page-main-header
+  .main-header-right.row.m-0
+      .main-header-left
+          .logo-wrapper
+              a(href='index.html')
+                  img.img-fluid(src='../assets/images/logo/logo.png', alt='')
+          .dark-logo-wrapper
+            a(href='index.html')
+              img.img-fluid(src='../assets/images/logo/dark-logo.png', alt='')
+          .toggle-sidebar
+            i.status_toggle.middle(data-feather='align-center')#sidebar-toggle
+      .left-menu-header.col
+        ul
+          li
+            form.form-inline.search-form
+              .search-bg
+                i.fa.fa-search
+                input.form-control-plaintext(placeholder='Search here.....')
+            span.d-sm-none.mobile-search.search-bg
+              i.fa.fa-search
+      .nav-right.col.pull-right.right-menu.p-0
+          if megamenu
+              include megamenu
+          ul.nav-menus
+              li
+                a.text-dark(href='#!', onclick='javascript:toggleFullScreen()')
+                    i(data-feather='maximize')
+              li.onhover-dropdown
+                .bookmark-box
+                  i(data-feather="star")
+                .bookmark-dropdown.onhover-show-div
+                  .form-group.mb-0
+                    .input-group
+                      .input-group-prepend
+                        span.input-group-text
+                          i.fa.fa-search
+                      input.form-control(type="text", placeholder="Search for bookmark...")
+                  ul.m-t-5
+                    li.add-to-bookmark
+                      i.bookmark-icon(data-feather='inbox')
+                      | Email
+                      span.pull-right
+                        i(data-feather="star")
+                    li.add-to-bookmark
+                      i.bookmark-icon(data-feather='message-square')
+                      | Chat
+                      span.pull-right
+                        i(data-feather="star")
+                    li.add-to-bookmark
+                      i.bookmark-icon(data-feather='command')
+                      | Feather Icon
+                      span.pull-right
+                        i(data-feather="star")
+                    li.add-to-bookmark
+                      i.bookmark-icon(data-feather='airplay')
+                      | Widgets
+                      span.pull-right
+                        i(data-feather="star")    
+              li.onhover-dropdown
+                  .notification-box
+                    i(data-feather='bell')
+                    span.dot-animated
+                  ul.notification-dropdown.onhover-show-div
+                      li
+                        p.f-w-700.mb-0 You have 3 Notifications
+                          span.pull-right.badge.badge-primary.badge-pill 4
+                      li.noti-primary
+                        .media
+                          span.notification-bg.bg-light-primary
+                            i(data-feather='activity') 
+                          .media-body
+                            p Delivery processing 
+                            span 10 minutes ago
+                      li.noti-secondary
+                        .media
+                          span.notification-bg.bg-light-secondary
+                            i(data-feather='check-circle') 
+                          .media-body
+                            p Order Complete
+                            span 1 hour ago
+                      li.noti-success
+                        .media
+                          span.notification-bg.bg-light-success
+                            i(data-feather='file-text') 
+                          .media-body
+                            p Tickets Generated
+                            span 3 hour ago
+                      li.noti-danger
+                        .media
+                          span.notification-bg.bg-light-danger
+                            i(data-feather='user-check') 
+                          .media-body
+                            p Delivery Complete
+                            span 6 hour ago
+              li
+                .mode
+                  i.fa.fa-moon-o
+
+                //- i.mode-moon(data-feather='moon')
+                //-   i.mode-sun(data-feather='sun')
+              li.onhover-dropdown
+                  i(data-feather='message-square')
+                  ul.chat-dropdown.onhover-show-div
+                    li
+                      .media
+                        img.img-fluid.rounded-circle.me-3(src='../assets/images/user/4.jpg', alt='')
+                        .media-body
+                          span Ain Chavez
+                          p.f-12.light-font Lorem Ipsum is simply dummy...
+                        p.f-12 32 mins ago
+                    li
+                      .media
+                        img.img-fluid.rounded-circle.me-3(src='../assets/images/user/1.jpg', alt='')
+                        .media-body
+                          span Erica Hughes
+                          p.f-12.light-font Lorem Ipsum is simply dummy...
+                        p.f-12 58 mins ago
+                    li
+                      .media
+                        img.img-fluid.rounded-circle.me-3(src='../assets/images/user/2.jpg', alt='')
+                        .media-body
+                          span Kori Thomas
+                          p.f-12.light-font Lorem Ipsum is simply dummy...
+                        p.f-12 1 hr ago
+                    li.text-center 
+                      a.f-w-700(href="javascript:void(0)") See All     
+              li.onhover-dropdown.p-0
+                  button.btn.btn-primary-light(type="button")
+                    a(href="login_two.html")
+                      i(data-feather="log-out")
+                      | Log out
+      .d-lg-none.mobile-toggle.pull-right.w-auto
+          i(data-feather='more-horizontal')
+// Page Header Ends                              

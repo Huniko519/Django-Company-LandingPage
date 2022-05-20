@@ -1,0 +1,64 @@
+- var theme_customizer      = true;
+- var jkanban               = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                    h3
+                                      | kanban board
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                          | Home
+                                      li.breadcrumb-item apps
+                                      li.breadcrumb-item.active kanban board
+                                .col-sm-6
+                                  include ../../components/bookmark
+
+                    // Container-fluid starts
+                    .container-fluid.jkanban-container
+                      .row
+                        .col-12
+                          .card
+                            .card-header.pb-0
+                              h5 Default Demo                            
+                            .card-body.kanban-block                     
+                              #demo1
+                        .col-12.colorfull-kanban
+                          .card
+                            .card-header.pb-0
+                              h5 Custom Board
+                              p.mb-0 | colors, gutter, click on board&apos;s item and restricting which boards to drag items to                         
+                            .card-body.kanban-block                     
+                              #demo2.kanban-block
+                        .col-12
+                          .card
+                            .card-header.pb-0
+                              h5 API
+                              p.mb-0 add item, add board, delete board:
+                            .card-body                     
+                              #demo3
+                              button#addDefault.btn.btn-primary Add &quot;Default&quot; board
+                              button#addToDo.btn.btn-secondary Add element in &quot;To Do&quot; Board
+                              button#removeBoard.btn.btn-danger.mb-0 Remove &quot;Done&quot; Board
+                        .col-12
+                          .card.note.p-20
+                            | jKanban is Pure agnostic Javascript plugin for Kanban boards for more options please refer 
+                            a(href="http://www.riccardotartaglia.it/jkanban/" target="_blank") jkanban Official site  
+                            | And 
+                            a(href="https://github.com/riktar/jkanban" target="_blank") githup link
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files      

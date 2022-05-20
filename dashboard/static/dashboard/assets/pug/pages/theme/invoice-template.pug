@@ -1,0 +1,172 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var counter               = true;
+- var print                 = true;
+- var sidebar               = true;
+- var scrollbar             = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                  .container-fluid
+                    .page-header
+                      .row
+                        .col-sm-6
+                          h3
+                            | Invoice
+                          ol.breadcrumb
+                            li.breadcrumb-item
+                              a(href='index.html')
+                               | Home
+                            li.breadcrumb-item Pages   
+                            li.breadcrumb-item ECommerce
+                            li.breadcrumb-item.active Invoice
+                        .col-sm-6
+                          include ../../components/bookmark
+                    // Container-fluid starts
+                    .container.invoice
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-body                             
+                                div
+                                  div
+                                    .row.invo-header
+                                      .col-sm-6
+                                        .media
+                                          .media-left
+                                            a(href="index.html")
+                                              img.media-object.img-60(src='../assets/images/logo/logo-1.png', alt='')
+                                          .media-body.m-l-20
+                                            h4.media-heading.f-w-600 Viho
+                                            p
+                                              | hello@viho.in
+                                              br
+                                              span.digits 289-335-6503
+                                        // End Info
+                                      .col-sm-6
+                                        .text-md-end.text-xs-center
+                                          h3
+                                            | Invoice #
+                                            span.digits.counter 1069
+                                          p
+                                            | Issued: May
+                                            span.digits  27, 2015
+                                            br
+                                            |                                                             Payment Due: June 
+                                            span.digits 27, 2015
+                                        // End Title                                 
+                                  // End InvoiceTop
+                                  .row.invo-profile
+                                    .col-xl-4
+                                      .media
+                                        .media-left
+                                          img.media-object.rounded-circle.img-60(src='../assets/images/user/1.jpg', alt='')
+                                        .media-body.m-l-20
+                                          h4.media-heading.f-w-600 Johan Deo
+                                          p
+                                            | JohanDeo@gmail.com
+                                            br
+                                            span.digits 555-555-5555
+                                    .col-xl-8
+                                      #project.text-xl-end
+                                        h6 Project Description
+                                        p
+                                          | Lorem Ipsum is simply dummy text of the printing and typesetting industry.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                  // End Invoice Mid
+                                  div
+                                    #table.table-responsive.invoice-table
+                                      table.table.table-bordered.table-striped
+                                        tbody
+                                          tr
+                                            td.item
+                                              h6.p-2.mb-0 Item Description
+                                            td.Hours
+                                              h6.p-2.mb-0 Hours
+                                            td.Rate
+                                              h6.p-2.mb-0 Rate
+                                            td.subtotal
+                                              h6.p-2.mb-0 Sub-total
+                                          tr
+                                            td
+                                              label Lorem Ipsum
+                                              p.m-0 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            td
+                                              p.itemtext.digits 5
+                                            td
+                                              p.itemtext.digits $75
+                                            td
+                                              p.itemtext.digits $375.00
+                                          tr
+                                            td
+                                              label Lorem Ipsum
+                                              p.m-0 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            td
+                                              p.itemtext.digits 3
+                                            td
+                                              p.itemtext.digits $75
+                                            td
+                                              p.itemtext.digits $225.00
+                                          tr
+                                            td
+                                              label Lorem Ipsum
+                                              p.m-0 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            td
+                                              p.itemtext.digits 10
+                                            td
+                                              p.itemtext.digits $75
+                                            td
+                                              p.itemtext.digits $750.00
+                                          tr
+                                            td
+                                              label Lorem Ipsum
+                                              p.m-0 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                            td
+                                              p.itemtext.digits 10
+                                            td
+                                              p.itemtext.digits $75
+                                            td
+                                              p.itemtext.digits $750.00
+                                          tr
+                                            td
+                                              p.itemtext
+                                            td
+                                              p.m-0 HST
+                                            td
+                                              p.m-0.digits 13%
+                                            td
+                                              p.m-0.digits $419.25
+                                          tr
+                                            td
+                                            td
+                                            td.Rate
+                                              h6.mb-0.p-2 Total
+                                            td.payment.digits
+                                              h6.mb-0.p-2 $3,644.25
+                                    // End Table
+                                    .row.mt-3
+                                      .col-md-8
+                                        div
+                                          p.legal
+                                            strong Thank you for your business!
+                                            |   Payment is expected within 31 days; please process this invoice within that time. There will be a 5% interest charge per month on late invoices.
+                                      .col-md-4
+                                        form.text-end.invo-pal
+                                          input(type='image', src='../assets/images/other-images/paypal.png', name='submit', alt='PayPal - The safer, easier way to pay online!')
+                                  // End InvoiceBot
+                                .col-sm-12.text-center.mt-3
+                                  button.btn.btn.btn-primary.me-2(type='button', onclick='myFunction()') Print
+                                  button.btn.btn-secondary(type='button') Cancel
+                                // End Invoice
+                                // End Invoice Holder
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

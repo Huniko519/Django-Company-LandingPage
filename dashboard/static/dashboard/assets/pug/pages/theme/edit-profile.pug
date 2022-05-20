@@ -1,0 +1,126 @@
+- var theme_customizer      = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                    h3
+                                      | Edit Profile
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                         | Home
+                                      li.breadcrumb-item Users
+                                      li.breadcrumb-item.active Edit Profile
+                                .col-sm-6
+                                  include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid
+                      .edit-profile
+                        .row
+                          .col-xl-4
+                            .card
+                              .card-header.pb-0
+                                h4.card-title.mb-0 My Profile
+                                .card-options
+                                  a.card-options-collapse(href='#', data-bs-toggle='card-collapse')
+                                    i.fe.fe-chevron-up
+                                  a.card-options-remove(href='#', data-bs-toggle='card-remove')
+                                    i.fe.fe-x
+                              .card-body
+                                form
+                                  .row.mb-2
+                                    .profile-title
+                                      .media                         
+                                        img.img-70.rounded-circle(alt='', src='../assets/images/user/7.jpg')
+                                        .media-body
+                                          h3.mb-1.f-20.txt-primary MARK JECNO
+                                          p.f-12 DESIGNER
+                                  .mb-3
+                                    h6.form-label Bio
+                                    textarea.form-control(rows='5') On the other hand, we denounce with righteous indignation
+                                  .mb-3
+                                    label.form-label Email-Address
+                                    input.form-control(placeholder='your-email@domain.com')
+                                  .mb-3
+                                    label.form-label Password
+                                    input.form-control(type='password', value='password')
+                                  .mb-3
+                                    label.form-label Website
+                                    input.form-control(placeholder='http://Uplor .com')
+                                  .form-footer
+                                    button.btn.btn-primary.btn-block Save
+                          .col-xl-8
+                            form.card
+                              .card-header.pb-0
+                                h4.card-title.mb-0 Edit Profile
+                                .card-options
+                                  a.card-options-collapse(href='#', data-bs-toggle='card-collapse')
+                                    i.fe.fe-chevron-up
+                                  a.card-options-remove(href='#', data-bs-toggle='card-remove')
+                                    i.fe.fe-x
+                              .card-body
+                                .row
+                                  .col-md-5
+                                    .mb-3
+                                      label.form-label Company
+                                      input.form-control(type='text', placeholder='Company')
+                                  .col-sm-6.col-md-3
+                                    .mb-3
+                                      label.form-label Username
+                                      input.form-control(type='text', placeholder='Username')
+                                  .col-sm-6.col-md-4
+                                    .mb-3
+                                      label.form-label Email address
+                                      input.form-control(type='email', placeholder='Email')
+                                  .col-sm-6.col-md-6
+                                    .mb-3
+                                      label.form-label First Name
+                                      input.form-control(type='text', placeholder='Company')
+                                  .col-sm-6.col-md-6
+                                    .mb-3
+                                      label.form-label Last Name
+                                      input.form-control(type='text', placeholder='Last Name')
+                                  .col-md-12
+                                    .mb-3
+                                      label.form-label Address
+                                      input.form-control(type='text', placeholder='Home Address')
+                                  .col-sm-6.col-md-4
+                                    .mb-3
+                                      label.form-label City
+                                      input.form-control(type='text', placeholder='City')
+                                  .col-sm-6.col-md-3
+                                    .mb-3
+                                      label.form-label Postal Code
+                                      input.form-control(type='number', placeholder='ZIP Code')
+                                  .col-md-5
+                                    .mb-3
+                                      label.form-label Country
+                                      select.form-control.btn-square
+                                        option(value='0') --Select--
+                                        option(value='1') Germany
+                                        option(value='2') Canada
+                                        option(value='3') Usa
+                                        option(value='4') Aus
+                                  .col-md-12
+                                    div
+                                      label.form-label About Me
+                                      textarea.form-control(rows='5', placeholder='Enter About your description')
+                              .card-footer.text-end
+                                button.btn.btn-primary(type='submit') Update Profile
+                        
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

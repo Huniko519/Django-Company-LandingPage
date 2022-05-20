@@ -1,0 +1,480 @@
+/**=====================
+     01. General CSS Start
+==========================**/
+//Custom css Start
+html{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+body {
+    font-size:$body-font-size;
+    overflow-x:hidden;   
+    font-family:$font-montserrat;
+    color: $theme-body-font-color;
+    background-color:$light-background;
+}
+ul {
+    padding-left: $ul-padding-left;
+    list-style-type: none;
+    margin-bottom: 0;
+    padding-right: $ul-padding-right;
+}
+a{
+    color: $primary-color;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+.btn-link{
+    text-decoration:none;
+}
+*a{
+    color: $primary-color;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+*.btn:focus{
+    box-shadow : $btn-focus-box-shadow !important;
+}
+h6{
+    font-weight:600;
+}
+p {
+    font-size: $paragraph-font-size;
+    line-height: $paragraph-line-height;
+    letter-spacing: $paragraph-letter-spacing;   
+}
+span {
+    font-weight:500;
+}
+.dropdown-item{
+    &:active,&.active {  
+        background-color: $primary-color;
+    }
+}
+hr{
+    background-color:$light-gray;
+    opacity:1;
+}
+.theme-form{
+    .col-form-label{
+        color: $semi-dark;
+    }
+}
+.form-label{
+    color: $semi-dark;
+    font-weight: 500;
+}
+code{
+    color: $code-tag-color !important;
+    background-color: $code-tag-bg-color;
+    padding: $code-tag-padding;
+    margin: $code-tag-margin;
+    border-radius: $code-tag-border-radious;
+}
+blockquote{
+    border-left: $blockquote-border;
+    padding: $blockquote-padding;
+}
+blockquote{
+    &.text-center{
+        border: none;
+        padding: $blockquote-padding;
+    }
+}
+blockquote{
+    &.text-end{
+        border-left: none;
+        border-right: $blockquote-border;
+        padding: $blockquote-padding;
+    }
+}
+:focus{
+    outline: none;
+}
+.disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+svg{
+    vertical-align: baseline;
+}
+input {
+    &:focus {
+        outline-color: $transparent-color;
+    }
+}
+.font-nunito {
+    font-family: $font-nunito, $font-serif;
+}
+
+.font-roboto{
+    font-family:$font-roboto;
+}
+
+
+.font-rubik {
+    font-family: $font-rubik, $font-serif;
+}
+
+.media-widgets {
+    .media-body {
+        margin-bottom: 30px;
+    }
+}
+
+.rating-star{
+    display:flex;
+    align-items:center;
+    li{       
+        i{
+            color:$yellow;           
+        }
+    }
+}
+
+
+
+// setting rotation
+@keyframes rotateInSetting {
+    0% {
+      transform-origin: center;
+      transform: rotate(-200deg);
+    }
+    to {
+      transform-origin: center;
+      transform: none;
+    }
+  }
+
+ .setting-primary, .setting-secondary, .setting-white{
+  width:32px;
+  height:32px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50px;
+    
+  svg {
+      width: 15px;
+      stroke-width: 2.5px;
+      animation: rotateInSetting 1.5s ease infinite;     
+  }
+}
+
+.setting-primary{
+  background-color: rgba($primary-color, 0.1);
+  svg{
+    color: $primary-color;
+  }
+  i{
+    color: $primary-color;
+  }
+
+  &:hover{
+      background-color:$primary-color;
+      svg{
+          color:$white;
+      }
+      i{
+          color: $white;
+      }
+  }
+
+}
+.setting-secondary{
+    background-color: rgba($secondary-color, 0.1);
+    svg{
+        color: $secondary-color;
+    }
+    i{
+        color: $secondary-color;
+    }
+
+    &:hover{
+        background-color:$secondary-color;
+        svg{
+            color:$white;
+        }
+        i{
+            color: $white;
+        }
+    }
+
+}
+.setting-white{
+    background-color: rgba($white, 0.1);
+    svg{
+        color:$white;
+    }
+    i{
+        color:$white;
+    }  
+    &:hover{
+        background-color:$white;
+        svg{
+            color:$primary-color;
+        }
+        i{
+            color:$primary-color;
+        }
+    } 
+}
+.setting-bg-primary {
+    background-color: rgba($primary-color, 0.1);
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    svg {
+        width: 15px;
+        color: $primary-color;
+        stroke-width: 2.5px;
+        animation: rotateInSetting 1.5s ease infinite;
+    }
+}
+//Custom css End
+
+//Typography css start
+.typography {
+    h1,.h1,
+    h2,.h2,
+    h3,.h3,
+    h4,.h4,
+    h5,.h5,
+    h6,.h6 {
+        margin: 20px 0;
+        margin-top: 0;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+    small {
+        padding-left: $small-tag-padding;
+        color: $small-tag-color;
+    }
+}
+pre{
+    background-color: $pre-tag-bg-color;
+    padding: $pre-tag-padding;
+}
+
+a{
+    &:hover{
+        text-decoration: none;
+        color: $primary-color;
+    }
+}
+
+.typography{
+    .blockquote-footer{
+        background-color:$light-background;
+    }
+}
+//Typography css end
+
+.owl-theme {
+    .owl-dots {
+        .owl-dot{
+            span{
+                background: lighten($primary-color, 20%);
+            }
+            &.active,&:hover {
+                span {
+                    background: $primary-color;
+                }
+            }
+        }
+    }
+    .owl-nav{
+        &.disabled {
+            &+ .owl-dots {
+                margin-bottom: -10px;
+                margin-top: 25px;
+            }
+        }
+    }
+}
+.click2edit{
+    &~.note-editor{
+        &.note-frame{
+            margin-bottom: 30px;
+        }
+    }
+}
+.note-editor{
+    p{
+        color:$light-text;
+    }
+    &.note-frame {
+        border-color: $light-gray;
+    }
+    i{
+        color: $primary-color;
+    }
+    span{
+        color: $primary-color;
+    }
+
+}
+.note-editor{
+    &.note-frame {
+        border-color: $light-gray;
+    }
+}
+// modal page
+.modal {
+    .modal-body {
+        .card {
+            box-shadow: none !important;
+        }
+    }
+}
+.modal-dialog{
+    .modal-content{
+        .modal-body{
+            p{
+                a{
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+
+.clipboaard-container{
+    p{
+        font-weight:600;
+    }
+    h6{
+        line-height: 1.8;
+    }
+}
+
+
+
+
+// index page notify
+.alert-theme{
+    button{
+        top: 24px !important;
+        right: 30px !important;
+        color: $primary-color;
+    }
+    span{
+        + span{
+            + span{
+                border-left: 5px solid $primary-color;
+                background-color: $white;
+                border-radius: 4px;
+                box-shadow: 0 2px 14px -3px rgba($black, 0.2);
+            }
+        }
+    }
+    i{
+        padding: 20px;
+        padding-right: 0 !important;
+        margin-right: 10px !important;
+    }
+    .progress {
+        margin-top: -2px !important;
+        height: 2px;
+        .progress-bar {
+            background-color: $primary-color;
+        }
+    }
+}
+.alert-copy{
+    border: 1px solid $primary-color;
+    line-height: 1;
+    display: inline-block;
+    width: 300px;
+    color: $white;
+    background-color: $primary-color;
+    box-shadow: 3px 3px 5px 0 #9b9b9b;
+    .close{
+        box-shadow: none;
+        color: $white;
+        line-height: 1.4;
+        font-weight: 100;
+    }
+}
+
+.ace-editor {
+    height: 400px;
+    width: 100%;
+}
+.editor-toolbar{
+    width: 100% !important;
+}
+.CodeMirror{
+    top:0!important;
+}
+
+
+.border{
+    border: 1px solid $light-gray !important;
+}
+
+// rangeslider
+.irs-from, .irs-to, .irs-single {
+    background: $primary-color;
+}
+
+
+// medaia //
+.media{
+    display: flex;            
+    align-items: flex-start;
+}
+.media-body{   
+    flex: 1;
+}
+.row {
+    > div {
+        position: relative;
+    }
+}
+[class*="col-"] {
+    position: relative;
+}
+.cke_top{
+    background-color:$light-background;
+}
+.cke_wysiwyg_frame,.cke_wysiwyg_div{
+    background-color:$light-background;
+}
+
+// modal page css //
+.modal-header,.modal-footer,.modal-content{    
+    .btn-close{        
+    position: absolute;
+    top: 30px;
+    right: 25px;
+    }
+}
+
+.btn-close{
+    &:focus{
+        box-shadow:none;
+    }
+}
+
+// photoswipe //
+.my-gallery{
+    &.gallery-with-description {
+        img{
+            border-color: $light-gray !important;
+        }
+    }
+}
+
+/**=====================
+      01. General CSS Ends
+==========================**/

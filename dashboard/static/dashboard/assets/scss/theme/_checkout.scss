@@ -1,0 +1,264 @@
+/**=====================
+    84. Checkout CSS start
+==========================**/
+.checkout{
+	label{
+		color: $dark-color ;
+	}
+	.checkout-details {	
+		border: 1px solid $light-gray;
+		padding: 40px;
+		.order-place{
+			margin-top:20px;
+		}
+	}
+}
+.order-box {
+	.title-box {
+		padding-bottom:20px;	
+		font-size:22px;
+		border-bottom:1px solid $light-gray;		
+		span{
+			width: 35%;
+			float: right;
+			font-weight: 600;
+			text-align: right;
+		}
+		h4{
+			font-weight: 600;
+		}
+		.checkbox-title{
+			display: flex;
+    		justify-content: space-between;
+		}
+	}
+	.sub-total {
+		li {
+			position: relative;
+			display: inline-block;
+			font-size:16px;
+			font-weight: 600;				
+			width: 100%;
+			&:nth-child(n+2){
+				margin-top:15px;
+			}
+			.count {
+				position:relative;
+				font-size:18px;
+				line-height:20px;						
+				width:35%;
+				float:right;
+				text-align:right;
+			}
+		}
+	.shipping-class{
+    	margin-bottom: 12px;
+		padding-bottom: 15px;
+		border-bottom: 1px solid $light-gray;
+	    .shopping-checkout-option{
+			margin-top: -4px;
+			position: relative;
+		    font-size: 18px;
+		    line-height: 20px;
+		    color:$primary-color;
+		    font-weight:400;
+		    width:35%;
+		    float:right;
+			label{
+				font-weight:500;
+				font-size:14px;
+				text-align:right;
+			}	
+		}
+	}
+
+}
+	.total {
+		position: relative;
+		margin-bottom: 30px;
+		li {
+			position: relative;
+			display: block;		
+			line-height: 20px;
+			font-size: 18px;
+		}
+	}
+.qty{
+	position: relative;
+	border-bottom: 1px solid $light-gray;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	li{
+		position: relative;
+		display: block;
+		font-size: 14px;		
+		font-weight: 500;
+		&:nth-child(n+2){
+			margin-top: 15px;
+		}
+		span{
+			float: right;
+			font-size: 18px;
+			line-height: 20px;		
+			font-weight: 500;
+			width:35%;
+			text-align:right;
+		}
+	}
+}
+}
+.radio-option {
+    position: relative;
+}
+.img-paypal{
+	width: 50%;
+	margin-left: 15px;
+}
+
+
+/**=====================
+    86. Checkout CSS Ends
+==========================**/
+
+/**=====================
+    Responsive CSS Start
+==========================**/
+@media screen and (max-width: 1199px) {
+	.checkout {
+		.checkout-details{
+			    padding: 25px;
+		}
+	}
+	.order-box {
+		.title-box {
+			span{
+				width: 30%;
+			}
+		}
+		.sub-total {
+			li {
+				.count {
+					width: 30%;
+				}
+			}
+
+			.shipping-class{
+			    .shopping-checkout-option{
+				    width: 32%;
+				}
+			}
+		}
+		.qty{
+			li{
+				span{
+					width: 30%;
+				}
+			}
+		}
+		.total{
+			li{
+				.count{
+					width: 30%;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 991px) {
+	.order-box {
+		.title-box {
+			h4{
+				font-size:18px;
+			}
+			span{
+				font-size:18px;
+			}
+		}
+		.qty {
+			li{
+				font-size:14px;
+				span{
+					font-size:16px;
+				}
+			}
+		}
+		.sub-total {
+			li {
+				font-size:14px;
+				.count{
+					font-size:16px;
+				}
+			}
+			.shipping-class {
+				.shopping-checkout-option {
+					width: 30%;
+				}
+			}
+		}
+		.animate-chk {
+			label{
+				font-size:14px;
+			}
+		}
+  }
+  
+
+
+}
+@media screen and (max-width: 575px) {
+	.order-box {
+		.title-box{
+			padding-bottom: 15px;
+		}
+		.sub-total {
+			.shipping-class {
+				.shopping-checkout-option {
+					width: 50%;
+				}
+			}
+			li {
+				.count {
+					width: 50%;
+				}
+			}
+		}
+		.animate-chk {
+			label{
+				font-size: 12px;
+				margin-bottom: 10px;
+			}
+		}
+  }
+
+  .checkout {
+	.checkout-details{
+		padding:20px;
+	}
+  }
+
+
+}
+
+@media screen and (max-width:420px){
+	.order-box {
+		.qty {
+			li {
+				font-size:13px;
+				span{
+					font-size:14px;
+				}			 
+			}
+		}
+		.sub-total {
+			li {
+				.count{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+/**=====================
+    84. Checkout CSS ends
+==========================**/

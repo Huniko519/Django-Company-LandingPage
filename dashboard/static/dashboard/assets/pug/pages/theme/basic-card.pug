@@ -1,0 +1,304 @@
+- var prism                 = true;
+- var clipboard             = true;
+- var customcard            = true;
+- var height_equal          = true;
+- var theme_customizer      = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                  h3
+                                    | Basic Card
+                                  ol.breadcrumb
+                                    li.breadcrumb-item
+                                      a(href='index.html')
+                                        | Home
+                                    li.breadcrumb-item Cards
+                                    li.breadcrumb-item.active Basic Card
+                                .col-sm-6
+                                  include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.d-flex.justify-content-between.align-items-center.pb-0
+                                h5 Basic Card
+                                .setting-list
+                                  ul.list-unstyled.setting-option
+                                    li
+                                      .setting-primary
+                                       i.icon-settings
+                                    li
+                                      i.view-html.fa.fa-code.font-primary
+                                    li
+                                      i.icofont.icofont-maximize.full-card.font-primary
+                                    li
+                                      i.icofont.icofont-minus.minimize-card.font-primary
+                                    li
+                                      i.icofont.icofont-refresh.reload-card.font-primary
+                                    li
+                                      i.icofont.icofont-error.close-card.font-primary
+                              .card-body
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                                .code-box-copy
+                                      button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#example-head', title='Copy')
+                                        i.icofont.icofont-copy-alt
+                                      pre
+                                        code.language-html#example-head
+                                            | &lt;!-- Cod Box Copy begin --&gt;
+                                            | &lt;p class="mb-0"&gt; Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. &lt;/p&gt;
+                                            | &lt;!-- Cod Box Copy end --&gt;              
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.d-flex.justify-content-between.align-items-center.pb-0
+                                h5
+                                  i.icofont.icofont-truck.me-2
+                                  |  Icon in Heading
+                                .setting-list
+                                  ul.list-unstyled.setting-option
+                                    li
+                                      .setting-primary
+                                       i.icon-settings
+                                    li
+                                      i.view-html.fa.fa-code.font-primary
+                                    li
+                                      i.icofont.icofont-maximize.full-card.font-primary
+                                    li
+                                      i.icofont.icofont-minus.minimize-card.font-primary
+                                    li
+                                      i.icofont.icofont-refresh.reload-card.font-primary
+                                    li
+                                      i.icofont.icofont-error.close-card.font-primary
+                              .card-body
+                                p
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                          .col-sm-12.col-xl-6
+                            .card.height-equal
+                              .card-header.pb-0
+                                h5 Card sub Title
+                                span
+                                  | Using the 
+                                  a(href='javascript:void(0)') card
+                                  |  component, you can extend the default collapse behavior to create an accordion.
+                              .card-body
+                                p
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled.
+                          .col-sm-12.col-xl-6
+                            .card.height-equal
+                              .card-header.pb-0
+                                h5 Card With Footer
+                              .card-body
+                                p
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the the industry's standard dummy text ever.
+                              .card-footer
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.d-flex.justify-content-between.align-items-center.pb-0.bg-primary
+                                h5 Primary Color Card
+                                .setting-list.bg-primary
+                                  ul.list-unstyled.setting-option
+                                    li
+                                      .setting-white
+                                       i.icon-settings
+                                    li
+                                      i.view-html.fa.fa-code.font-white
+                                    li
+                                      i.icofont.icofont-maximize.full-card.font-white
+                                    li
+                                      i.icofont.icofont-minus.minimize-card.font-white
+                                    li
+                                      i.icofont.icofont-refresh.reload-card.font-white
+                                    li
+                                      i.icofont.icofont-error.close-card.font-white
+                              .card-body.bg-primary
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer.bg-primary
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.bg-secondary.d-flex.justify-content-between.align-items-center.pb-0
+                                h5 Secondary Color Card
+                                .setting-list.bg-secondary
+                                  ul.list-unstyled.setting-option
+                                    li
+                                      .setting-white
+                                       i.icon-settings
+                                    li
+                                      i.view-html.fa.fa-code.font-white
+                                    li
+                                      i.icofont.icofont-maximize.full-card.font-white
+                                    li
+                                      i.icofont.icofont-minus.minimize-card.font-white
+                                    li
+                                      i.icofont.icofont-refresh.reload-card.font-white
+                                    li
+                                      i.icofont.icofont-error.close-card.font-white
+                              .card-body.bg-secondary
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer.bg-secondary
+                                h6.mb-0.text-white Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.bg-success.d-flex.justify-content-between.align-items-center.pb-0
+                                h5 Success color Card
+                                .setting-list.bg-success
+                                  ul.list-unstyled.setting-option
+                                    li
+                                      .setting-white
+                                       i.icon-settings
+                                    li
+                                      i.view-html.fa.fa-code.font-white
+                                    li
+                                      i.icofont.icofont-maximize.full-card.font-white
+                                    li
+                                      i.icofont.icofont-minus.minimize-card.font-white
+                                    li
+                                      i.icofont.icofont-refresh.reload-card.font-white
+                                    li
+                                      i.icofont.icofont-error.close-card.font-white
+                              .card-body.bg-success
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer.bg-success
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.bg-danger.d-flex.justify-content-between.align-items-center.pb-0
+                                h5 Danger color Card
+                                .setting-list.bg-danger
+                                  ul.list-unstyled.setting-option
+                                    li
+                                      .setting-white
+                                       i.icon-settings
+                                    li
+                                      i.view-html.fa.fa-code.font-white
+                                    li
+                                      i.icofont.icofont-maximize.full-card.font-white
+                                    li
+                                      i.icofont.icofont-minus.minimize-card.font-white
+                                    li
+                                      i.icofont.icofont-refresh.reload-card.font-white
+                                    li
+                                      i.icofont.icofont-error.close-card.font-white
+                              .card-body.bg-danger
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer.bg-danger
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.bg-warning.d-flex.justify-content-between.align-items-center
+                                h5 Warning color Card
+                                .setting-list.bg-warning
+                                  ul.list-unstyled.setting-option
+                                    li
+                                      .setting-white
+                                       i.icon-settings
+                                    li
+                                      i.view-html.fa.fa-code.font-white
+                                    li
+                                      i.icofont.icofont-maximize.full-card.font-white
+                                    li
+                                      i.icofont.icofont-minus.minimize-card.font-white
+                                    li
+                                      i.icofont.icofont-refresh.reload-card.font-white
+                                    li
+                                      i.icofont.icofont-error.close-card.font-white
+                              .card-body.bg-warning
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer.bg-warning
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.bg-primary.d-flex.justify-content-between.align-items-center
+                                h5.text-white Primary Color Header
+                                .setting-list.bg-primary
+                                  ul.list-unstyled.setting-option
+                                    li
+                                      .setting-white
+                                       i.icon-settings
+                                    li
+                                      i.view-html.fa.fa-code.font-white
+                                    li
+                                      i.icofont.icofont-maximize.full-card.font-white
+                                    li
+                                      i.icofont.icofont-minus.minimize-card.font-white
+                                    li
+                                      i.icofont.icofont-refresh.reload-card.font-white
+                                    li
+                                      i.icofont.icofont-error.close-card.font-white
+                              .card-body
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.d-flex.justify-content-between.align-items-center
+                                h5 Primary Color Body
+                                .setting-list
+                                  ul.list-unstyled.setting-option
+                                    li
+                                      .setting-primary
+                                       i.icon-settings
+                                    li
+                                      i.view-html.fa.fa-code.font-white
+                                    li
+                                      i.icofont.icofont-maximize.full-card.font-white
+                                    li
+                                      i.icofont.icofont-minus.minimize-card.font-white
+                                    li
+                                      i.icofont.icofont-refresh.reload-card.font-white
+                                    li
+                                      i.icofont.icofont-error.close-card.font-white
+                              .card-body.bg-primary
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer
+                                h6.mb-0 Card Footer
+                          .col-sm-12.col-xl-6
+                            .card
+                              .card-header.d-flex.justify-content-between.align-items-center
+                                h5 Primary Color Footer
+                                .setting-list
+                                  ul.list-unstyled.setting-option
+                                    li
+                                      .setting-primary
+                                       i.icon-settings
+                                    li
+                                      i.view-html.fa.fa-code.font-white
+                                    li
+                                      i.icofont.icofont-maximize.full-card.font-white
+                                    li
+                                      i.icofont.icofont-minus.minimize-card.font-white
+                                    li
+                                      i.icofont.icofont-refresh.reload-card.font-white
+                                    li
+                                      i.icofont.icofont-error.close-card.font-white
+                              .card-body
+                                p.mb-0
+                                  | Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the.
+                              .card-footer.bg-primary
+                                h6.mb-0 Card Footer
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files      

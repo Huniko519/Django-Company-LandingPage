@@ -1,0 +1,4 @@
+env/
+/__pycached__/
+__pycached__/
+db.sqlite3

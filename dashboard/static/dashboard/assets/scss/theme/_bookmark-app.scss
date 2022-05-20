@@ -1,0 +1,555 @@
+/**=====================
+     85. bookmark app CSS Start
+==========================**/
+
+.email-wrap .email-app-sidebar .main-menu>li a[aria-selected="true"] span{  
+  color:$primary-color !important;
+}
+
+
+.modal-bookmark{
+  .modal-body,.modal-header {
+    padding:25px;
+    h5{
+      font-weight:600;
+    }
+  } 
+} 
+
+
+.bookmark-wrap {
+  .btn-mail {
+    color:$primary-color !important;
+    width:100% ; 
+    font-weight:600;  
+  }
+
+  .row {
+    .col-xl-3 {
+      +.col-xl-3 {
+        padding-right: 15px;
+      }
+    }
+  }
+  .left-bookmark {   
+    ul {
+      li {
+        button {
+          border: none;
+          cursor: pointer;
+          &:focus {
+            outline: none;
+          }
+        }
+        svg {
+          width: 18px;
+          height: 18px;
+          vertical-align: middle;
+        }
+        >.main-title {
+          color: $primary-color;
+          font-weight: 600;
+          margin-bottom: 5px;
+          display: block;
+          font-size:16px;
+          span {
+            a {
+              &:hover {
+                background-color: $transparent-color;
+              }
+            }
+          }
+          svg {
+            color: $dark-gray;
+            stroke-width: 1px;
+          }
+        }
+        a {
+          >.title {
+            text-transform: capitalize;
+            color:$theme-font-color;
+          }
+        }
+      }
+    }
+  }
+}
+.form-bookmark {
+  a {
+    text-transform: capitalize !important;
+    color: $primary-color !important;
+    line-height: 1 !important;
+    font-weight: 500;
+    &:hover {
+      background-color: $transparent-color !important;
+    }
+  }
+  input {
+    &#index_var {
+      display: none;
+    }
+  }
+  .form-group {
+    label{
+      font-weight: 600;
+      margin-bottom: 5px;
+    }
+    input, select {
+      font-size: 14px;
+    }
+    .select2-container {
+      .select2-selection--single {
+        border-color: #ced4da !important;
+      }
+    }
+    .select2 {
+      width: 100% !important;
+    }
+    .error {
+       margin: 0 !important;
+       font-size: 11px;
+       color: red !important;
+     }
+
+     .fill-color{
+       width:35px;
+       height:30px;
+       padding:3px;
+     }
+  }
+  button {
+    margin-top: 30px;
+  }
+
+}
+
+@keyframes displayTransition {
+    from { opacity: 0; }
+      to { opacity: 1; }
+}
+.bookmark-tabcontent {
+  .details-bookmark {
+    height: auto;
+    min-height: 359px;
+    .bookmark-card {
+      position: relative;
+      &.card {
+        .favourite-icon {
+        padding: 3px;
+        border-radius: 4px;
+        background-color: rgba($black, 0.2);
+        width: 30px;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        opacity:0;
+        i {
+          color: $white;
+          font-size: 16px;
+          vertical-align: text-bottom;
+        }
+        &.favourite {
+          i {
+            color: #fed112;
+          }
+        }
+      }
+      .desciption-data {
+        width: 100%;
+        .content-general {
+          display: none;
+        }
+      }
+      .favourite-icon {
+        transition: 0.5s;
+      }
+      .title-bookmark {
+        text-align:left;
+        padding:15px;
+        border-top:1px solid $light-gray;
+        position:relative;
+        p{         
+          animation:displayTransition 1s;          
+          font-size:13px;
+          opacity:1;
+        }
+        .hover-block{
+          display:none;
+          margin-top:15px;
+          ul{
+            li {
+              display: inline-block;
+              + li {
+                margin-left: 5px;
+              }
+              svg {
+                width: 16px;
+                height: 16px;
+                color: $dark-gray;
+              }
+            }
+          }
+        }
+      }
+      &:hover {
+        box-shadow: 1px 4px 16px 3px rgba($black, 0.04);
+        transition: 0.5s;
+        .title-bookmark {
+          p {
+            opacity: 0;           
+          }
+          .hover-block {
+            display: block;
+            animation: displayTransition 2s;
+            // opacity: 0;
+            position: absolute;
+            width: 100%;
+            padding: 15px;
+            top: 15px;
+            left: 0;
+          }
+        }
+        .favourite-icon {
+          opacity: 1;
+        }
+      }
+      }
+    }
+    &.list-bookmark {
+      .row{
+        .col-xl-3{
+          flex:0 0 100%;
+          max-width: 100%
+        }
+      }
+      .bookmark-card{
+        .desciption-data{
+          .content-general{
+            display: block;
+          }
+        }
+        .details-website {
+          display:flex;
+          align-items:center;
+          .title-bookmark {
+            p {
+              display: block;
+              opacity: 1;
+            }
+            .hover-block {
+              position:absolute;
+              right:15px;
+              display:block;
+              text-align: right;
+            }
+          }
+          &:hover {
+            .title-bookmark {
+              .hover-block {
+                display: block;
+                animation: displayTransition 0s;
+              }
+            }
+          }             
+        }
+        &.card {
+          .title-bookmark {
+            border-top: none;
+            p, h6 {
+              margin-top: 0;
+              display: inline-block;
+            }
+            h6 {
+              position: relative;
+              padding-right: 15px;
+              &::after {
+                position: absolute;
+                content: '-';
+                right: 0;
+                color: $dark-gray;
+              }
+            }
+            .content-general {
+              margin-top: 5px;
+              p {
+                width: 68%;
+                margin-right: 20px;
+                opacity: 1;
+              }
+            }
+          }
+        }
+        img {
+          width: 20%;
+        }
+      }
+    }
+  }
+  .tab-content {
+    .card {
+      .card-header {
+        justify-content: space-between;
+        display:flex ;
+        border-bottom:1px solid $light-gray;
+        h5{
+          font-weight:600;
+          font-size:22px;
+        }
+        svg {
+          width: 18px;
+          height: 18px;
+          vertical-align: middle;
+        }
+        ul {
+          li {
+            display: inline-block;
+            + li {
+              margin-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// responsive 
+@media only screen and (max-width: 1660px) {
+  .bookmark-tabcontent {
+    .details-bookmark {
+      &.list-bookmark {
+        .bookmark-card {
+          &.card{
+            .title-bookmark{             
+              .content-general{
+                p{
+                  display: none;
+                }
+              }
+              .hover-block {
+                margin-top: 6px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+
+
+  
+}
+@media screen and (min-width: 1200px) and (max-width: 1366px) {
+  .bookmark-wrap {
+    .left-bookmark {
+      ul {
+        li {
+          .btn-block {
+            svg {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1366px) {
+  .bookmark-tabcontent {
+    .details-bookmark {
+      &.list-bookmark {
+        .bookmark-card {
+          img {
+            width: 40%;
+          }
+          &.card {
+            .title-bookmark {
+              .hover-block{
+                top:80px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bookmark {
+    ul {
+      li {
+        a {
+          svg{
+            width:15px;
+            height:15px;
+            margin:10px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+}
+@media only screen and (max-width: 1199px) {
+  .bookmark-wrap {
+    .left-bookmark {
+      height: auto;
+    }
+  }
+  .bookmark-tabcontent{
+    .details-bookmark{
+      min-height:auto;
+      // .bookmark-card.card {
+      //   .title-bookmark{
+      //     h6{
+      //       font-size:16px;
+      //     }
+      //   }
+      // }
+    }
+  }
+  
+}
+@media only screen and (max-width: 991px) {
+  .modal-bookmark {
+    .modal-body, .modal-header {
+      padding: 20px;
+    }
+  }
+  .form-bookmark {
+    button {
+      margin-top: 20px;
+    }
+  }
+
+  .bookmark-tabcontent {
+    .tab-content {
+      .card {
+        .card-header,.card-body {
+          padding:20px;
+          h5{
+            font-size:18px;
+          }
+        }
+      }
+    }
+    
+  }
+
+
+}
+@media only screen and (max-width: 767px) {
+  
+  .bookmark-tabcontent {
+    .details-bookmark {
+      &.list-bookmark {
+        .bookmark-card {
+          .details-website {
+            .title-bookmark {
+              p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                max-width: 172px;
+              }
+            }
+            &:hover {
+              .title-bookmark {
+                .hover-block {
+                  p {
+                    display: none;
+                  }
+                  ul {
+                    position: relative;
+                    right: unset;
+                    top: unset;
+                  }
+                }
+              }
+            }
+          }
+          img {
+            width:45%;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .bookmark-tabcontent {
+    .details-bookmark {
+      &.list-bookmark {
+        .bookmark-card {
+          img {
+              width:46%;
+          }         
+          .details-website {
+            display: block;
+            
+            img{
+              width:100%;
+            }
+            .title-bookmark {
+              h6,p{
+                display: block;
+              }
+              .content-general{
+                display:none;
+              }
+              .hover-block {
+                position: relative;
+                right: unset;
+                text-align: left;
+                top: unset;
+                padding: 0;
+              }
+            }
+          }
+
+
+
+          
+
+        }       
+      }
+    }
+  }
+  .modal-bookmark {
+    .modal-body, .modal-header {
+      padding: 15px;
+    }
+  }
+  .form-bookmark {
+    button {
+      margin-top: 15px;
+    }
+  }
+
+
+  
+
+
+
+}
+@media only screen and (max-width: 360px) {
+  .bookmark-tabcontent {
+    .details-bookmark {
+      &.list-bookmark {
+        .bookmark-card {
+          img {
+              width: 28%;
+          }
+        }
+      }
+    }
+  }
+}
+/**=====================
+   85. bookmark app CSS Ends
+==========================**/

@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="page-body">
+  <div class="container-fluid">
+    <div class="page-header">
+      <div class="row">
+        <div class="col-sm-6">
+          <h3>Update Company Information</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container-fluid starts-->
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12">
+        <div class="card">
+          <div class="card-header pb-0">
+            <h5>Company Information</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col">
+                <form>
+                  <div class="mb-3 m-form__group">
+                    <label class="form-label">Current Business Address:</label>
+                    <div class="input-group">
+                      <input class="form-control" type="text" placeholder="Update Business Address By Putting In Your Information in here">
+                    </div>
+                  </div>
+                  <div class="mb-3 m-form__group">
+                    <label class="form-label">Annual Sales:</label>
+                    <div class="input-group">
+                      <input class="form-control" type="text" placeholder="Update Annual Sales By Putting In Your Information">
+                    </div>
+                  </div>
+                  <div class="mb-3 m-form__group">
+                    <label class="form-label">Current Business Phone Number:</label>
+                    <div class="input-group">
+                      <input class="form-control" type="text" placeholder="Update Current Business Phone Number By Putting In Your Information">
+                    </div>
+                  </div>
+                  <div class="mb-3 m-form__group">
+                    <label class="form-label">Current Number Of Employees: Employees</label>
+                    <div class="input-group">
+                      <input class="form-control" type="text" placeholder="Update Your Current Number Of Employees By Putting In Your Information">
+                    </div>
+                  </div>
+                  <div class="mb-3 m-form__group">
+                    <label class="form-label">Current Line Of Business:</label>
+                    <div class="input-group">
+                      <input class="form-control" type="text" placeholder="Update Current Line Of Business By Putting In Your Information Below">
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary m-r-15" type="submit">Submit</button>
+            <button class="btn btn-light" type="submit">Cancel</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Container-fluid Ends-->
+</div>
+</div>
+{% endblock content %}

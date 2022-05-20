@@ -1,0 +1,245 @@
+/**=====================
+      68. Dashboard 3 CSS Start
+==========================**/
+.order-chart-container {
+  .history {
+    height: 294px;
+    .chartist-tooltip {
+      box-shadow:-1.5px 1.33px 15px 0px rgba($secondary-color,0.1);
+      .chartist-tooltip-value {
+         color: $secondary-color;
+      }
+    }
+    svg {
+      .ct-grids {
+        .ct-horizontal {
+          stroke: $transparent-color;
+          &:nth-child(4){
+            stroke: rgba(0,0,0,0.2);
+          }
+        }
+      }
+      .ct-point {
+        stroke-width: 3px;
+        fill: $white;
+        &.circle-trans {
+          display: none;
+        }
+      }
+      .ct-series-a {
+        .ct-point, .ct-line, .ct-bar, .ct-slice-donut {
+          stroke: lighten($secondary-color, 30%);
+        }
+      }
+      .ct-series-b {
+        .ct-slice-pie, .ct-slice-donut-solid, .ct-area {
+          fill: url(#gradient) !important;
+          fill-opacity: 0.2;
+        }
+      }
+    }
+  }
+}
+.task-progress {
+  margin-top: 30px;
+  .progress {
+    margin-top: 10px;
+  }
+}
+.task-table, .project-table {
+  table {
+    tr {
+      th {
+        border-top: none;
+        border-bottom: none;
+        color: rgba($theme-body-font-color, 0.5);
+        font-weight: 500;
+      }
+      td {
+        + td {
+          color: rgba($theme-body-font-color, 0.5);
+        }
+      }
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+.report-status {
+  #project-status {
+    margin-top: -15px;
+  }
+  ul {
+    display: flex;
+    border-top: 1px solid $light-gray;
+    li {
+      display: inline-block;
+      width: 100%;
+      padding: 15px;
+      h5 {
+        margin-bottom: 0;
+      }
+      + li {
+        border-left: 1px solid $light-gray;
+      }
+    }
+  }
+}
+.update-line {
+  .media {
+    .activity-line {
+      height: 249px;
+    }
+  }
+}
+.project-table {
+  table {
+    thead {
+      tr {
+        th {
+          color: $theme-body-font-color;
+          font-weight: 600;
+        }
+      }
+    }
+    tr {
+      th,td {
+        vertical-align: middle;
+        span {
+          font-size: 12px;
+        }
+        &:last-child {
+          min-width: 150px;
+        }
+      }
+    }
+  }
+}
+.jvector-map-project {
+  height: 304px;
+}
+.map-progress {
+  li {
+    h6 {
+      font-weight: 400;
+      span {
+        color: rgba($theme-body-font-color, 0.5);
+      }
+    }
+    + li {
+      margin-top: 30px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1291px) {
+ .update-line {
+  .media {
+    .activity-line {
+       height: 287px;
+    }
+  }
+ }
+ .order-chart-container {
+  .history {
+    height: 321px;
+  }
+ }
+ #project-status {
+  min-height: 320px !important;
+  .apexcharts-canvas, svg {
+    height: 320px !important;
+  } 
+ }
+}
+@media only screen and (max-width: 991px) {
+  .update-line {
+    .media {
+      .activity-line {
+         height: 211px;
+      }
+    }
+   }
+  .map-progress {
+    li {
+      + li {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 767px) {
+  .map-progress {
+    margin-top: 20px;
+  }
+  .project-table {
+    table {
+      tr {
+        td,th {
+          min-width: 130px;
+          &:nth-child(2) {
+            min-width: 169px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 575px) {
+  .task-table {
+    table {
+      tr {
+        th,td {
+          &:first-child {
+            min-width: 280px;
+          }
+          &:last-child {
+            min-width: 60px;
+          }
+        }
+      }
+    }
+  }
+  .map-progress {
+    margin-top: 15px;
+    li {
+      + li {
+        margin-top: 15px;
+      }
+    }
+  }
+  .order-chart-container {
+    .history {
+      height: 245px;
+    }
+  }
+  .update-line {
+    .media {
+      .activity-line {
+        height: 178px;
+        top: 139px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 468px) {
+  .update-line {
+    .media {
+      .activity-line {
+        height: 215px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 333px) {
+  .update-line {
+    .media {
+      .activity-line {
+        height: 228px;
+      }
+    }
+  }
+}
+/**=====================
+     68. Dashboard 3 CSS End
+==========================**/

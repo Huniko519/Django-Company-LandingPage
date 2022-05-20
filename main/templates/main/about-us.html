@@ -1,0 +1,60 @@
+{% extends "main/base.html" %}
+{% block content %}
+{% load static %}
+<!-- Inner Banner -->
+<section class="bg-dark bg-img position-relative inner-banner py-5"
+  style="background-image: url('{% static 'main/images/about_us-bg-01.jpg' %}');">
+  <div class="bg_overlay bg-dark"></div>
+  <div class="container">
+    <div class="inner-banner-wrap d-table w-100">
+      <div class="inner-banner-content d-table-cell align-middle w-100 text-center text-white">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="h1 mb-2">About Us</h2>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+              <ol class="breadcrumb bg-transparent m-0 p-0">
+                <li class="breadcrumb-item">
+                  <a href="/">Home</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">About Us</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Inner Banner / END -->
+
+<!-- block_section -->
+<section class="block_section py-100-70">
+  <div class="container ">
+    <div class="slider_block">
+      <div class="item">
+        <div class="row align-items-center">
+          <div class="col-md-12  col-lg-6 mb-30 pr-lg-0">
+            <div class="block_img">
+              <img src="{% static 'main/images/video_img-02.jpg' %}" alt="" class="img-fluid w-100">
+            </div>
+          </div>
+          <div class="col-md-12  col-lg-6 pl-lg-5 mb-30">
+            <div class="block_con">
+              <h3 class="font-weight-bold h2 mb-4">We Provide The Solutions To <br>
+                Grow Your Business</h3>
+              <p class="mb-4 text-light"> Vukode provides information, analytical tools, and data to organizations and
+                individuals that help them to make financial decisions and to manage the risk. Our mission is to help
+                organizations to make their business more profitable. We provide opportunities to business owners to
+                gain knowledge about managing and protecting their business information and make the most beneficial
+                financial and purchasing decisions.
+              </p>
+              <a href="" class="btn btn-primary rounded-pill py-2 px-5">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- block_section -->
+{% endblock content %}

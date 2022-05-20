@@ -1,0 +1,186 @@
+- var theme_customizer      = true;
+- var ckeditor              = true;
+- var email_app             = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                    h3
+                                      | Email Compose
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                         | Home
+                                      li.breadcrumb-item Apps   
+                                      li.breadcrumb-item Email
+                                      li.breadcrumb-item.active Email Compose
+                                .col-sm-6
+                                  include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid
+                        .email-wrap
+                          .row
+                            .col-xl-3.col-md-6.xl-30
+                              .email-sidebar
+                                a.btn.btn-primary.email-aside-toggle(href="javascript:void(0)")
+                                  | email filter
+                                .email-left-aside
+                                  .card
+                                    .card-body
+                                      .email-app-sidebar
+                                        .media
+                                          .media-size-email
+                                            img.me-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                          .media-body
+                                            h6.f-w-600 MARKJENCO
+                                            p Markjecno@gmail.com
+                                        ul.nav.main-menu(role='tablist')
+                                          li.nav-item
+                                            a#pills-darkhome-tab.btn-primary.btn-block.btn-mail(data-bs-toggle='pill', href='#pills-darkhome', role='tab', aria-controls='pills-darkhome', aria-selected='true')
+                                              i.icofont.icofont-envelope.me-2
+                                              |  NEW MAIL
+                                          li.nav-item
+                                            a#pills-darkprofile-tab.show(data-bs-toggle='pill', href='#pills-darkprofile', role='tab', aria-controls='pills-darkprofile', aria-selected='false')
+                                              span.title
+                                                i.icon-import
+                                                |  Inbox
+                                              span.badge.pull-right (236)
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-folder
+                                                |  All mail
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-new-window
+                                                |  Sent
+                                              span.badge.pull-right (69)
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-pencil-alt
+                                                |  DRAFT
+                                              span.badge.pull-right (59)
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-trash
+                                                |  TRASH
+                                              span.badge.pull-right (99)
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-info-alt
+                                                |  IMPORTANT
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-star
+                                                |  Starred
+                                          li
+                                            hr
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-email
+                                                |  UNREAD
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-export
+                                                |  SPAM
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-share
+                                                |  OUTBOX
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-file
+                                                |  UPDATE
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-bell
+                                                |  ALERT
+                                          li
+                                            a(href='#')
+                                              span.title
+                                                i.icon-notepad
+                                                |  NOTES
+                                              span.badge.pull-right (20)
+                            .col-xl-9.col-md-12.xl-70
+                              .email-right-aside
+                                .card.email-body
+                                  .email-profile                                                                      
+                                    .email-right-aside
+                                      .email-body
+                                        .email-content
+                                          .email-top
+                                            .row
+                                              .col-xl-12
+                                                .media
+                                                  img.me-3.rounded-circle(src='../assets/images/user/user.png', alt='')
+                                                  .media-body
+                                                      h6.d-block
+                                                        | Lorm lpsa                                                             
+                                                      p Mattis luctus. Donec nisi diam text.
+                                          .email-wrapper
+                                            .emailread-group
+                                              .read-group
+                                                p Hello
+                                                p Dear Sir Good Morning,
+                                              .read-group
+                                                h5 Elementum varius nisi vel tempus. Donec eleifend egestas viverra.
+                                                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non diam facilisis, commodo libero et, commodo sapien. Pellentesque sollicitudin massa sagittis dolor facilisis, sit amet vulputate nunc molestie. Pellentesque maximus nibh id luctus porta. Ut consectetur dui nec nulla mattis luctus. Donec nisi diam, congue vitae felis at, ullamcorper bibendum tortor. Vestibulum pellentesque felis felis. Etiam ac tortor felis. 
+                                                p.m-t-10 In elementum varius nisi vel tempus. Donec eleifend egestas viverra. Donec dapibus sollicitudin blandit. Donec scelerisque purus sit amet feugiat efficitur. Quisque feugiat semper sapien vel hendrerit. Mauris lacus felis, consequat nec pellentesque viverra, venenatis a lorem. Sed urna
+                                            .emailread-group
+                                              h6.text-muted.mb-0
+                                                i.icofont.icofont-clip
+                                                |  ATTACHMENTS
+                                              a.text-muted.text-end.right-download.font-primary.f-w-600(href='#')
+                                                i.fa.fa-long-arrow-down.me-2
+                                                | Download All
+                                              .clearfix
+                                              .attachment
+                                                ul
+                                                  li
+                                                    img.img-fluid(src='../assets/images/email/1.jpg', alt='')
+                                                  li
+                                                    img.img-fluid(src='../assets/images/email/2.jpg', alt='')
+                                                  li
+                                                    img.img-fluid(src='../assets/images/email/3.jpg', alt='')
+                                            .emailread-group
+                                              textarea.form-control(rows='4' cols='50' placeholder="write about your nots")
+                                              .action-wrapper
+                                                ul.actions
+                                                  li
+                                                    a.btn.btn-primary(href='javascript:void(0)')
+                                                      i.fa.fa-reply.me-2
+                                                      | Reply
+                                                  li
+                                                    a.btn.btn-secondary(href='javascript:void(0)')
+                                                      i.fa.fa-reply-all.me-2
+                                                      | Reply All
+                                                  li
+                                                    a.btn.btn-danger(href='javascript:void(0)')
+                                                      i.fa.fa-share.me-2
+                                                      | Forward
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

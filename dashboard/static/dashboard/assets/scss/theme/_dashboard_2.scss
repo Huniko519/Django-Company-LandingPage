@@ -1,0 +1,842 @@
+/**=====================
+      67. Dashboard 2 CSS Start
+==========================**/
+// dashbord-2 viho css start
+.dashboard-2-main {
+  .card{
+    .card-header{
+      span{
+        font-size: 14px !important;
+        color: $primary-color;
+        font-weight: 600 !important;
+        display: inline-block;
+      }
+    }
+    .card-body {
+      .media {
+        img {
+          margin-right:5px;
+        }
+      }
+    }
+  }
+}
+.yearly-growth-sec {
+  #myChart {
+    height: 350px !important;
+  }
+}
+.top-dealer-sec {
+  .card {
+    margin-bottom: 20px;
+    .card-img-top {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin: 0 auto;
+      margin-bottom:15px;
+    }
+    .top-dealerbox {
+      padding:20px;    
+      h6 {
+        font-size: 13px;
+        font-weight: 600;
+      }
+      p {
+        font-size:11px;   
+        font-family:$font-roboto;
+        margin-bottom:12px;
+        color: $light-text;
+      }
+      .btn {
+        padding:8px 10px;
+        background-color:rgba($primary-color,0.1);
+        color:$primary-color;
+        font-size:11px; 
+        font-weight:400;
+        border-radius:15px;
+        font-family:$font-roboto; 
+        line-height:1;    
+      }
+      &:hover{
+        background-color:$white;        
+        .btn{
+          background-color:$primary-color;
+          color:$white;
+        }
+      }
+    }   
+  }
+  .owl-theme {
+    .owl-nav{
+      &.disabled {
+        + .owl-dots{
+          margin-top:0;
+        }
+      }
+    }
+  }
+}
+.top-sell-sec {
+  .card-body {
+    .fa-shopping-bag {
+      background-color:$primary-color;
+      padding:8px;
+      border-radius:2px;
+      color:$white;
+    }
+    .media {
+      background-color: rgba($primary-color, 0.05);
+      padding: 25px 30px;
+      border-radius: 5px;
+      img{
+        transition: all 3s ease;
+      }
+      .btn{       
+        &:hover{
+          i{
+            &:before{
+              animation: bounceIn 0.5s ease-in-out ;
+            }
+          }
+        }
+      }
+      .media-body {
+        margin-left:20px;
+        h6 {
+          font-size:16px;
+          font-weight:700;
+          margin-bottom:5px;
+        }
+        p{
+          margin-bottom:5px;
+        } 
+      }
+      &:hover{
+        img{
+          transform:rotate(-26deg);
+          
+        }
+      }
+    }
+  }
+
+  .media {
+    .media-body {
+      .fa-star {
+        color: #f5c304;
+      }
+    }
+  }
+}
+
+.target-sec {
+  background-color:$white;
+  border:none;
+  .card-header {
+    ul.target-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      li {
+        border-radius: 10px;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 0px;
+        padding-right: 0px;
+        width: 50%;
+        transition: all 0.5s ease;
+        &:hover{
+          h6{
+            color: $white;
+          }
+          p{
+            color: $white;
+          }
+          span{
+            color: $white;
+          }
+        }
+        &:first-child {
+          background-color:rgba($primary-color, 0.05); 
+          &:hover{
+            background-color:$primary-color;
+          }
+        }
+        &:nth-child(n+2) {
+          background-color: $primary-color;
+          margin-left: 20px;
+          h6{
+            color: $white;
+          }
+          p{
+            color: $white;
+          }
+          span{
+            color: $white;
+          }
+        }
+        h6 {
+          font-size:16px;
+          font-weight:700;
+          margin-bottom:10px;
+        }
+        p {
+          font-size: 12px;
+          margin-bottom: 10px;
+          line-height: 1.4;
+        }
+        span{
+          color:$primary-color;
+        }
+      }
+    }
+  }
+  .card-body{
+    .traget-img-sec{
+      width: 100%;
+      background-image: url('../images/dashboard-2/target1.png');
+      height: 415px;
+      background-position:center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+  .animat-block{
+    i{
+      color: $primary-color;
+      position: absolute;
+    }
+    .close1{
+      bottom: 29%;
+      left: 75px;
+      position: absolute;
+      animation: star 5s linear infinite;
+      
+    }
+    .close2{
+      bottom: 31%;   
+      right: 8%;
+      animation: star 7s linear infinite;
+    }
+    .close3{
+      bottom: 65%;
+      left: 30%;
+      opacity:0.2;
+      animation: star 10s linear infinite;
+    }
+    >div{
+      width: 5px;
+      height: 5px;
+      border-radius:50%;
+      background-color:$primary-color;
+      position: absolute;
+    }
+    .circle1{
+      bottom:50%;
+      left:5%;
+      animation: move2 1.2s infinite alternate;
+    }
+    .circle2{
+      bottom: 45%;
+      right: 30%;  
+      animation: move2 1.4s infinite alternate;
+    }
+    .circle3{
+      bottom: 65%;
+      right: 18%;
+      opacity:0.2;
+      animation: move2 1.6s infinite alternate;
+    }
+  }
+}
+
+
+
+.activity-sec {
+  .activity-timeline {
+    .media {
+      align-items: start !important;
+      .activity-line {
+        left: 37px;
+      }
+    }
+    &.update-line {
+      .media {
+        .activity-line {
+          height: 80% !important;
+        }
+      }
+      .media {
+        .media-body {
+          h6 {
+            font-size: 12px;
+            margin-bottom: 25px;
+            span{
+              margin-right:5px;
+              font-weight:600;
+            }
+            .dot-notification{
+              float: right;
+              width: 15px;
+              height: 15px;
+              background-color: $primary-color;
+              border:5px solid #b2b6b6;
+              border-radius: 50%;
+              animation: round 1.3s ease-in-out infinite;
+            }
+          }
+
+          h5 {
+            font-size: 14px;
+            color: $theme-body-font-color;
+            font-weight: 600;
+            margin-bottom:5px;
+          }
+          p {
+            font-size: 14px;
+            font-weight: 400;
+            font-family: $font-roboto;
+            color: $light-font;
+          }
+          ul.timeline-pro {
+            display: flex;
+            align-items: center;
+            margin-top:15px;
+            li {
+              width: 100px;
+              height: 65px;
+              border-radius: 5px;
+              background-color: rgba($primary-color, 0.05);
+              display: flex;
+              img {
+                margin: auto;
+                transition: all 0.5s ease;
+              }
+              &:nth-child(n+2) {
+                margin-left: 20px;
+              }
+              &:hover{
+                img{                 
+                  animation:tada 1s ease-out infinite;
+                }
+              }
+            }
+          }
+
+          .tomorrow-sec {
+            margin: auto;
+            font-weight: 500;
+            font-family: $font-montserrat;
+            position: relative;
+            z-index: 1;
+            &:before {
+              content: '';
+              position: absolute;
+              top: 45%;
+              left: 0;
+              right: 0;
+              margin: auto;
+              background-color: $light-gray;
+              height: 1px;
+              width: 90%;
+              z-index: -1;
+            }
+
+            p {
+              width: fit-content;
+              padding-left: 20px;
+              padding-right: 20px;
+              margin-left: auto;
+              margin-right: auto;
+              background-color: $light-background;
+            }
+          }
+        }
+      }
+    }
+
+
+
+
+  }
+
+  .media {
+    .tomorrow-sec {
+      p {
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+
+
+.yearly-growth-sec {
+  #myChart {
+    height: 350px !important;
+  }
+}
+
+
+#graph_rounded {
+  svg {
+    filter: drop-shadow(-1px 5px 9px rgba(233, 233, 255, 0.3));
+  }
+}
+
+// dashbord-2 viho css end
+
+
+
+
+// responsive  dashboard-2
+@media only screen and (max-width:1800px){
+  .activity-sec {
+    .activity-timeline{
+      &.update-line {
+        .media {
+          .activity-line{
+            left:27px;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:1200px)and(max-width:1500px){
+  .dashboard-2-main{
+    .setting-primary, .setting-secondary, .setting-white{
+      width:25px;
+      height:25px;
+    }
+    .setting-list {
+      .setting-option{
+          width:25px;
+          height:25px;
+        .setting-option{
+          width:25px;
+          height:25px;
+        }
+        li{
+          &:first-child {
+            i.icon-angle-double-right{
+              font-size:12px;
+            }
+          }
+        }
+      }
+    }
+    .card{
+      .card-header,.card-body,.card-footer{
+        padding:20px;
+      }     
+      .card-header {
+        h5{
+          font-size:16px;
+        }
+               
+      }
+      &.income-card {
+        .card-body{
+          h5{
+            font-size:18px;
+          }
+        }
+      }
+    }
+  } 
+  .top-dealer-sec {
+    .card {
+      .top-dealerbox{
+        padding:15px;
+      }
+    }
+  }
+  .top-sell-sec {
+    .card-body {
+      .media{
+        padding:15px;
+        .btn-iconsolid{
+          padding:5px 10px;
+          i{
+            font-size:12px;
+          }
+        }
+        .media-body{
+          h6{
+            font-size:15px;
+          }
+          p{
+            font-size:12px;           
+          }
+        }
+      }
+    }
+  }
+  .target-sec{
+    .card-header{
+      ul{
+        &.target-list {
+          li{
+            h6 {
+              font-size:14px;
+            }           
+          }
+        }
+      }
+    }
+    .card-body {
+      .traget-img-sec {
+        height:410px;
+      }
+    }
+  }
+  .activity-sec{
+    .activity-timeline{
+      &.update-line{
+        .media{
+          .media-body{
+            h6{
+              margin-bottom:10px;
+            }
+            p{
+              font-size:12px;
+            }
+          }
+          .activity-line{
+            left:26px;
+            top: 105px;
+          }
+        }
+      }
+    }
+  }
+  .activity-dot-primary{
+    width:14px;
+    height:14px;
+    border-width:2px;
+  }
+
+  
+
+ 
+
+  
+
+  
+ 
+   
+
+
+
+}
+
+@media screen and (min-width:1366px)and(max-width:1500px){
+  .top-sell-sec {
+    .card-body{
+      .media {
+        .media-body {
+          p{
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .activity-sec {
+    .activity-timeline{
+      &.update-line {
+        .media {
+          .media-body
+          p{
+            display:none;
+          }
+        }
+      }
+    }
+  }
+  .target-sec {
+    .card-body {
+      .traget-img-sec{
+        height:328px;        
+      }
+    }
+    .card-header {
+      ul{
+        &.target-list {
+          li{
+            padding-top: 15px;
+            padding-bottom: 15px;
+            p{
+              display:none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+@media screen and (min-width:1200px)and(max-width:1365px){
+  .dashboard-2-main{
+    .des-xl-50{
+      max-width: 50%;
+      flex:0 0 50%;
+    }
+    .des-xl-100{
+      max-width: 100%;
+      width:100%;
+      flex:0 0 100%;
+    }
+
+  }
+
+  .target-sec {
+    .card-body {
+      .traget-img-sec{
+        margin-top:20px;
+        background-position:top;
+        height:247px;
+      }
+    }
+  }
+
+}
+
+@media only screen and (max-width: 1200px) {
+  .traget-img-sec {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media only screen and (max-width: 1199px){
+  .activity-sec {
+    .activity-timeline{
+      &.update-line {
+        .media {
+          .activity-line{
+            left:37px;
+          }
+        }
+      }
+    }
+  }
+
+  .target-sec {
+    .card-body {
+      .traget-img-sec{
+        background-position:top;
+      }
+    }
+  }
+
+}
+
+
+
+
+
+@media only screen and (max-width:991px){
+  .activity-sec {
+    .activity-timeline{
+      &.update-line {
+        .media {
+          .activity-line{
+            left:28px;
+          }
+        }
+      }
+    }
+  }
+  .top-dealer-sec{
+    .card {
+      .top-dealerbox{
+        padding:12px;
+      }
+    }
+  }
+  .target-sec {
+    .card-body {
+      .traget-img-sec{
+        height:360px;
+      }
+    }
+  }
+
+
+}
+
+
+@media only screen and (max-width: 767px){
+  .activity-timeline {
+    .media {
+      .activity-line {
+        top: 100px;
+      }
+    }
+  }
+
+  .top-sell-sec {
+    .card {
+      .card-body {
+        .media {
+          img {
+            margin-right: 25px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .activity-sec {
+    .activity-timeline {
+      .media {
+        .activity-line {
+          left: 26px;
+        }
+      }
+    }
+  }
+  .top-dealer-sec {
+    .owl-theme {
+      .owl-nav{
+        &.disabled {
+          + .owl-dots{
+            margin-top:-15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .activity-sec {
+    .activity-timeline {
+      .media {
+        .activity-line {
+          // left: 22px;
+        }
+      }
+    }
+  }
+  .update-line {
+    .media {
+      .activity-line {
+        top: 95px !important;
+      }
+    }
+  }
+  .top-dealer-sec {
+    .card{
+      box-shadow:none !important; 
+    }
+    .owl-theme {
+      .owl-nav{
+        &.disabled {
+          + .owl-dots{
+            margin-top:0;
+          }
+        }
+      }
+    }
+  } 
+}
+
+@media only screen and (max-width: 480px){
+  .top-sell-sec {
+    .card-body {
+      .media{
+        display:block;
+        position:relative;
+        padding:20px;
+        .btn{
+          position:absolute;
+          top:20px;
+          right:20px;
+          padding:5px 10px;
+          font-size:12px;
+        }
+        .media-body{
+          margin-left:unset;
+          margin-top:15px;
+        }
+      }
+    }
+  }
+  .target-sec {
+    .card-header {
+      ul.target-list {
+        display:block;       
+        li{
+          width:auto;
+          &:nth-child(n+2){
+            margin-left:unset;
+            margin-top:15px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 359px) {
+  .update-line{
+    .media{
+      .activity-line{
+        top:125px!important;
+      }
+    }
+  }
+  .activity-sec {
+    .media{
+      .activity-dot-primary{
+        width:10px;
+        height:10px;
+        border:1px solid $primary-color;
+      }
+    }
+     .activity-timeline {
+      .media {
+        .activity-line{
+          left:23px;
+        }
+      }
+     }   
+  }
+  .activity-timeline {
+    .media {
+      .media-body{
+        margin-left: 10px;
+      }
+    }
+  }
+
+
+  
+
+}
+
+@media only screen and (max-width: 340px) {
+  .top-sell-sec {
+    .card {
+      .card-body {
+        // margin-left: 0px;
+      }
+    }
+  }
+}
+
+/**=====================
+     67. Dashboard 2  CSS End
+==========================**/

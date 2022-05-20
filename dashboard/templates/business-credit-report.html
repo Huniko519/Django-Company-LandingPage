@@ -1,0 +1,467 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<div class="page-body">
+  <!-- Container-fluid starts-->
+  <div class="container-fluid dashboard-default-sec">
+    <div class="row">
+      <div class="col-xl-6 box-col-12 des-xl-100">
+        <div class="row">
+          <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+            <div class="card income-card card-primary">
+              <div class="card-body text-center">
+                <h5>8,50,49</h5>
+                <p>Maximum Credit Recommendation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6 box-col-12 des-xl-100">
+        <div class="row">
+          <div class="col-xl-12 col-50 box-col-6 des-xl-50">
+            <div class="card latest-update-sec">
+              <div class="card-header">
+                <div class="header-top d-sm-flex align-items-center">
+                  <h5>Latest activity</h5>
+                </div>
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table class="table table-bordernone">
+                    <tbody>
+                      <tr>
+                        <td>
+                          <div class="media">
+                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
+                              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 512.001 512.001"
+                              style="enable-background:new 0 0 512.001 512.001;" xml:space="preserve">
+                              <g>
+                                <g>
+                                  <path
+                                    d="M506.35,80.699c-7.57-7.589-19.834-7.609-27.43-0.052L331.662,227.31l-42.557-42.557c-7.577-7.57-19.846-7.577-27.423,0                                                      L89.076,357.36c-7.577,7.57-7.577,19.853,0,27.423c3.782,3.788,8.747,5.682,13.712,5.682c4.958,0,9.93-1.894,13.711-5.682                                                      l158.895-158.888l42.531,42.524c7.57,7.57,19.808,7.577,27.397,0.032l160.97-160.323                                                      C513.881,100.571,513.907,88.288,506.35,80.699z">
+                                  </path>
+                                </g>
+                              </g>
+                              <g>
+                                <g>
+                                  <path
+                                    d="M491.96,449.94H38.788V42.667c0-10.712-8.682-19.394-19.394-19.394S0,31.955,0,42.667v426.667                                                      c0,10.712,8.682,19.394,19.394,19.394H491.96c10.712,0,19.394-8.682,19.394-19.394C511.354,458.622,502.672,449.94,491.96,449.94z                                                      ">
+                                  </path>
+                                </g>
+                              </g>
+                              <g>
+                                <g>
+                                  <path
+                                    d="M492.606,74.344H347.152c-10.712,0-19.394,8.682-19.394,19.394s8.682,19.394,19.394,19.394h126.061v126.067                                                      c0,10.705,8.682,19.394,19.394,19.394S512,249.904,512,239.192V93.738C512,83.026,503.318,74.344,492.606,74.344z">
+                                  </path>
+                                </g>
+                              </g>
+                            </svg>
+                            <div class="media-body"><span> Payment History</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="media">
+                            <svg enable-background="new 0 0 512 512" viewbox="0 0 512 512"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <path
+                                d="m362 91v-60h-212v60h-150v390h512c0-16.889 0-372.29 0-390zm-182-30h152v30h-152zm302 390h-452v-202.844l90 36v46.844h90v-30h92v30h90v-46.844l90-36zm-302-150h-30v-60h30zm152-60h30v60h-30c0-7.259 0-52.693 0-60zm150-25.156-90 36v-40.844h-90v60h-92v-60h-90v40.844l-90-36c0-14.163 0-84.634 0-94.844h452z">
+                              </path>
+                            </svg>
+                            <div class="media-body"><span>Employee Number & Annual Sales</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="media">
+                            <svg enable-background="new 0 0 512 512" viewbox="0 0 512 512"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path
+                                  d="m345.622 126.038c-50.748-45.076-130.482-46.914-183.244 3.903-21.262 20.478-35.375 47.381-39.737 75.754-5.454 35.471 2.872 70.834 23.444 99.576 56.271 78.616 49.132 141.058 49.915 145.691 0 16.435 6.211 31.795 17.491 43.253 11.289 11.469 26.386 17.785 42.509 17.785 33.084 0 60-26.916 60-60 .686-4.269-6.11-72.81 47.676-143.691 17.875-23.557 27.324-51.673 27.324-81.309 0-38.547-16.54-75.347-45.378-100.962zm-89.622 355.962c-16.486 0-29.462-13.096-29.975-30h59.975c0 16.542-13.458 30-30 30zm83.777-191.826c-30.015 39.554-47.946 84.707-52.569 131.826h-62.57c-4.961-45.331-23.43-91.26-54.157-134.19-15.985-22.333-22.444-49.876-18.188-77.556 7.293-47.43 49.733-88.262 103.846-88.262 58.661 0 104.861 47.891 104.861 105.008 0 23.032-7.339 44.877-21.223 63.174z">
+                                </path>
+                                <path
+                                  d="m256 62c8.284 0 15-6.716 15-15v-32c0-8.284-6.716-15-15-15s-15 6.716-15 15v32c0 8.284 6.716 15 15 15z">
+                                </path>
+                                <path
+                                  d="m419.385 149.99 25.98-15c7.174-4.142 9.632-13.316 5.49-20.49-4.142-7.175-13.316-9.633-20.49-5.49l-25.98 15c-7.174 4.142-9.632 13.316-5.49 20.49 4.162 7.21 13.349 9.613 20.49 5.49z">
+                                </path>
+                                <path
+                                  d="m92.615 304.01-25.98 15c-7.174 4.142-9.632 13.316-5.49 20.49 4.163 7.21 13.35 9.613 20.49 5.49l25.98-15c7.174-4.142 9.632-13.316 5.49-20.49-4.141-7.175-13.316-9.632-20.49-5.49z">
+                                </path>
+                                <path
+                                  d="m338.5 84.105c7.141 4.124 16.33 1.716 20.49-5.49l15-25.98c4.142-7.174 1.684-16.348-5.49-20.49-7.174-4.144-16.349-1.685-20.49 5.49l-15 25.98c-4.142 7.175-1.684 16.348 5.49 20.49z">
+                                </path>
+                                <path
+                                  d="m153.01 78.615c4.163 7.21 13.35 9.613 20.49 5.49 7.174-4.142 9.632-13.316 5.49-20.49l-15-25.98c-4.142-7.174-13.315-9.633-20.49-5.49-7.174 4.142-9.632 13.316-5.49 20.49z">
+                                </path>
+                                <path
+                                  d="m445.365 319.01-25.98-15c-7.175-4.143-16.349-1.684-20.49 5.49-4.142 7.174-1.684 16.348 5.49 20.49l25.98 15c7.141 4.124 16.33 1.716 20.49-5.49 4.143-7.174 1.685-16.348-5.49-20.49z">
+                                </path>
+                                <path
+                                  d="m107.615 124.01-25.98-15c-7.175-4.144-16.348-1.684-20.49 5.49s-1.684 16.348 5.49 20.49l25.98 15c7.141 4.124 16.33 1.716 20.49-5.49 4.143-7.174 1.685-16.348-5.49-20.49z">
+                                </path>
+                                <path
+                                  d="m466 212h-30c-8.284 0-15 6.716-15 15s6.716 15 15 15h30c8.284 0 15-6.716 15-15s-6.716-15-15-15z">
+                                </path>
+                                <path
+                                  d="m91 227c0-8.284-6.716-15-15-15h-30c-8.284 0-15 6.716-15 15s6.716 15 15 15h30c8.284 0 15-6.716 15-15z">
+                                </path>
+                                <path
+                                  d="m275.394 216.394-19.394 19.393-19.394-19.393c-5.857-5.858-15.355-5.858-21.213 0s-5.858 15.355 0 21.213l25.607 25.606v53.787c0 8.284 6.716 15 15 15s15-6.716 15-15v-53.787l25.606-25.606c5.858-5.858 5.858-15.355 0-21.213-5.857-5.859-15.355-5.859-21.212 0z">
+                                </path>
+                              </g>
+                            </svg>
+                            <div class="media-body"><span> Open Credit</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>100%</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <div class="media">
+                            <svg enable-background="new 0 0 512 512" viewbox="0 0 512 512"
+                              xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path
+                                  d="m512 390v-390h-512v390h241v32h-15c-41.355 0-75 33.645-75 75v15h210v-15c0-41.355-33.645-75-75-75h-15v-32zm-226 62c19.556 0 36.239 12.539 42.43 30h-144.86c6.191-17.461 22.874-30 42.43-30zm-256-92v-330h452v330c-12.164 0-438.947 0-452 0z">
+                                </path>
+                                <path
+                                  d="m136 180c24.813 0 45-20.187 45-45s-20.187-45-45-45-45 20.187-45 45 20.187 45 45 45zm0-60c8.271 0 15 6.729 15 15s-6.729 15-15 15-15-6.729-15-15 6.729-15 15-15z">
+                                </path>
+                                <path
+                                  d="m184.568 197.848c-28.678-24.39-60.953-16.827-61.054-16.833-35.639 5.799-62.514 38.985-62.514 77.196v41.789h150v-45c0-22.034-9.634-42.865-26.432-57.152zm-3.568 72.152h-90v-11.789c0-23.666 16.049-44.122 37.332-47.584 13.509-2.198 26.578 1.38 36.801 10.074 10.083 8.577 15.867 21.078 15.867 34.299z">
+                                </path>
+                                <path d="m241 270h120v30h-120z"></path>
+                                <path d="m241 210h210v30h-210z"></path>
+                                <path d="m241 150h210v30h-210z"></path>
+                                <path d="m331 90h120v30h-120z"></path>
+                                <path d="m241 90h60v30h-60z"></path>
+                                <path d="m391 270h60v30h-60z"></path>
+                              </g>
+                            </svg>
+                            <div class="media-body"><span> Business Age</span>
+                            </div>
+                          </div>
+                        </td>
+                        <td>100%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-12 box-col-12 des-xl-100">
+        <div class="row">
+          <div class="col-xl-12 col-50 box-col-6 des-xl-50">
+            <div class="card latest-update-sec">
+              <div class="card-header">
+                <div class="header-top d-sm-flex align-items-center">
+                  <h5>Business Name</h5>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  Address : 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-12 box-col-12 des-xl-100">
+        <div class="row">
+          <div class="col-xl-12 col-50 box-col-6 des-xl-50">
+            <div class="card latest-update-sec">
+              <div class="card-header">
+                <div class="header-top d-sm-flex align-items-center">
+                  <h5>Legal Events</h5>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>
+                  Judgements : 
+                </p>
+                <br>
+                <p>
+                  Lines : 
+                </p>
+                <br>
+                <p>
+                  Suits : 
+                </p>
+                <br>
+                <p>
+                  UCC Filings : 
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-12 box-col-12 des-xl-100">
+        <div class="row">
+          <div class="col-xl-12 col-50 box-col-6 des-xl-50">
+            <div class="card latest-update-sec">
+              <div class="card-header">
+                <div class="header-top d-sm-flex align-items-center">
+                  <h5>Special Events</h5>
+                </div>
+              </div>
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-12 box-col-12 des-xl-100">
+        <div class="row">
+          <div class="col-xl-12 col-50 box-col-6 des-xl-50">
+            <div class="card latest-update-sec">
+              <div class="card-header">
+                <div class="header-top d-sm-flex align-items-center">
+                  <h5>Company Events</h5>
+                </div>
+              </div>
+              <div class="card-body">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-12 box-col-12 des-xl-100">
+        <div class="row">
+          <div class="col-xl-12 col-50 box-col-6 des-xl-50">
+            <div class="card latest-update-sec">
+              <div class="card-header">
+                <div class="header-top d-sm-flex align-items-center">
+                  <h5>Financials</h5>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Profit And Loss Information: Sales For 2020 were $1,000,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-12 box-col-12 des-xl-100">
+        <div class="row">
+          <div class="col-xl-12 col-50 box-col-6 des-xl-50">
+            <div class="card latest-update-sec">
+              <div class="card-header">
+                <div class="header-top d-sm-flex align-items-center">
+                  <h5>Your Company Information <br>
+                    See All Of Your Business Credit Information Below</h5>
+                </div>
+              </div>
+              <div class="card-body">
+                <p>Profit And Loss Information: Sales For 2020 were $1,000,000</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>Vukode Number</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>Mailing Address</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>Annual Sales</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>Business Form
+                    </h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>Telephone</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>
+                      Employees</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>Date Incorporated</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>Age (Year Started)</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>
+                      State Of Incorporation</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>Named Principal</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>Ownership</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 box-col-12 des-xl-100">
+            <div class="row">
+              <div class="col-xl-12 col-md-6 col-sm-6 box-col-6 des-xl-25 rate-sec">
+                <div class="card income-card card-primary">
+                  <div class="card-body text-center">
+                    <h5>Line Of Business</h5>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="card">
+              <div class="card-header">
+                <h5>View Your Current Business Tradelines
+              </div>
+              <div class="card-block row">
+                <div class="col-sm-12 col-lg-12 col-xl-12">
+                  <div class="table-responsive">
+                    <table class="table table-styling">
+                      <thead>
+                        <tr>
+                          <th scope="col">No</th>
+                          <th scope="col">Business Name</th>
+                          <th scope="col">Email</th>
+                          <th scope="col">Phone</th>
+                          <th scope="col">Tradeline Age</th>
+                          <th scope="col">Tradeline Date</th>
+                          <th scope="col">Tradeline Amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <!-- Container-fluid Ends-->
+</div>
+{% endblock content %}

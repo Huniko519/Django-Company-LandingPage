@@ -1,0 +1,59 @@
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader       
+
+        // page-wrapper Start
+        section
+          .container-fluid
+            .row
+              .col-xl-7
+                img.bg-img-cover.bg-center(src="../assets/images/login/2.jpg" alt="looginpage" )
+              .col-xl-5.p-0
+                .login-card
+                  form.theme-form.login-form
+                    h4 Login
+                    h6 Welcome back! Log in to your account.
+                    .form-group
+                      label Email Address
+                      .input-group
+                        span(class="input-group-text")
+                          i.icon-email
+                        input.form-control(type='email', required='' placeholder='Test@gmail.com')
+                    .form-group
+                      label Password
+                      .input-group
+                        span(class="input-group-text")
+                          i.icon-lock
+                        input.form-control(type='password', name='login[password]', required='' placeholder="*********")
+                        .show-hide
+                          span.show                          
+                    .form-group
+                      .checkbox
+                        input#checkbox1(type='checkbox')
+                        label.text-muted(for='checkbox1') Remember password
+                      a.link(href='forget-password.html') Forgot password?
+                    .form-group
+                      button.btn.btn-primary.btn-block(type='submit') Sign in
+                    .login-social-title                 
+                      h5 Sign in with
+                    .form-group
+                      ul.login-social
+                        li
+                          a(href='https://www.linkedin.com/login' target='_blank')
+                            i(data-feather="linkedin")
+                        li
+                          a(href='https://www.linkedin.com/login' target='_blank')
+                            i(data-feather="twitter")
+                        li
+                          a(href='https://www.linkedin.com/login' target='_blank')
+                            i(data-feather="facebook")
+                        li
+                          a(href='https://www.instagram.com/login' target='_blank')
+                            i(data-feather="instagram")                   
+                    p Don't have account?
+                      a.ms-2(href="sign-up.html") Create Account
+        // page-wrapper end
+
+        include ../../components/footer-files

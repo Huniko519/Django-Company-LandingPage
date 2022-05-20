@@ -1,0 +1,1019 @@
+- var apex                  = true;
+- var theme_customizer      = true;
+- var animate               = true;
+- var owlcarousel           = true;
+- var chartjs               = true;
+- var dashboard_2           = true;
+- var chartist              = true;
+- var counter               = true;
+- var knobchart             = true;
+- var clipboard             = true;
+- var customcard            = true;
+- var prism                 = true;
+- var chartjs               = true;
+- var page_owlcarousel      = true;
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper.compact-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.sidebar-icon
+                include ../../components/sidebar
+                .page-body.dashboard-2-main
+                    // Container-fluid starts
+                    .container-fluid
+                        .row
+                          .col-xl-6.box-col-12.des-xl-100.invoice-sec
+                            .card
+                              .card-header
+                                .header-top.d-sm-flex.justify-content-between.align-items-center
+                                  h5 Invoice Overview    
+                                  .center-content                                                                
+                                     p.d-sm-flex.align-items-center
+                                      span.m-r-10 $5,56548k
+                                      i.toprightarrow-primary.fa.fa-arrow-up.m-r-10
+                                      | 94% More Than Last Year
+                                  .setting-list
+                                    ul.list-unstyled.setting-option
+                                      li
+                                        .setting-primary
+                                         i.icon-settings
+                                      li
+                                        i.view-html.fa.fa-code.font-primary
+                                      li
+                                        i.icofont.icofont-maximize.full-card.font-primary
+                                      li
+                                        i.icofont.icofont-minus.minimize-card.font-primary
+                                      li
+                                        i.icofont.icofont-refresh.reload-card.font-primary
+                                      li
+                                        i.icofont.icofont-error.close-card.font-primary  
+                              .card-body.p-0
+                                #timeline-chart
+                                .code-box-copy
+                                    button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#invoice-overview', title='Copy')
+                                      i.icofont.icofont-copy-alt
+                                    pre
+                                      code.language-html#invoice-overview
+                                        |&lt;div class="card"&gt;
+                                        |  &lt;div class="card-header"&gt;
+                                        |    &lt;div class="header-top d-sm-flex justify-content-between align-items-center"&gt;
+                                        |      &lt;h5&gt;Invoice Overview &lt;/h5&gt;
+                                        |      &lt;div class="center-content"&gt;
+                                        |        &lt;p class="d-sm-flex align-items-center"&gt;
+                                        |          &lt;span class="m-r-10"&gt;$5,56548k&lt;/span&gt;
+                                        |            &lt;i class="toprightarrow-primary fa fa-arrow-up m-r-10"&gt;&lt;/i&gt;94% More Than Last Year
+                                        |        &lt;/p&gt;
+                                        |      &lt;/div&gt;
+                                        |      &lt;div class="setting-list"&gt;
+                                        |        &lt;ul class="list-unstyled setting-option"&gt;
+                                        |          &lt;li&gt;
+                                        |            &lt;div class="setting-primary"&gt;&lt;i class="icon-settings"&gt;&lt;/i&gt;&lt;/div&gt;
+                                        |          &lt;/li&gt;
+                                        |          &lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                        |          &lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                        |          &lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                        |          &lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                        |          &lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt; &lt;/i&gt;&lt;/li&gt;
+                                        |        &lt;/ul&gt;
+                                        |      &lt;/div&gt;
+                                        |    &lt;/div&gt;
+                                        |  &lt;/div&gt;
+                                        |  &lt;div class="card-body p-0"&gt;
+                                        |    &lt;div id="timeline-chart"&gt;&lt;/div&gt;
+                                        |  &lt;/div&gt;
+                                        |&lt;/div&gt;
+                          .col-xl-6.box-col-12.des-xl-100.top-dealer-sec
+                            .card
+                              .card-header.pb-0
+                                .header-top.d-sm-flex.justify-content-between.align-items-center
+                                  h5 Top Dealer
+                                  .center-content                                   
+                                    p.d-sm-flex.align-items-center
+                                      span.m-r-10 845 Dealer
+                                      i.toprightarrow-primary.fa.fa-arrow-up.m-r-10
+                                      | 86% More Than Last Year
+                                  .setting-list
+                                    ul.list-unstyled.setting-option
+                                      li
+                                        .setting-primary
+                                          i.icon-settings
+                                      li
+                                        i.view-html.fa.fa-code.font-primary
+                                      li
+                                        i.icofont.icofont-maximize.full-card.font-primary
+                                      li
+                                        i.icofont.icofont-minus.minimize-card.font-primary
+                                      li
+                                        i.icofont.icofont-refresh.reload-card.font-primary
+                                      li
+                                        i.icofont.icofont-error.close-card.font-primary 
+                              .card-body
+                                      #owl-carousel-14.owl-carousel.owl-theme
+                                          .item
+                                            .row
+                                              .col-12
+                                                .owl-carousel-16.owl-carousel.owl-theme
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/1.png' alt='...')
+                                                        h6 Thompson lee
+                                                        p Malasiya
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/8.png' alt='...')
+                                                        h6 Johnson allon
+                                                        p Bangladesh
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/3.png' alt='...')
+                                                        h6 williams reed
+                                                        p Belgium
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/4.png' alt='...')
+                                                        h6  Jones king
+                                                        p Canada
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                              .col-12
+                                                .owl-carousel-16.owl-carousel.owl-theme
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/5.png' alt='...')
+                                                        h6 Brown davis
+                                                        p China
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/6.png' alt='...')
+                                                        h6 Wilson Hill
+                                                        p Denmark
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/7.png' alt='...')
+                                                        h6 Anderson ban
+                                                        p Japan
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/8.png' alt='...')
+                                                        h6 Thompson lee
+                                                        p Malasiya
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                          .item
+                                            .row
+                                              .col-12
+                                                .owl-carousel-16.owl-carousel.owl-theme
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/1.png' alt='...')
+                                                        h6 Thompson lee
+                                                        p Malasiya
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/8.png' alt='...')
+                                                        h6 Johnson allon
+                                                        p Bangladesh
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/3.png' alt='...')
+                                                        h6 williams reed
+                                                        p Belgium
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/4.png' alt='...')
+                                                        h6  Jones king
+                                                        p Canada
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                              .col-12
+                                                .owl-carousel-16.owl-carousel.owl-theme
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/5.png' alt='...')
+                                                        h6 Brown davis
+                                                        p China
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/6.png' alt='...')
+                                                        h6 Wilson Hill
+                                                        p Denmark
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/7.png' alt='...')
+                                                        h6 Anderson ban
+                                                        p Japan
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/8.png' alt='...')
+                                                        h6 Thompson lee
+                                                        p Malasiya
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                          .item
+                                            .row
+                                              .col-12
+                                                .owl-carousel-16.owl-carousel.owl-theme
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/1.png' alt='...')
+                                                        h6 Thompson lee
+                                                        p Malasiya
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/8.png' alt='...')
+                                                        h6 Johnson allon
+                                                        p Bangladesh
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/3.png' alt='...')
+                                                        h6 williams reed
+                                                        p Belgium
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/4.png' alt='...')
+                                                        h6  Jones king
+                                                        p Canada
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                              .col-12
+                                                .owl-carousel-16.owl-carousel.owl-theme
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/5.png' alt='...')
+                                                        h6 Brown davis
+                                                        p China
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/6.png' alt='...')
+                                                        h6 Wilson Hill
+                                                        p Denmark
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/7.png' alt='...')
+                                                        h6 Anderson ban
+                                                        p Japan
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/8.png' alt='...')
+                                                        h6 Thompson lee
+                                                        p Malasiya
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                          .item
+                                            .row
+                                              .col-12
+                                                .owl-carousel-16.owl-carousel.owl-theme
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/1.png' alt='...')
+                                                        h6 Thompson lee
+                                                        p Malasiya
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/8.png' alt='...')
+                                                        h6 Johnson allon
+                                                        p Bangladesh
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/3.png' alt='...')
+                                                        h6 williams reed
+                                                        p Belgium
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/4.png' alt='...')
+                                                        h6  Jones king
+                                                        p Canada
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                              .col-12
+                                                .owl-carousel-16.owl-carousel.owl-theme
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/5.png' alt='...')
+                                                        h6 Brown davis
+                                                        p China
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/6.png' alt='...')
+                                                        h6 Wilson Hill
+                                                        p Denmark
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/7.png' alt='...')
+                                                        h6 Anderson ban
+                                                        p Japan
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                                 .item
+                                                    .card
+                                                      .top-dealerbox.text-center
+                                                        img.card-img-top(src='../assets/images/dashboard-2/8.png' alt='...')
+                                                        h6 Thompson lee
+                                                        p Malasiya
+                                                        a.btn.btn-rounded(href='social-app.html') View More
+                                      .code-box-copy
+                                          button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#top-dealer', title='Copy')
+                                            i.icofont.icofont-copy-alt
+                                          pre
+                                            code.language-html#top-dealer
+                                              |&lt;div class="card"&gt;
+                                              |  &lt;div class="card-header pb-0"&gt;
+                                              |    &lt;div class="header-top d-sm-flex justify-content-between align-items-center"&gt;
+                                              |        &lt;h5&gt;Top Dealer&lt;/h5&gt;
+                                              |        &lt;div class="center-content"&gt; 
+                                              |          &lt;p class="d-sm-flex align-items-center"&gt;&lt;span class="m-r-10"&gt;845 Dealer&lt;/span&gt;&lt;i class="toprightarrow-primary fa fa-arrow-up m-r-10"&gt;&lt;/i&gt;86% More Than Last Year&lt;/p&gt;
+                                              |        &lt;/div&gt;
+                                              |        &lt;div class="setting-list"&gt;
+                                              |            &lt;ul class="list-unstyled setting-option"&gt;
+                                              |              &lt;li&gt;
+                                              |                &lt;div class="setting-primary"&gt;&lt;i class="icon-settings"&gt;&lt;/i&gt;&lt;/div&gt;
+                                              |              &lt;/li&gt;
+                                              |              &lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                              |              &lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                              |              &lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                              |              &lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                              |              &lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt; &lt;/i&gt;&lt;/li&gt;
+                                              |             &lt;/ul&gt;
+                                              |        &lt;/div&gt;
+                                              |    &lt;/div&gt;
+                                              |  &lt;/div&gt;
+                                              |  &lt;div class="card-body"&gt;
+                                              |      &lt;div id="owl-carousel-14" class="owl-carousel owl-theme"&gt;
+
+                                              |        &lt;div class="item"&gt;
+                                              |          &lt;div class="row"&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/1.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Thompson lee&lt;/h6&gt;
+                                              |                    &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/8.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;johnson allon&lt;/h6&gt;
+                                              |                    &lt;p&gt;bangladeshlt&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/3.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;williams reed&lt;/h6&gt;
+                                              |                    &lt;p&gt;Belgium&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/3.png" alt="..."&gt;
+                                              |                    &lt;h6&gt; Jones king&lt;/h6&gt;
+                                              |                    &lt;p&gt;Canada&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/5.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Brown davis&lt;/h6&gt;
+                                              |                    &lt;p&gt;China&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/6.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Wilson Hill&lt;/h6&gt;
+                                              |                    &lt;p&gt;Denmark&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/7.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Anderson ban&lt;/h6&gt;
+                                              |                    &lt;p&gt;Japan&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/8.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Thompson lee&lt;/h6&gt;
+                                              |                    &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+
+                                              |          &lt;/div&gt;
+                                              |        &lt;/div&gt;
+
+                                              |        &lt;div class="item"&gt;
+                                              |          &lt;div class="row"&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/1.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Thompson lee&lt;/h6&gt;
+                                              |                    &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/8.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;johnson allon&lt;/h6&gt;
+                                              |                    &lt;p&gt;bangladeshlt&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/3.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;williams reed&lt;/h6&gt;
+                                              |                    &lt;p&gt;Belgium&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/3.png" alt="..."&gt;
+                                              |                    &lt;h6&gt; Jones king&lt;/h6&gt;
+                                              |                    &lt;p&gt;Canada&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/5.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Brown davis&lt;/h6&gt;
+                                              |                    &lt;p&gt;China&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/6.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Wilson Hill&lt;/h6&gt;
+                                              |                    &lt;p&gt;Denmark&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/7.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Anderson ban&lt;/h6&gt;
+                                              |                    &lt;p&gt;Japan&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/8.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Thompson lee&lt;/h6&gt;
+                                              |                    &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+
+                                              |          &lt;/div&gt;
+                                              |        &lt;/div&gt;
+
+                                              |        &lt;div class="item"&gt;
+                                              |          &lt;div class="row"&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/1.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Thompson lee&lt;/h6&gt;
+                                              |                    &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/8.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;johnson allon&lt;/h6&gt;
+                                              |                    &lt;p&gt;bangladeshlt&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/3.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;williams reed&lt;/h6&gt;
+                                              |                    &lt;p&gt;Belgium&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/3.png" alt="..."&gt;
+                                              |                    &lt;h6&gt; Jones king&lt;/h6&gt;
+                                              |                    &lt;p&gt;Canada&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/5.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Brown davis&lt;/h6&gt;
+                                              |                    &lt;p&gt;China&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/6.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Wilson Hill&lt;/h6&gt;
+                                              |                    &lt;p&gt;Denmark&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/7.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Anderson ban&lt;/h6&gt;
+                                              |                    &lt;p&gt;Japan&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |            &lt;div class="col-sm-3"&gt;
+                                              |                &lt;div class="card"&gt;
+                                              |                  &lt;div class="top-dealerbox text-center"&gt;&lt;img class="card-img-top" src="../assets/images/dashboard-2/8.png" alt="..."&gt;
+                                              |                    &lt;h6&gt;Thompson lee&lt;/h6&gt;
+                                              |                    &lt;p&gt;Malasiya&lt;/p&gt;&lt;a class="btn btn-rounded" href="javascript:void(0)"&gt;View More&lt;/a&gt;
+                                              |                  &lt;/div&gt;
+                                              |                &lt;/div&gt;
+                                              |            &lt;/div&gt;
+                                              |          &lt;/div&gt;
+                                              |        &lt;/div&gt;
+                                              |      &lt;/div&gt;
+                                              |    &lt;/div&gt;
+                                              |&lt;/div&gt;
+                          .col-xl-8.col-md-.des-xl-100.box-col-12
+                            .row
+                              .col-xl-3.col-sm-6.box-col-3.chart_data_right
+                                .card.income-card.card-secondary
+                                  .card-body.align-items-center
+                                    .round-progress.knob-block.text-center
+                                      .progress-circle
+                                        input.knob1(data-width='10',data-height='70', data-thickness='.3', data-angleoffset='0',data-linecap='round', data-fgcolor='#ba895d',data-bgcolor="#e0e9ea", value='60')
+                                      h5 $9,84,235
+                                      p Our Annual Income
+                              .col-xl-3.col-sm-6.box-col-3.chart_data_right.second
+                                .card.income-card.card-primary
+                                  .card-body
+                                      .round-progress.knob-block.text-center
+                                        .progress-circle
+                                          input.knob1(data-width='50',data-height='70',  data-thickness='.3', data-fgcolor='#24695c', data-linecap='round',data-angleoffset='0', value='60')
+                                        h5 $4,55,462
+                                        p Our Annual Income
+                              .col-xl-6.box-col-6.top-sell-sec
+                                .card
+                                  .card-header.pb-0
+                                    .header-top.d-sm-flex.justify-content-between.align-items-center
+                                      h5 Top Selling Product
+                                      .center-content
+                                        ul.week-date
+                                          li.font-primary Today
+                                          li Month
+                                      .setting-list
+                                        ul.list-unstyled.setting-option
+                                          li
+                                            .setting-primary
+                                             i.icon-settings
+                                          li
+                                            i.view-html.fa.fa-code.font-primary
+                                          li
+                                            i.icofont.icofont-maximize.full-card.font-primary
+                                          li
+                                            i.icofont.icofont-minus.minimize-card.font-primary
+                                          li
+                                            i.icofont.icofont-refresh.reload-card.font-primary
+                                          li
+                                            i.icofont.icofont-error.close-card.font-primary
+                                  .card-body
+                                    .media
+                                      img.img-fluid(src="../assets/images/dashboard-2/9.png" alt="")
+                                      .media-body
+                                        a(href='product-page.html')
+                                          h6 Trending Nike shoes
+                                        p New Offer Only $126.00
+                                        ul.rating-star
+                                          li                                       
+                                            i.fa.fa-star
+                                          li                                       
+                                            i.fa.fa-star
+                                          li                                       
+                                            i.fa.fa-star
+                                          li                                       
+                                            i.fa.fa-star
+                                          li                                       
+                                            i.fa.fa-star
+                                      a.btn.btn-iconsolid(href="cart.html")
+                                        i.icon-bag
+                                    .code-box-copy
+                                        button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#top-selling-product', title='Copy')
+                                          i.icofont.icofont-copy-alt
+                                        pre
+                                          code.language-html#top-selling-product
+                                            |&lt;div class="card"&gt;
+                                            |    &lt;div class="card-header pb-0"&gt;
+                                            |      &lt;div class="header-top d-sm-flex justify-content-between align-items-center"&gt;
+                                            |        &lt;h5&gt;Top Selling Product&lt;/h5&gt;
+                                            |        &lt;div class="center-content"&gt;
+                                            |          &lt;ul class="week-date"&gt;
+                                            |            &lt;li class="font-primary"&gt;Today&lt;/li&gt;
+                                            |            &lt;li&gt;Month&lt;/li&gt;
+                                            |          &lt;/ul&gt;
+                                            |        &lt;/div&gt;
+                                            |      &lt;div class="setting-list"&gt;
+                                            |        &lt;ul class="list-unstyled setting-option"&gt;
+                                            |          &lt;li&gt;
+                                            |            &lt;div class="setting-primary"&gt;&lt;i class="icon-settings"&gt;&lt;/i&gt;&lt;/div&gt;
+                                            |          &lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |        &lt;/ul&gt;
+                                            |      &lt;/div&gt;
+                                            |    &lt;/div&gt;
+                                            |    &lt;/div&gt;
+                                            |    &lt;div class="card-body"&gt;
+                                            |      &lt;div class="media"&gt;&lt;img class="img-fluid" alt="" src="../assets/images/dashboard-2/9.png"&gt;
+                                            |        &lt;div class="media-body"&gt;
+                                            |          &lt;h6&gt;Trending Nike shoes&lt;/h6&gt;
+                                            |          &lt;p&gt;New Offer Only $126.00&lt;/p&gt;
+                                            |          &lt;ul class="rating-star"&gt;
+                                            |            &lt;li&gt; &lt;i class="fa fa-star"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |            &lt;li&gt; &lt;i class="fa fa-star"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |            &lt;li&gt; &lt;i class="fa fa-star"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |            &lt;li&gt; &lt;i class="fa fa-star"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |            &lt;li&gt; &lt;i class="fa fa-star"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;/ul&gt;
+                                            |        &lt;/div&gt;
+                                            |        &lt;a class="btn btn-iconsolid" href="javascript:void(0)"&gt;&lt;i class="icon-bag"&gt;&lt;/i&gt;&lt;/a&gt;
+                                            |      &lt;/div&gt; 
+                                            |&lt;/div&gt;                                                
+                              .col-xl-6.box-col-6
+                                .card
+                                  .card-header
+                                    .header-top.d-sm-flex.justify-content-between.align-items-center
+                                      h5 Total Selling
+                                      .center-content
+                                        ul.week-date
+                                          li.font-primary Today
+                                          li Month                                     
+                                      .setting-list
+                                        ul.list-unstyled.setting-option
+                                          li
+                                            .setting-primary
+                                             i.icon-settings
+                                          li
+                                            i.view-html.fa.fa-code.font-primary
+                                          li
+                                            i.icofont.icofont-maximize.full-card.font-primary
+                                          li
+                                            i.icofont.icofont-minus.minimize-card.font-primary
+                                          li
+                                            i.icofont.icofont-refresh.reload-card.font-primary
+                                          li
+                                            i.icofont.icofont-error.close-card.font-primary
+                                  .card-body.chart-block.p-0
+                                      #chart-dash-2-line
+                                      .code-box-copy
+                                        button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#total-selling', title='Copy')
+                                          i.icofont.icofont-copy-alt
+                                        pre
+                                          code.language-html#total-selling   
+                                            |&lt;div class="card"&gt;
+                                            |    &lt;div class="card-header pb-0"&gt;
+                                            |      &lt;div class="header-top d-sm-flex justify-content-between align-items-center"&gt;
+                                            |        &lt;h5&gt;Total Selling&lt;/h5&gt;
+                                            |        &lt;div class="center-content"&gt;
+                                            |          &lt;ul class="week-date"&gt;
+                                            |            &lt;li class="font-primary"&gt;Today&lt;/li&gt;
+                                            |            &lt;li&gt;Month&lt;/li&gt;
+                                            |          &lt;/ul&gt;
+                                            |        &lt;/div&gt;
+                                            |      &lt;div class="setting-list"&gt;
+                                            |        &lt;ul class="list-unstyled setting-option"&gt;
+                                            |          &lt;li&gt;
+                                            |            &lt;div class="setting-primary"&gt;&lt;i class="icon-settings"&gt;&lt;/i&gt;&lt;/div&gt;
+                                            |          &lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |        &lt;/ul&gt;
+                                            |      &lt;/div&gt;
+                                            |    &lt;/div&gt;
+                                            |    &lt;/div&gt;
+                                            |    &lt;div class="card-body"&gt;
+                                            |       &lt;div id="chart-dash-2-line"&gt;
+                                            |       &lt;/div&gt;
+                                            |    &lt;/div&gt; 
+                                            |&lt;/div&gt;        
+                              .col-xl-6.box-col-6
+                                .card.target-sec
+                                  .card-header.pb-0                                      
+                                      ul.target-list
+                                        li                                         
+                                          h6 Our Target
+                                          p Completed
+                                          span $687.780
+                                        li.bg-primary
+                                          h6 We Archieve
+                                          p Completed in After 3 Hours
+                                          span $687.780k                                     
+                                  .card-body.p-0
+                                      .traget-img-sec
+                                        //- img.img-fluid.bg-img-cover(src="../assets/images/dashboard-2/target1.png")
+                                      .animat-block
+                                          i.fa.fa-times.close1
+                                          i.fa.fa-times.close2
+                                          i.fa.fa-times.close3
+                                          div.circle1
+                                          div.circle2
+                                          div.circle3
+                          .col-xl-4.des-xl-50.box-col-12.activity-sec.chart_data_left
+                            .card
+                              .card-header
+                                .header-top.d-sm-flex.justify-content-between.align-items-center
+                                  h5.m-0 Activity Timeline
+                                  .center-content
+                                    p Yearly User 24.65k
+                                  .setting-list
+                                    ul.list-unstyled.setting-option
+                                      li
+                                        .setting-primary
+                                         i.icon-settings
+                                      li
+                                        i.view-html.fa.fa-code.font-primary
+                                      li
+                                        i.icofont.icofont-maximize.full-card.font-primary
+                                      li
+                                        i.icofont.icofont-minus.minimize-card.font-primary
+                                      li
+                                        i.icofont.icofont-refresh.reload-card.font-primary
+                                      li
+                                        i.icofont.icofont-error.close-card.font-primary
+                              .card-body
+                                .chart-main.activity-timeline.update-line
+                                      .media
+                                        .activity-line
+                                        .activity-dot-primary
+                                        .media-body.d-block
+                                          h6 
+                                            span.font-primary 20-04-2021
+                                            | Today 
+                                          h5 Updated Product
+                                            i.fa.fa-circle.circle-dot-primary.pull-right
+                                          p Quisque a consequat ante Sit amet magna at volutapt.
+                                      .media
+                                        .activity-dot-primary
+                                        .media-body.d-block
+                                          h6 
+                                            span.font-primary 20-04-20121
+                                            | Today
+                                            span.badge.pill-badge-primary.m-l-10 new                                           
+                                          h5 James just like your product     
+                                            i.fa.fa-circle.circle-dot-primary.pull-right
+                                          p Quisque a consequat ante Sit amet magna at volutapt.
+                                          ul.timeline-pro
+                                            li                                             
+                                              img.img-fluid(src='../assets/images/dashboard-2/11.png',alt='Product-1')
+                                            li                                         
+                                              img.img-fluid(src='../assets/images/dashboard-2/10.png',alt='Product-2')                                     
+                                      .media
+                                        .activity-dot-primary
+                                        .media-body.d-block
+                                          h6 
+                                            span.font-primary 20-04-20121
+                                            | Today
+                                          h5 Jihan Doe just like your product
+                                            i.fa.fa-circle.circle-dot-primary.pull-right
+                                          p Vestibulum nec mi suscipit, dapibus purus ane.
+                                      .media
+                                        .media-body.d-block
+                                          .tomorrow-sec
+                                            p Tomorrow
+                                      .media
+                                        .activity-dot-primary
+                                        .media-body.d-block
+                                          h6  
+                                            span.font-primary 20-04-20121
+                                            | Tomorrow
+                                          h5 Today Total  Revenue
+                                            i.fa.fa-circle.circle-dot-primary.pull-right
+                                          p Quisque a consequat ante Sit amet magna at volutapt.
+                                      .media
+                                        .activity-dot-primary
+                                        .media-body.d-block                                          
+                                          .hospital-small-chart
+                                            #column-chart                                         
+                                .code-box-copy
+                                    button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#activity-timeline', title='Copy')
+                                      i.icofont.icofont-copy-alt
+                                    pre
+                                      code.language-html#activity-timeline    
+                                          |&lt;div class="card"&gt;
+                                          |  &lt;div class="card-header"&gt;
+                                          |    &lt;div class="header-top d-sm-flex justify-content-between align-items-center"&gt;
+                                          |      &lt;h5 class="m-0"&gt;Activity Timeline&lt;/h5&gt;
+                                          |      &lt;div class="center-content"&gt;
+                                          |        &lt;p&gt;Yearly User 24.65k&lt;/p&gt;
+                                          |      &lt;/div&gt;
+                                          |      &lt;div class="setting-list"&gt;
+                                          |        &lt;ul class="list-unstyled setting-option"&gt;
+                                          |            &lt;li&gt;
+                                          |              &lt;div class="setting-primary"&gt;&lt;i class="icon-settings"&gt;&lt;/i&gt;&lt;/div&gt;
+                                          |            &lt;/li&gt;
+                                          |            &lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                          |            &lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                          |            &lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                          |            &lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                          |            &lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                          |        &lt;/ul&gt;
+                                          |      &lt;/div&gt;
+                                          |    &lt;/div&gt;
+                                          |  &lt;/div&gt;
+                                          |  &lt;div class="card-body"&gt;
+                                          |    &lt;div class="chart-main activity-timeline update-line"&gt;
+                                          |      &lt;div class="media"&gt;
+                                          |        &lt;div class="activity-line"&gt;&lt;/div&gt;
+                                          |        &lt;div class="activity-dot-primary"&gt;&lt;/div&gt;
+                                          |        &lt;div class="media-body d-block"&gt;
+                                          |          &lt;h6&gt; &lt;span class="font-primary"&gt;20-04-2021&lt;/span&gt;Today &lt;/h6&gt;
+                                          |          &lt;h5&gt;Updated Product&lt;i class="fa fa-circle circle-dot-primary pull-right"&gt;&lt;/i&gt;&lt;/h5&gt;
+                                          |          &lt;p&gt;Quisque a consequat ante Sit amet magna at volutapt.&lt;/p&gt;
+                                          |        &lt;/div&gt;
+                                          |      &lt;/div&gt;
+                                          |      &lt;div class="media"&gt;
+                                          |        &lt;div class="activity-dot-primary"&gt;&lt;/div&gt;
+                                          |          &lt;div class="media-body d-block"&gt;
+                                          |            &lt;h6&gt; &lt;span class="font-primary"&gt;20-04-20121&lt;/span&gt;Today&lt;span class="badge pill-badge-primary m-l-10"&gt;new &lt;/span&gt;&lt;/h6&gt;
+                                          |            &lt;h5&gt;James just like your product &lt;i class="fa fa-circle circle-dot-primary pull-right"&gt;&lt;/i&gt;&lt;/h5&gt;
+                                          |            &lt;p&gt;Quisque a consequat ante Sit amet magna at volutapt.&lt;/p&gt;
+                                          |            &lt;ul class="timeline-pro"&gt;
+                                          |              &lt;li&gt; &lt;img class="img-fluid" src="../assets/images/dashboard-2/11.png" alt="Product-1"&gt;&lt;/li&gt;
+                                          |              &lt;li&gt; &lt;img class="img-fluid" src="../assets/images/dashboard-2/10.png" alt="Product-2"&gt;&lt;/li&gt;
+                                          |            &lt;/ul&gt;
+                                          |          &lt;/div&gt;
+                                          |      &lt;/div&gt;
+                                          |      &lt;div class="media"&gt;
+                                          |          &lt;div class="activity-dot-primary"&gt;&lt;/div&gt;
+                                          |            &lt;div class="media-body d-block"&gt;
+                                          |              &lt;h6&gt; &lt;span class="font-primary"&gt;20-04-20121&lt;/span&gt;Today&lt;/h6&gt;
+                                          |              &lt;h5&gt;Jihan Doe just like your product&lt;i class="fa fa-circle circle-dot-primary pull-right"&gt;&lt;/i&gt;&lt;/h5&gt;
+                                          |              &lt;p&gt;Vestibulum nec mi suscipit, dapibus purus ane.&lt;/p&gt;
+                                          |            &lt;/div&gt;
+                                          |          &lt;/div&gt;
+                                          |          &lt;div class="media"&gt;
+                                          |              &lt;div class="media-body d-block"&gt;
+                                          |                &lt;div class="tomorrow-sec"&gt;
+                                          |                  &lt;p&gt;Tomorrow&lt;/p&gt;
+                                          |                &lt;/div&gt;
+                                          |              &lt;/div&gt;
+                                          |          &lt;/div&gt;
+                                          |          &lt;div class="media"&gt;
+                                          |            &lt;div class="activity-dot-primary"&gt;&lt;/div&gt;
+                                          |            &lt;div class="media-body d-block"&gt;
+                                          |              &lt;h6&gt; &lt;span class="font-primary"&gt;20-04-20121&lt;/span&gt;Tomorrow&lt;/h6&gt;
+                                          |              &lt;h5&gt;Today Total Revenue&lt;i class="fa fa-circle circle-dot-primary pull-right"&gt;&lt;/i&gt;&lt;/h5&gt;
+                                          |              &lt;p&gt;Quisque a consequat ante Sit amet magna at volutapt.&lt;/p&gt;
+                                          |            &lt;/div&gt;
+                                          |          &lt;/div&gt;
+                                          |          &lt;div class="media"&gt;
+                                          |              &lt;div class="activity-dot-primary"&gt;&lt;/div&gt;
+                                          |                &lt;div class="media-body d-block"&gt;
+                                          |                  &lt;div class="hospital-small-chart"&gt;
+                                          |                    &lt;div id="column-chart"&gt; &lt;/div&gt;
+                                          |                  &lt;/div&gt;
+                                          |                &lt;/div&gt;
+                                          |              &lt;/div&gt;
+                                          |          &lt;/div&gt;
+                                          |        &lt;/div&gt;
+                                          |      &lt;/div&gt;
+                          .col-xl-12.des-xl-50.yearly-growth-sec
+                            .card
+                              .card-header
+                                .header-top.d-sm-flex.justify-content-between.align-items-center
+                                  h5 Yearly growth
+                                  .center-content                                   
+                                      p.d-sm-flex.align-items-center
+                                        span.m-r-10
+                                          i.toprightarrow-primary.fa.fa-arrow-up.m-r-10
+                                          | $9657.55k 
+                                        | 86% more then last year
+                                  .setting-list
+                                      ul.list-unstyled.setting-option
+                                        li
+                                          .setting-primary
+                                           i.icon-settings
+                                        li
+                                          i.view-html.fa.fa-code.font-primary
+                                        li
+                                          i.icofont.icofont-maximize.full-card.font-primary
+                                        li
+                                          i.icofont.icofont-minus.minimize-card.font-primary
+                                        li
+                                          i.icofont.icofont-refresh.reload-card.font-primary
+                                        li
+                                          i.icofont.icofont-error.close-card.font-primary
+                              .card-body.p-0.chart-block
+                                  #chart-yearly-growth-dash-2
+                                  .code-box-copy
+                                        button.code-box-copy__btn.btn-clipboard(data-clipboard-target='#yearly-growth', title='Copy')
+                                          i.icofont.icofont-copy-alt
+                                        pre
+                                          code.language-html#yearly-growth   
+                                            |&lt;div class="card"&gt;
+                                            |    &lt;div class="card-header pb-0"&gt;
+                                            |      &lt;div class="header-top d-sm-flex justify-content-between align-items-center"&gt;
+                                            |        &lt;h5&gt;Yearly growth&lt;/h5&gt;
+                                            |        &lt;div class="center-content"&gt;
+                                            |              &lt;p class="d-sm-flex align-items-center"&gt;
+                                            |                 &lt;span class="m-r-10"&gt;
+                                            |                   &lt;i class=" toprightarrow-primary fa fa-arrow-up m-r-10"&gt;&lt;/i&gt;  $9657.55k
+                                            |                 &lt;/span&gt; 86% more then last year
+                                            |             &lt;/p&gt;
+                                            |          &lt;/div&gt;                                             
+                                            |      &lt;div class="setting-list"&gt;
+                                            |        &lt;ul class="list-unstyled setting-option"&gt;
+                                            |          &lt;li&gt;
+                                            |            &lt;div class="setting-primary"&gt;&lt;i class="icon-settings"&gt;&lt;/i&gt;&lt;/div&gt;
+                                            |          &lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="view-html fa fa-code font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-maximize full-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-minus minimize-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-refresh reload-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |          &lt;li&gt;&lt;i class="icofont icofont-error close-card font-primary"&gt;&lt;/i&gt;&lt;/li&gt;
+                                            |        &lt;/ul&gt;
+                                            |      &lt;/div&gt;
+                                            |    &lt;/div&gt;
+                                            |    &lt;/div&gt;
+                                            |    &lt;div class="card-body p-0 chart-block"&gt;
+                                            |       &lt;div id="chart-yearly-growth-dash-2"&gt;
+                                            |       &lt;/div&gt;
+                                            |    &lt;/div&gt; 
+                                            |&lt;/div&gt;        
+                              //- canvas#myChart
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

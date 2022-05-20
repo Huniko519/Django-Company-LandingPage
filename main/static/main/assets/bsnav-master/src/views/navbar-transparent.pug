@@ -1,0 +1,47 @@
+extends templates/_template.pug
+
+block content
+	.navbar.navbar-expand-lg.bsnav.bsnav-transparent
+
+		a.navbar-brand(href="#") bsnav
+
+		button.navbar-toggler.toggler-spring
+			span.navbar-toggler-icon
+
+
+		.collapse.navbar-collapse.justify-content-md-end
+			ul.navbar-nav.navbar-mobile.mr-0
+				li.nav-item.nav-item-line.active
+					a.nav-link(href="#") Home
+				li.nav-item.nav-item-line
+					a.nav-link(href="#") About Us
+				li.nav-item.nav-item-line
+					a.nav-link(href="#") News
+				li.nav-item.nav-item-line
+					a.nav-link(href="#") Gallery
+				li.nav-item.nav-item-line
+					a.nav-link(href="#") Contact
+
+
+	.jumbotron.jumbotron-fluid
+		.container
+			h1 Navbar transparent
+
+
+	.container
+		script(src="https://gitlab.com/snippets/1718745.js")
+
+
+	.bsnav-mobile
+		.bsnav-mobile-overlay
+		.navbar
+
+
+	style.
+		.jumbotron{
+			background: url('https://picsum.photos/1400/700?random') no-repeat center top / cover;
+			color: #000;
+			height: 600px;
+			display: flex;
+			align-items: center;
+		}

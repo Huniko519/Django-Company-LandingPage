@@ -1,0 +1,62 @@
+/**========================
+  89.  Formwidgets CSS Start
+=============================**/
+.clockpicker-popover {
+  .popover-title{
+    border-color:$light-gray;
+  }
+  .popover-content{
+    background-color: rgba($primary-color,0.05);
+  }
+}
+
+// date range picker //
+.date-range-picker{ 
+  margin-bottom:-25px;
+  .daterange-card{
+    border:1px solid $light-gray;
+    padding:30px;
+    height:100%;   
+    .form-group{
+      margin-bottom:unset;
+    }
+  }
+  >div{
+    margin-bottom:25px;
+  }
+}
+
+
+@media screen and (max-width:1199px){
+  .card {
+    .card-header {
+      h5{
+        font-size:20px;
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width:1199px){
+  .date-range-picker {
+    .daterange-card{
+      padding:20px;
+    }
+  }
+}
+
+
+@media screen and (max-width:575px){
+  .date-range-picker {
+    .daterange-card{
+      padding:15px;
+    }
+  }
+  
+}
+
+
+/**========================
+  89. Formwidgets CSS end
+=============================**/

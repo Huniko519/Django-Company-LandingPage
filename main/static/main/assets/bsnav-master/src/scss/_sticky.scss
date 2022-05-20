@@ -1,0 +1,104 @@
+/*---------------------------------------------------------*/
+/*	NAV PLACEMENT
+/*---------------------------------------------------------*/
+$zindex-fixed: 99;
+$zindex-sticky: 99;
+
+
+.bsnav-sticky{
+	left: 0;
+	right: 0;
+	position: fixed;
+	z-index: 99;
+
+
+
+	// SLIDE
+	&.bsnav-sticky-slide{
+		position: absolute;
+
+		&.sticked{
+			position: fixed;
+			transform: translate3d(0,-100%,0);
+		}//sticked
+
+		&.sticked.in{
+			transition: transform .4s .2s;
+			transform: translate3d(0,0,0);
+		}//sticked
+
+	}//bsnav-sticky-slide
+
+
+
+	// FADE
+	&.bsnav-sticky-fade{
+		position: absolute;
+
+		&.sticked{
+			position: fixed;
+			opacity: 0;
+			visibility: hidden;
+		}//sticked
+
+		&.sticked.in{
+			transition: opacity .3s .2s;
+			opacity: 1;
+			visibility: visible;
+		}//sticked
+
+	}//bsnav-sticky-fade
+
+
+
+
+
+
+	/*---------------------------------------------------------*/
+	/*	NAV TOGGLE
+	/*---------------------------------------------------------*/
+	&[data-navbar-toggle]{
+		position: absolute;
+		top: 0;
+		right: 0;
+		left: 0;
+	}//[data-navbar-toggle]
+	
+
+	// SLIDE
+	&.navbar-slide{
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		transform: translateY(-100%);
+
+
+		&.in{
+			transform: translateY(0);
+		}//in
+
+	}//slide
+
+
+
+
+	// FADE
+	&.navbar-fade{
+		position: fixed;
+		top: 0;
+		right: 0;
+		left: 0;
+		visibility: hidden;
+		opacity: 0;
+
+
+		&.in{
+			visibility: visible;
+			opacity: 1;
+		}//in
+
+	}//fade
+
+
+}//bsnav-sticky

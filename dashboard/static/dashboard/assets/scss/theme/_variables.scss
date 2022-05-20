@@ -1,0 +1,306 @@
+// General variables
+$theme-font-color: #2b2b2b;
+$theme-body-font-color: #242934;
+$theme-body-sub-title-color: rgba($theme-body-font-color, 0.7);
+// Theme colors variables
+$primary-color: #24695c;
+$secondary-color:#ba895d;
+$success-color: #1b4c43;
+$warning-color: #e2c636;
+$danger-color: #d22d3d;
+$light-color : #f4f4f4;
+$light-gray  : #e6edef;
+$light-semi-gray   :#efefef;
+$dark-light :$theme-font-color;
+$dark-gray 	: #898989;
+$dark-color   : #2c323f;
+$gray-60   :#cccccc ;
+$card-body-color : #f9f9fa;
+$transparent-color: transparent;
+$auth-bg-color:#fafafa;
+$light : #fdfeff;
+$semi-dark  :#59667a;
+$light-text: #999;
+$light-background: #f5f7fb;
+$light-font: #717171;
+$light-semi-font: $semi-dark;
+$light-chartist-grid-color: #f6f9fd;
+$off-white: #ffebce;
+$dark-primary: #448aff;
+$pitch-color: #fe8a7d;
+$light-pitch: #fecf8b;
+$flower-pink: #fb6d9d;
+$dark-sky: #536dfe;
+$color-scarpa: #4c5667;
+$color-fiord: #455a64;
+$dark-blue: #00008B;
+$black : #000;
+$white:#fff;
+$yellow:#f4c705;
+$btn-bhome-bg-c:#ff6060;
+$btn-search-bg-c:#ffd042;
+$btn-opacity-down-primary:#F7F0FF;
+// error page color end
+
+// gradient colors
+$gradient-primary: linear-gradient(#1693f8, #0d67e9);
+
+//social colors
+$fb: #50598e;
+$twitter: #6fa2d8;
+$google-plus: #c64e40;
+$linkedin: #0077B5;
+
+//error input color start
+$light-body-bg-color:#fafdff;
+
+//fonts
+$font-montserrat:'Montserrat', sans-serif;
+$font-roboto:'Roboto', sans-serif;
+$font-rubik:'Rubik', sans-serif;
+$font-nunito: Nunito;
+$font-raleway: Raleway;
+$font-serif: sans-serif;
+$font-themify: themify;
+$font-awesome: FontAwesome;
+$font-ICO: IcoFont;
+
+
+// dark layout variables
+$dark-body-background: #202938;
+$dark-card-background: #111727;
+$dark-card-inbox: #323846;
+$dark-small-font-color:#98a6ad;
+$dark-all-font-color: rgba(255,255,255,0.7);
+$light-all-font-color: rgba(255,255,255,0.2);
+$sidebar-submenu-font-color:rgba(255,255,255,0.7);
+$dark-border-color: $dark-body-background;
+// $dark-card-border:#374558;
+$dark-card-border: rgba($primary-color,0.2);
+$dark-editor-document: #2b2b2b;
+$bg-dark-color: #1f2533;
+$dark-datatable-odd: #1f232b;
+$dark-datatable-sorting: #1c212b;
+$dark-datatable-sorting-even: #22262f;
+$dark-even-hover-sorting: #191e27;
+
+//General tag settings
+$body-font-size: 14px;
+$body-font-color: $theme-body-font-color;
+$ul-padding-left: 0px;
+$ul-padding-right: 0px;
+$ancher-color: $primary-color;
+$btn-focus-box-shadow: none;
+$all-focus-outline-color: $primary-color;
+
+$paragraph-font-size: 14px;
+$paragraph-line-height: 1.7;
+$paragraph-letter-spacing : inherit;
+
+$code-tag-color: $primary-color;
+$code-tag-bg-color: rgba($primary-color, 0.03);
+$code-tag-padding: 3px;
+$code-tag-margin: 0 3px;
+$code-tag-border-radious: 2px;
+
+$blockquote-padding : 15px;
+$blockquote-border : 4px solid $light-gray;
+
+$small-tag-padding: 10px;
+$small-tag-color: $dark-color;
+
+$pre-tag-bg-color: rgba($primary-color, 0.03);
+$pre-tag-padding: 20px 0;
+
+$list-group-active-bg-color: $primary-color;
+$list-group-active-border-color: $primary-color;
+$list-group-img-size: 40px;
+$list-group-margin: 10px;
+
+
+// Tables settings
+$table-b-margin:             0px;
+$table-heading-color:        $theme-body-font-color;
+$table-row-color:            $theme-body-font-color;
+$table-footer-font-weight:   bold;
+$table-inverse-color:        $white;
+$table-hover-color:          $light;
+$table-padding:              0.75rem;
+$table-xl-padding:           1.25rem 2rem;
+$table-xl-font:              120%;
+$table-lg-padding:           .9rem 2rem;
+$table-lg-font:              110%;
+$table-de-padding:           .75rem 2rem;
+$table-de-font:              100%;
+$table-sm-padding:           .5rem 2rem;
+$table-sm-font:              90%;
+$table-xs-padding:           0.2rem 2rem;
+$table-xs-font:              80%;
+$horizontal-border-color:    #f2f4ff;
+$horizontal-padding:         .75rem 2rem;
+$table-inverse-bg-color:     #292b2c;
+
+
+//According setting
+$according-card-top-margin           : 10px;
+$according-btn-weight                : 500;
+$according-btn-color                 : $theme-body-font-color;
+$according-card-header-padding       : 1rem 1.25rem;
+$according-card-header-icon          : $font-ICO;
+$according-open-icon                 : "\eb73";
+$according-close-icon                : "\eb7a";
+
+//Alert settings
+$alert-hover-color        :$dark-color;
+$alert-border-radious     :0.15rem;
+$alert-padding            :15px;
+$alert-msg-icon-size      :16px;
+
+//badge settings
+$badge-padding        :0.44em 0.7em;
+$badge-svg-size       :10px;
+
+//form input settings
+$form-group-margin-bottom        : 1.25em;
+$col-form-label-font-size        : 14px;
+$form-control-font-size          : 14px;
+$form-control-border-radious     : 2px;
+$form-control-border-color     : $light-gray;
+
+//breadcrumb setting
+$breadcrumb-ancher-color    : $white;
+$breadcrumb-ancher-dark-color    : $black;
+
+//buttons setting
+$btn-font-size : 14px;
+$btn-padding : 0.375rem 1.75rem;
+$btn-lg-font-size: 18px;
+$btn-sm-font-size: 12px;
+$btn-xs-font-size: 10px;
+$btn-xs-padding:  0.2rem 0.7rem;
+
+
+//Card settings
+$card-padding        :30px;
+$card-margin-bottom  :30px;
+$card-border-color   :1px solid $light-gray;
+$card-border-radious :0;
+$border-secondary:#ede7e4 ;
+$common-shadow-color : rgba($light-font, 0.08);
+$card-box-shadow     : 0 25px 50px rgba(8,21,66,.06);
+$card-header-font-weight : 600;
+$card-header-bg-color : $white;
+$card-header-font-transform : capitalize;
+$card-header-span-size : 12px;
+$card-header-span-color : $theme-body-sub-title-color;
+$card-body-bg-color : $transparent-color;
+// $card-body-bg-color : $white;
+$card-footer-bg-color : $white;
+
+//footer settings
+$footer_bg_color : $white;
+$footer_box_shadow : 0 0 20px 16px rgba(4,122,251,0.04);
+$footer_link_align : right;
+$footer_dark_color : $theme-font-color;
+$footer_dark__txt_color : $white;
+
+//form settings
+$form-group-margin-bottom  :20px;
+$sm-form-margin-bottom : 14px;
+$form-placeholder-color : $dark-gray;
+$form-placeholder-font-size : 14px;
+$form-placeholder-letter-spacing : 1px;
+$form-placeholder-font-weight : 100;
+$form-input-border-color : $light-semi-gray;
+$form-input-bg-color : $white;
+
+//Tour settings
+$tour-color: $primary-color;
+
+
+
+//sidabr main settings
+$sidebar-width: 255px;
+$sidebar-position: fixed;
+$sidebar-background-color: $white;
+$sidebar-shadow: 0 0 11px rgba(69, 110, 243, 0.13);
+$sidebar-overflow: auto;
+$sidebar-z-index: 9;
+$sidebar-transition: 0.5s;
+
+//sidebar profile settings
+$sidebar-user-section-padding: 10px;
+$sidebar-user-section-shadow: 3px 2px 7px -1px rgba(68, 102, 242, 0.13);
+$sidebar-profile-edit-icon-size: 14px;
+$sidebar-profile-name-txt-color : $primary-color;
+$sidebar-profile-name-txt-transfer : uppercase;
+$sidebar-profile-name-txt-weight : 600;
+$sidebar-profile-name-letter-specing : 1.5px;
+$sidebar-profile-name-marging : 3px;
+$sidebar-profile-sub-title-font-size: 10px;
+$sidebar-profile-sub-title-margin: 0px;
+$sidebar-profile-img-shadow: 0 0 15px rgba(68, 102, 242, 0.3);
+
+//Sidebar main menu setting
+$sidebar-menu-padding: 15px;
+$sidebar-menu-list-style: none;
+$sidebar-menu-list-margin: 0;
+
+$sidebar-icon-size: 14px;
+$sidebar-icon-margin: 14px;
+$sidebar-icon-stroke-width: 3px;
+$sidebar-font-size: 14px;
+$sidebar-letter-specing: 0.5px;
+$sidebar-txt-transform: capitalize;
+$sidebar-font-weight: 600;
+$sidebar-font-color: $theme-body-font-color;
+$sidebar-padding-top: 12px;
+$sidebar-padding-bottom: 12px;
+$sidebar-sub-header-padding: 15px;
+$sidebar-sub-header-margin: 0;
+$sidebar-heading-hover-padding: 5px;
+$sidebar-hover-txt-color: $primary-color;
+$sidebar-arrow-margin-top: 2px;
+$sidebar-arrow-size: 15px;
+$sidebar-arrow-color: $theme-body-font-color;
+$sidebar-open-icon: "\f107";
+$sidebar-close-icon:"\f105";
+$sidebar-icon-font-family: $font-awesome;
+$sidebar-height: calc(100vh - 355px);
+// $sidebar-height: calc(100vh - 115px);
+
+//Header settings
+$main-header-position: fixed;
+$main-header-top: 0;
+$main-header-shadow:  0 0 20px rgba(25,124,207,0.08);
+$bookmark-icon-color: #fa9f44;
+
+//page settings
+$page-body-padding : 0 15px 0 15px;
+$page-body-bg-color: $light-gray;
+$page-body-margin-bottom: 0px;
+
+$page-header-padding : 30px;
+
+$common-box-shadow: 2px 3.464px 8px 0px rgba( 22, 145, 248, 0.18 );
+$page-title-font-size: 24px;
+$page-title-margin-bottom: 0;
+$page-title-font-weight: 600;
+$page-title-text-tranform: capitalize;
+$page-small-title-display: block;
+$page-small-title-font-size: 12px;
+$page-small-title-margin-bottom: 5px;
+$page-small-title-text-transform: capitalize;
+$page-small-title-text-color: $theme-body-sub-title-color;
+$breadcrumb-size: 16px;
+$breadcrumb-content: "/";
+
+
+//main header left settings
+$main-header-left-bg-color : $white;
+$main-header-padding : 27px 22px;
+$main-header-z-index : 9;
+$main-header-right-padding: 24px 40px;
+$main-header-right-nav-icon-size :  18px;
+$main-header-right-nav-icon-color :  $theme-font-color;
+$main-header-right-nav-icon-align :  middle;

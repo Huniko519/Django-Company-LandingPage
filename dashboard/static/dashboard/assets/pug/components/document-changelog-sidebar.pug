@@ -1,0 +1,14 @@
+// Page Sidebar Start
+- var status = (sidebar_open ? 'open' : '');
+
+#myScrollspy.page-sidebar.custom-scrollbar(class=status)
+  .logo-wrapper
+    a(href='index.html')
+        img(src='../assets/images/logo/logo.png', alt='')
+  ul.document-menu.custom-scrollbar
+    h4.mb-2.pb-2 Table of contents
+    li.nav-item
+      a.nav-link.menu-title.active(href='#section1', data-original-title='', title='')       
+        | Changelog
+            
+// Page Sidebar Ends

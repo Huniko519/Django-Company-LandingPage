@@ -1,0 +1,119 @@
+/**=====================
+    81. Bookmark CSS start
+==========================**/
+.bookmark {
+  text-align:right;
+  ul {
+    li {
+      border:1px solid $light-gray;
+      background-color:$white;
+      display:inline-block;
+      border-radius:8px;
+      transition: all 0.5s ease;
+      svg{
+        transition: all 0.5s ease;
+      }
+      &:hover{
+        background-color:$primary-color;       
+        a {
+          svg{
+            color:$white;
+            stroke:$white;
+          }
+        }       
+      }
+      .search-form {
+        position: absolute;
+        bottom: 53px;
+        .form-control-search {
+          top:60px;
+          position:absolute;
+          transition:all linear 0.3s;
+          right:-20px;
+          transform: translateY(-35px) scaleY(0);
+          opacity:0;
+          visibility: hidden;
+          input {
+            width: 285px;
+            background-color: $white;           
+            border: 1px solid $light-gray;
+          }
+          &.open {
+            transform: translateY(0px) scaleY(1);
+            opacity: 1;
+            visibility: visible;
+            transition: all linear 0.3s;
+            z-index: 100;
+          }
+          &:after {
+            top: 12px;
+            left: 20px;
+            z-index: 1;
+          }
+          &:before {
+            left: 50px;
+            top: 9px;
+            z-index: 2;
+          }
+        }
+      }
+      a{
+        position: relative;
+        color: $theme-body-font-color;
+        svg {
+          vertical-align: middle;
+          height: 18px;
+          width: 18px;
+          margin: 12px;
+        }
+      }
+      &:nth-child(n+2){
+        margin-left:8px;
+      }
+      &:last-child {
+        padding-right: 0;
+        color: $primary-color;
+        a {
+          border-radius: 5px;
+          svg {
+            color: $primary-color;
+          }
+        }
+      }
+      
+    }
+  }
+}
+.offcanvas-bookmark {
+  &.page-wrapper.horizontal-wrapper {
+    .page-body-wrapper {
+      .page-body {
+        .bookmark {
+          ul {
+            li {
+              a {
+                z-index: 99999;
+                color: rgba(255, 255, 255, 0.5);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  &:before {
+    position: fixed;
+    content: '';
+    background-color: rgba(0,0,0,0.5);
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+    right: 0;
+    left: 0;
+  }
+}
+
+
+/**=====================
+    81. Bookmark CSS Ends
+==========================**/

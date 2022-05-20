@@ -1,0 +1,1 @@
+web: gunicorn vukode.wsgi --log-file -

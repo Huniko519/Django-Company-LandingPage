@@ -1,0 +1,202 @@
+/*-----------------------------------------------------------------------------------
+    Template Name: viho Admin
+    Template URI: themes.pixelstrap.com/viho
+    Description: This is Admin theme
+    Author: Pixelstrap
+    Author URI: https://themeforest.net/user/pixelstrap
+-----------------------------------------------------------------------------------
+
+01. General CSS
+02. Generic CSS
+03. Card CSS
+04. Loader CSS
+05. Header CSS
+06. Button CSS
+07. Color CSS
+08. GRID CSS
+09. Error-page  CSS
+10. Icon css
+11. Form Builder 1 CSS
+12. Form Builder 2 CSS
+13. Email Application  CSS
+14. Chat CSS
+15. Alert CSS
+16. Popover CSS
+17. List CSS
+18. Switch  CSS
+19. Mega option CSS
+20. Touchspin  CSS
+21. Select 2 CSS
+22. User profile css
+23. Progress CSS
+24. According CSS
+25. Authentication CSS
+26. Form CSS
+27. Coming Soon CSS
+28. Radio CSS
+29. Form Input CSS
+30. Data-table CSS
+31. JS datagrid CSS
+32. Page CSS
+33. Ecommerce  CSS
+34. Pricing CSS
+35. Form builder css
+36. NAV CSS
+37. Dropdown CSS
+38. Landing CSS
+39. Table  CSS
+40. Alertbox-call-out CSS
+41. Chart CSS
+42. Timeline CSS
+43. Timeline 2 CSS
+44. Tabs CSS
+45. Gallery CSS
+46. Blog CSS
+47. Footer CSS
+48. Form Wizard
+49. Badge CSS
+50. Tree CSS
+51. Search CSS
+52. Datepicker CSS
+53. Dashboard CSS
+54. Tour  CSS
+55. theme layout CSS
+56. Ribbon CSS
+57. breadcrumb CSS
+58. Steps  CSS
+59. Customizer CSS
+60. RTL CSS
+61. base_inputs CSS
+62. Responsive css
+63. Box-layout css
+64. Button Builder css
+65. Button Builder color picker CSS
+66. FullCalendar CSS
+67. Dashboard 2
+68. Dashboard 3
+70. Document css
+71. Faq CSS
+72. Job CSS
+73. knowledgebase CSS
+74. internationalization CSS
+75. Learning CSS
+76. Order History css
+77. Print CSS
+78. Sidebar CSS
+79. social app
+80. avatars
+81. Bookmark
+82. cart
+83. wishlist
+84. checkout
+85. bookmark app
+86. contacts
+87. task
+88. Invoice
+89. Formwidgets
+90. Base_inputs
+91. Project list
+92. File Manager
+
+ */
+
+ @import "theme/variables";
+ $primary-color: #168eea;
+ $secondary-color:#90b4cd;
+ @import "theme/general";
+ @import "theme/generic";
+ @import "theme/card";
+ @import "theme/loader";
+ @import "theme/header";
+ $primary-color: #168eea;
+ $secondary-color:#90b4cd;
+ @import "theme/sidebar";
+ @import "theme/buttons";
+ @import "theme/color";
+ @import "theme/grid";
+ @import "theme/errorpage";
+ @import "theme/icons";
+ @import "theme/form-builder";
+ @import "theme/form_builder-2";
+ @import "theme/email-application";
+ @import "theme/chat";
+ @import "theme/alert";
+ @import "theme/popover";
+ @import "theme/list";
+ @import "theme/switch";
+ @import "theme/megaoption";
+ @import "theme/touchspin";
+ @import "theme/select2";
+ @import "theme/user-profile";
+ @import "theme/progress";
+ @import "theme/according";
+ @import "theme/login";
+ @import "theme/forms";
+ @import "theme/comingsoon";
+ @import "theme/radio";
+ @import "theme/form-input";
+ @import "theme/datatable";
+ @import "theme/jsgrid";
+ @import "theme/page";
+ @import "theme/ecommerce";
+ @import "theme/pricing";
+ @import "theme/builders";
+ @import "theme/navs";
+ @import "theme/dropdown";
+ @import "theme/landing";
+ @import "theme/landing-responsive";
+ @import "theme/table";
+ @import "theme/chart";
+ @import "theme/timeline-v";
+ @import "theme/timeliny";
+ $primary-color: #168eea;
+ $secondary-color:#90b4cd;
+ @import "theme/tab";
+ @import "theme/gallery";
+ @import "theme/blog";
+ @import "theme/footer";
+ @import "theme/form-wizard";
+ $primary-color: #168eea;
+ $secondary-color:#90b4cd;
+ @import "theme/badge";
+ @import "theme/tree";
+ @import "theme/search";
+ $primary-color: #168eea;
+ $secondary-color:#90b4cd;
+ @import "theme/datepicker";
+ @import "theme/tour";
+ @import "theme/custom-theme-options";
+ @import "theme/ribbon";
+ @import "theme/breadcrumb";
+ @import "theme/steps";
+ $primary-color: #168eea;
+ $secondary-color:#90b4cd;
+ @import "theme/theme-customizer";
+ @import "theme/faq";
+ @import "theme/knowledgebase";
+ @import "theme/document";
+ @import "theme/job-search";
+ @import "theme/learning";
+ @import "theme/order-history";
+ @import "theme/internationalization";
+ @import "theme/social-app";
+ @import "theme/avatars";
+ @import "theme/bookmark";
+ @import "theme/cart";
+ @import "theme/wishlist";
+ @import "theme/checkout";
+ @import "theme/bookmark-app";
+ @import "theme/contacts";
+ @import "theme/task";
+ @import "theme/invoice";
+ @import "theme/form-widgets";
+ @import "theme/kanban";
+ @import "theme/projectlist";
+ @import "theme/file";
+ $primary-color: #168eea;
+ $secondary-color:#90b4cd;
+ @import "theme/dashboard_default";
+ @import "theme/dashboard_2";
+ @import "theme/dashboard_3";
+ @import "theme/box-layout";
+ @import "theme/rtl";

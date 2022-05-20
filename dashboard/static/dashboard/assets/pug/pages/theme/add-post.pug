@@ -1,0 +1,86 @@
+- var theme_customizer      = true;
+- var form_validation_custom= true;
+- var select2               = true;
+- var page_select2          = true;
+- var dropzone              = true;
+- var ckeditor              = true;
+- var email_app             = true;
+
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                  .container-fluid
+                    .page-header
+                      .row
+                        .col-sm-6
+                          h3
+                            | Add Post
+                          ol.breadcrumb
+                            li.breadcrumb-item
+                              a(href='index.html')
+                               | Home
+                            li.breadcrumb-item Blog
+                            li.breadcrumb-item.active Add Post
+                        .col-sm-6
+                          include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid
+                      .row
+                        .col-sm-12
+                          .card
+                            .card-header.pb-0
+                              h5 Post Edit
+                            .card-body.add-post
+                                form.row.needs-validation(novalidate='')
+                                    .col-sm-12
+                                      .form-group
+                                        label(for='validationCustom01') Title:
+                                        input#validationCustom01.form-control(type='text', placeholder='Post Title', required='')
+                                        .valid-feedback
+                                          | Looks good!
+                                      .form-group
+                                          label Type:
+                                          .m-checkbox-inline
+                                              label.f-w-500(for='edo-ani')
+                                                input#edo-ani.radio_animated(type='radio', name='rdo-ani', checked='')
+                                                | Text
+                                              label.f-w-500(for='edo-ani1')
+                                                input#edo-ani1.radio_animated(type='radio', name='rdo-ani')
+                                                | Image
+                                              label.f-w-500(for='edo-ani2')
+                                                input#edo-ani2.radio_animated(type='radio', name='rdo-ani', checked='')
+                                                | Audio
+                                              label.f-w-500(for='edo-ani3')
+                                                input#edo-ani3.radio_animated(type='radio', name='rdo-ani')
+                                                | Video
+                                      .form-group
+                                        label.d-block Category:
+                                        select.js-example-placeholder-multiple.col-sm-12(multiple='multiple')
+                                          option(value='AL') Lifestyle
+                                          option(value='WY') Travel
+                                      .email-wrapper
+                                            .theme-form
+                                                .form-group
+                                                  label Content:
+                                                  textarea#text-box(name='text-box', cols='10', rows='2')
+                                
+                                form#singleFileUpload.dropzone.digits(action='/upload.php')
+                                  .m-0.dz-message.needsclick
+                                    i.icon-cloud-up
+                                    h6.mb-0 Drop files here or click to upload.
+                                .btn-showcase
+                                          button.btn.btn-primary(type='submit') Post
+                                          input.btn.btn-light(type='reset', value='Discard')
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

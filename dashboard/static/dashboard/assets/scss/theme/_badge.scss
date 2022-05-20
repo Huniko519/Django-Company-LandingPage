@@ -1,0 +1,56 @@
+/**=====================
+    49. Badge CSS start
+==========================**/
+.badge {
+  padding: $badge-padding;
+  &+.badge{
+  	margin-left: 5px;
+  }
+  svg{
+    width: $badge-svg-size;
+    height: $badge-svg-size;
+  }
+}
+
+// flat badge loop css
+@each $pill-badge-name, $pill-badge-color in (primary, $primary-color),
+        (secondary, $secondary-color) ,
+        (success, $success-color),
+        (danger, $danger-color),
+        (info, $light-font),
+        (light, $light-gray),
+        (dark, $dark-color),
+        (warning, $warning-color) {
+  .pill-badge-#{$pill-badge-name}{
+    background-color: $pill-badge-color;
+    box-shadow: -0.5px 4.33px 16px 0px rgba($pill-badge-color, 0.25);
+    color:$white;
+    font-size:9px;
+    text-transform:capitalize;
+    border-radius:5px;
+    font-weight:600;
+    padding: 5px 9px;
+    
+  }
+}
+
+// round badge loop css
+@each $round-badge-name, $round-badge-color in (primary, $primary-color),
+        (secondary, $secondary-color) ,
+        (success, $success-color),
+        (danger, $danger-color),
+        (info, $light-font),
+        (light, $light-gray),
+        (dark, $dark-color),
+        (warning, $warning-color) {
+  .round-badge-#{$round-badge-name}{
+    border-radius: 6px;
+    background-color: $round-badge-color;
+    box-shadow: -0.5px -6.67px 14px 0px rgba($round-badge-color, 0.18);
+    color: $white !important;
+  }
+}
+
+/**=====================
+    49. Badge CSS Ends
+==========================**/

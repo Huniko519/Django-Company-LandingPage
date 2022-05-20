@@ -1,0 +1,85 @@
+- var theme_customizer      = true;
+- var tooltip               = true;
+- var date_picker           = true;
+
+doctype html
+html(lang='en')
+    include ../../components/header-files
+    body
+        include ../../components/loader
+        // page-wrapper Start
+        #pageWrapper.page-wrapper
+            include ../../components/header
+            // Page Body Start
+            .page-body-wrapper.horizontal-menu
+                include ../../components/sidebar
+                .page-body
+                    .container-fluid
+                        .page-header
+                            .row
+                                .col-sm-6
+                                    h3
+                                      | Date Picker
+                                    ol.breadcrumb
+                                      li.breadcrumb-item
+                                        a(href='index.html')
+                                         | Home
+                                      li.breadcrumb-item Forms
+                                      li.breadcrumb-item Form Widgets
+                                      li.breadcrumb-item.active Date Picker
+                                .col-sm-6
+                                  include ../../components/bookmark
+                    // Container-fluid starts
+                    .container-fluid
+                      .card
+                        .card-header
+                          h5 Date Picker
+                        .card-body
+                          .row
+                            .col-md-12
+                              .date-picker
+                                form.theme-form
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-end Default
+                                    .col-xl-5.col-sm-9
+                                      .input-group
+                                        input.datepicker-here.form-control.digits(type='text', data-language='en')
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-end Selecting multiple dates
+                                    .col-xl-5.col-sm-9
+                                      input.datepicker-here.form-control.digits(type='text', data-multiple-dates='3', data-multiple-dates-separator=', ', data-language='en')
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-end Month selection
+                                    .col-xl-5.col-sm-9
+                                      input.datepicker-here.form-control.digits(type='text', data-language='en', data-min-view='months', data-view='months', data-date-format='MM yyyy')
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-end Minimum and maximum dates
+                                    .col-xl-5.col-sm-9
+                                      input#minMaxExample.form-control.digits(type='text')
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-end Range of dates
+                                    .col-xl-5.col-sm-9
+                                      input.datepicker-here.form-control.digits(type='text', data-range='true', data-multiple-dates-separator=' - ', data-language='en')
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-end Disable days of week
+                                    .col-xl-5.col-sm-9
+                                      input#disabled-days.form-control.digits(type='text')
+                                  .form-group.row
+                                    label.col-sm-3.col-form-label.text-end Orientation
+                                    .col-xl-5.col-sm-9
+                                      .form-row
+                                        .col-md-12.mb-2
+                                          input.datepicker-here.form-control.digits(type='text', data-language='en', data-multiple-dates-separator=', ', data-position='top left', placeholder='top left')
+                                        .col-md-12.mb-2
+                                          input.datepicker-here.form-control.digits(type='text', data-language='en', data-multiple-dates-separator=', ', data-position='top right', placeholder='top right')
+                                        .col-md-12.mb-2
+                                          input.datepicker-here.form-control.digits(type='text', data-language='en', data-multiple-dates-separator=', ', data-position='bottom left', placeholder='bottom left')
+                                        .col-md-12
+                                          input.datepicker-here.form-control.digits(type='text', data-language='en', data-multiple-dates-separator=', ', data-position='bottom right', placeholder='bottom right')
+                                  .form-group.row.mb-0
+                                    label.col-sm-3.col-form-label.text-end Permanently visible Datepicker
+                                    .col-sm-3
+                                      .datepicker-here(data-language='en')
+                    // Container-fluid Ends
+                include ../../components/footer
+        include ../../components/footer-files

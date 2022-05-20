@@ -1,0 +1,110 @@
+/*------------------------------------------------------------*/
+/*	NAVBAR OVERLAY
+/*------------------------------------------------------------*/
+.bsnav-overlay{
+
+	$overlay-bg: rgba(#000,.4);
+ 
+	background: $overlay-bg;
+	border-bottom: solid 1px rgba(#fff,.3);
+	left: 0;
+	right: 0;
+	position: absolute;
+
+
+	.navbar-nav .nav-item{
+		color: #fff;
+	}//nav-item
+
+
+	.navbar-toggler .navbar-toggler-icon{
+		&,
+		&::before,
+		&::after{
+			background-color: #fff;
+		}
+	}//.navbar-toggler
+
+
+
+	.nav-item .caret{
+		border-top-color: #fff;
+	}//caret
+
+	.nav-item.dropdown .navbar-nav .nav-link .caret,
+	.nav-item.dropdown.dropdown-right .navbar-nav .nav-link .caret{
+		border-left-color: #fff;
+		border-right-color: #fff;
+	}
+
+	.nav-item.dropdown.dropdown-horizontal > .navbar-nav .nav-link .caret,
+	.nav-item.dropdown.dropdown-horizontal > .navbar-nav .navbar-nav .nav-link .caret{
+		border-top-color: #fff;
+		top: 2px;
+		position: relative;
+	}
+
+
+
+
+	.nav-item.dropdown > .navbar-nav{
+		background: $overlay-bg;
+
+
+		.navbar-nav{
+			background: $overlay-bg;
+		}//navbar-nav
+
+		&:not(.in){
+			transition: clip 0s;
+		}
+
+	}//dropdown > navbar-nav
+
+
+}//bsnav-overlay
+
+
+
+
+
+
+
+
+.bsnav-overlay-light{
+
+	$overlay-bg: rgba(#fff,.8);
+
+	background: $overlay-bg;
+	border-bottom: solid 1px #fff;
+	left: 0;
+	right: 0;
+	position: absolute;
+
+
+	.nav-item.dropdown > .navbar-nav{
+		background: $overlay-bg;
+
+
+		.navbar-nav{
+			background: $overlay-bg;
+		}//navbar-nav
+
+	}//dropdown > navbar-nav
+
+
+
+	.dropdown.dropdown-horizontal{
+
+		> .navbar-nav,
+		> .navbar-nav .navbar-nav{
+			box-shadow: 0 1px 0 #fff inset;
+		}
+
+		> .navbar-nav:not(.in){
+			transition: clip 0s;
+		}
+
+	}//dropdown-horizontal
+
+}//bsnav-overlay-light

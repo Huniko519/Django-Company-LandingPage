@@ -1,0 +1,49 @@
+/*------------------------------------------------------------*/
+/*	CARET
+/*------------------------------------------------------------*/
+$size: 5px;
+
+$active: #64DD17;
+
+.nav-item .caret{
+	width: 0;
+	height: 0;
+	margin-left: 5px;
+	margin-top: -$size/2;
+	border: none;
+	border-left: solid $size - 1 transparent;
+	border-right: solid $size - 1 transparent;
+	border-top: solid $size #444;
+	vertical-align: middle;
+	display: inline-block;
+	transition: .3s;
+}//caret
+
+
+.nav-item:hover .caret,
+.nav-item.active .caret{
+	border-top-color: $active;
+}
+
+
+
+.nav-item.dropdown{
+
+	.navbar-nav .nav-link .caret{
+		border: none;
+		border-top: solid $size - 1 transparent;
+		border-bottom: solid $size - 1 transparent;
+		border-left: solid $size #444;
+	}//caret
+
+
+	&.dropdown-right .navbar-nav .nav-link .caret{
+		border: none;
+		border-top: solid $size - 1 transparent;
+		border-bottom: solid $size - 1 transparent;
+		border-right: solid $size #444;
+		margin-left: 0;
+		margin-right: 5px;
+	}//caret at right
+
+}//nav-item.dropdown

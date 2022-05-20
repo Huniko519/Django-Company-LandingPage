@@ -1,0 +1,243 @@
+/**=====================
+   90. base_inputs CSS start
+==========================**/
+.jkanban-container {
+  // .btn {
+  //   margin-bottom: 10px;
+  // }
+  .note {
+    a {
+      display: contents;
+    }
+  }
+  p{
+    color: $light-text;
+  }
+}
+.kanban-board-header {
+  height: auto;
+  width: auto;
+  line-height: unset;
+  background-color: rgba($primary-color,0.05);
+  // border-bottom: 1px solid $light-gray;
+  &.bg-primary {
+    &~.kanban-drag {
+      background-color: rgba($primary-color, 0.3);
+    }
+  }
+  &.bg-secondary {
+    &~.kanban-drag {
+      background-color: rgba($secondary-color, 0.3);
+    }
+  }
+  &.bg-warning {
+    &~.kanban-drag {
+      background-color: rgba($warning-color, 0.3);
+    }
+  }
+  &.bg-success {
+    &~.kanban-drag {
+      background-color: rgba($success-color, 0.3);
+    }
+  }
+}
+.kanban-container {
+  display: contents;
+  footer{
+    padding:0;
+    margin:0;
+  }
+}
+.kanban-board {
+  margin-bottom:30px;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  border-radius: 8px;
+  box-shadow: 1px 5px 24px 0 rgba(68, 102, 242, 0.05);
+  overflow: hidden;
+  width: calc(100% / 3 - 30px) !important;
+  .kanban-drag {
+    background: rgba($primary-color,0.05);
+  }
+}
+.kanban-board header {  
+  padding: 20px 20px 0;
+}
+.kanban-item {
+  background:$white;
+  padding:0;
+  margin-bottom:20px;
+  p {    
+    font-size:13px;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  .list {
+    display: inline-block;
+    opacity: 0.4;
+    li {
+      display: inline-block;
+      font-size: 12px;
+      i{
+        margin-right: 10px;
+      }     
+      &:nth-child(n+2){
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .kanban-box {
+    border: 1px solid $light-gray;
+    border-radius: 5px;
+    padding: 20px;
+    position: relative;
+    display: block;
+    color: inherit;   
+
+    &:hover {
+      color: inherit;
+    }
+
+    &+.kanban-box {
+      margin-top: 20px;
+    }
+
+    .badge {
+      font-weight: 400;
+    }
+
+    h6 {
+      font-size:15px;
+      margin-top:5px;
+      font-weight: 600;
+    }
+
+    .dropdown {
+      display: inline-block;
+      right: 10px;
+      position: absolute;
+      top: 20px;
+
+      .dropdown-item {
+        font-size: 13px;
+        font-weight: 500;
+        padding: 5px 10px;
+        text-align: left;
+      }
+
+      svg {
+        height: 14px;
+      }
+    }
+
+    .d-flex {
+      justify-content: space-between;
+    }
+
+    .dropdown-toggle {
+      &:after {
+        content: none;
+      }
+    }
+
+    .customers ul li+li {
+      margin-left: -10px;
+    }
+
+    .date {
+      font-size: 11px;
+      opacity: 0.5;
+    }
+  }
+}
+.colorfull-kanban{
+  .kanban-board-header{
+    padding-bottom:20px;
+  }
+}
+.kanban-block{
+  margin-bottom:-30px;
+}
+
+
+@media only screen and (max-width: 1300px){
+  .kanban-board{
+    width: calc(100% / 2 - 30px) !important;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .jkanban-container .btn {
+    margin-bottom: 10px;
+    margin-left: 20px;
+  }
+}
+
+
+@media only screen and (max-width:991px){
+  .kanban-block{
+    margin-bottom: -20px;
+  }
+}
+
+
+@media only screen and (max-width: 700px){
+  .kanban-container .kanban-board {
+    width:100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  } 
+  .jkanban-container{
+    .btn{
+      margin-left:unset;
+      padding: 10px 15px;
+    }
+  }
+
+}
+@media only screen and (max-width: 600px) {
+  .kanban-board .kanban-drag, .kanban-container .kanban-item .kanban-box {
+    // padding: 10px 15px;
+  }  
+}
+
+@media only screen and (max-width: 480px) { 
+  .kanban-board{
+    .kanban-drag{
+      padding:10px;
+    }
+    header{
+      padding:10px 10px 0;
+      .kanban-title-board{
+        font-size:14px;
+      }
+    }
+  }
+  .jkanban-container{
+    .card{
+      .card-body{
+        padding:15px;
+      }
+    }
+    .btn{
+      padding:7px 12px;
+    }
+  }
+  .kanban-item{
+    margin-bottom:10px;
+    .kanban-box{
+      padding:15px;
+    }
+  }
+  .colorfull-kanban{
+    .kanban-board-header{
+      padding-bottom:10px;
+    }
+  }  
+  
+}
+/**=====================
+  90. base_inputs CSS ends
+==========================**/
